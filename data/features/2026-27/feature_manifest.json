@@ -1,0 +1,5037 @@
+{
+  "schema_version": "1.0.0",
+  "builder_version": "1.3.0",
+  "season": "2026-27",
+  "generated_at_utc": "2026-08-15T20:43:33.478098+00:00",
+  "input_directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\processed\\2026-27",
+  "output_files": {
+    "player_gameweek_features.csv": {
+      "rows": 0,
+      "columns": []
+    }
+  },
+  "column_classification": {
+    "feature_columns": [],
+    "audit_columns": [],
+    "target_columns": []
+  },
+  "source_processed_manifest": {
+    "schema_version": "1.0.0",
+    "builder_version": "1.0.0",
+    "season": "2026-27",
+    "generated_at_utc": "2026-08-15T20:43:26.457481+00:00",
+    "project_root": "E:\\Python\\FPL Fantasy Predictiom",
+    "raw_directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\raw\\2026-27",
+    "processed_directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\processed\\2026-27",
+    "source_snapshots": {
+      "bootstrap": {
+        "path": "E:\\Python\\FPL Fantasy Predictiom\\data\\raw\\2026-27\\bootstrap\\2026-08-15_20-39-21.json",
+        "filename": "2026-08-15_20-39-21.json",
+        "timestamp": "2026-08-15_20-39-21",
+        "sha256": "2e7c4eccea8b39ca7c83c125ef65b8c9cd23c32020622c8f7d918bf79af64615"
+      },
+      "fixtures": {
+        "path": "E:\\Python\\FPL Fantasy Predictiom\\data\\raw\\2026-27\\fixtures\\2026-08-15_20-39-22.json",
+        "filename": "2026-08-15_20-39-22.json",
+        "timestamp": "2026-08-15_20-39-22",
+        "sha256": "1345f0fb93994f39476b5fc0c6a903c5f67a1ad78cd92244cf59bfbf08748288"
+      }
+    },
+    "player_snapshot_mode": "latest_per_player",
+    "player_snapshot_count": 587,
+    "counts": {
+      "teams": 20,
+      "players": 587,
+      "gameweeks": 38,
+      "fixtures": 380,
+      "player_gameweek_rows": 0,
+      "player_season_history_rows": 2032
+    },
+    "integrity": {
+      "unique_players": 587,
+      "unique_teams": 20,
+      "unique_gameweeks": 38,
+      "unique_fixtures": 380,
+      "player_gameweek_rows": 0,
+      "player_season_history_rows": 2032
+    },
+    "business_rules": {
+      "warnings": [],
+      "duplicate_fixture_codes": 0,
+      "invalid_positions": 0,
+      "invalid_minutes_rows": 0,
+      "negative_points_rows": 0
+    },
+    "files": {
+      "players.csv": {
+        "columns": [
+          "player_id",
+          "code",
+          "first_name",
+          "second_name",
+          "web_name",
+          "known_name",
+          "team_id",
+          "team_code",
+          "position_id",
+          "position_name",
+          "now_cost",
+          "now_cost_m",
+          "cost_change_event",
+          "cost_change_event_fall",
+          "cost_change_start",
+          "cost_change_start_fall",
+          "price_change_percent",
+          "total_points",
+          "points_per_game",
+          "form",
+          "event_points",
+          "ep_next",
+          "ep_this",
+          "selected_by_percent",
+          "transfers_in",
+          "transfers_in_event",
+          "transfers_out",
+          "transfers_out_event",
+          "value_form",
+          "value_season",
+          "minutes",
+          "starts",
+          "goals_scored",
+          "assists",
+          "clean_sheets",
+          "goals_conceded",
+          "own_goals",
+          "penalties_saved",
+          "penalties_missed",
+          "yellow_cards",
+          "red_cards",
+          "saves",
+          "bonus",
+          "bps",
+          "influence",
+          "creativity",
+          "threat",
+          "ict_index",
+          "clearances_blocks_interceptions",
+          "recoveries",
+          "tackles",
+          "defensive_contribution",
+          "expected_goals",
+          "expected_assists",
+          "expected_goal_involvements",
+          "expected_goals_conceded",
+          "expected_goals_per_90",
+          "expected_assists_per_90",
+          "expected_goal_involvements_per_90",
+          "expected_goals_conceded_per_90",
+          "saves_per_90",
+          "goals_conceded_per_90",
+          "starts_per_90",
+          "clean_sheets_per_90",
+          "defensive_contribution_per_90",
+          "chance_of_playing_next_round",
+          "chance_of_playing_this_round",
+          "status",
+          "removed",
+          "can_select",
+          "can_transact",
+          "news",
+          "news_added",
+          "team_join_date",
+          "birth_date",
+          "squad_number",
+          "selected_rank",
+          "selected_rank_type",
+          "form_rank",
+          "form_rank_type",
+          "points_per_game_rank",
+          "points_per_game_rank_type",
+          "influence_rank",
+          "influence_rank_type",
+          "creativity_rank",
+          "creativity_rank_type",
+          "threat_rank",
+          "threat_rank_type",
+          "ict_index_rank",
+          "ict_index_rank_type",
+          "now_cost_rank",
+          "now_cost_rank_type"
+        ]
+      },
+      "teams.csv": {
+        "columns": [
+          "team_id",
+          "code",
+          "name",
+          "short_name",
+          "strength",
+          "strength_overall_home",
+          "strength_overall_away",
+          "strength_attack_home",
+          "strength_attack_away",
+          "strength_defence_home",
+          "strength_defence_away",
+          "position",
+          "played",
+          "win",
+          "draw",
+          "loss",
+          "points",
+          "form",
+          "team_division",
+          "unavailable",
+          "pulse_id"
+        ]
+      },
+      "gameweeks.csv": {
+        "columns": [
+          "gameweek",
+          "name",
+          "deadline_time",
+          "deadline_time_epoch",
+          "release_time",
+          "release_time_epoch",
+          "average_entry_score",
+          "finished",
+          "data_checked",
+          "highest_scoring_entry",
+          "highest_score",
+          "is_previous",
+          "is_current",
+          "is_next",
+          "cup_leagues_created",
+          "h2h_ko_matches_created",
+          "ranked_count",
+          "transfers_made",
+          "most_selected",
+          "most_transferred_in",
+          "top_element",
+          "top_element_info",
+          "chip_plays",
+          "most_vice_captained",
+          "most_captained"
+        ]
+      },
+      "fixtures.csv": {
+        "columns": [
+          "fixture_id",
+          "code",
+          "gameweek",
+          "event_name",
+          "team_h",
+          "team_a",
+          "team_h_score",
+          "team_a_score",
+          "team_h_difficulty",
+          "team_a_difficulty",
+          "finished",
+          "finished_provisional",
+          "started",
+          "minutes",
+          "provisional_start_time",
+          "kickoff_time",
+          "pulse_id"
+        ]
+      },
+      "player_gameweek.csv": {
+        "columns": [
+          "player_id",
+          "season",
+          "gameweek",
+          "fixture_id",
+          "opponent_team",
+          "was_home",
+          "kickoff_time",
+          "minutes",
+          "total_points",
+          "goals_scored",
+          "assists",
+          "clean_sheets",
+          "goals_conceded",
+          "own_goals",
+          "penalties_saved",
+          "penalties_missed",
+          "yellow_cards",
+          "red_cards",
+          "saves",
+          "bonus",
+          "bps",
+          "influence",
+          "creativity",
+          "threat",
+          "ict_index",
+          "clearances_blocks_interceptions",
+          "recoveries",
+          "tackles",
+          "defensive_contribution",
+          "starts",
+          "expected_goals",
+          "expected_assists",
+          "expected_goal_involvements",
+          "expected_goals_conceded"
+        ]
+      },
+      "player_season_history.csv": {
+        "columns": [
+          "player_id",
+          "season",
+          "element_code",
+          "start_cost",
+          "end_cost",
+          "total_points",
+          "minutes",
+          "goals_scored",
+          "assists",
+          "clean_sheets",
+          "goals_conceded",
+          "own_goals",
+          "penalties_saved",
+          "penalties_missed",
+          "yellow_cards",
+          "red_cards",
+          "saves",
+          "bonus",
+          "bps",
+          "influence",
+          "creativity",
+          "threat",
+          "ict_index",
+          "clearances_blocks_interceptions",
+          "recoveries",
+          "tackles",
+          "defensive_contribution",
+          "starts",
+          "expected_goals",
+          "expected_assists",
+          "expected_goal_involvements",
+          "expected_goals_conceded"
+        ]
+      }
+    },
+    "notes": [
+      "Raw snapshots are immutable and were not modified.",
+      "Bootstrap player data is used for the normalized current player table.",
+      "Global fixtures are used as the authoritative fixture dimension.",
+      "Player current-season history is empty before the first FPL gameweek.",
+      "history_past contains season-level historical summaries, not per-gameweek history.",
+      "Feature engineering and prediction targets are intentionally not created at this stage."
+    ],
+    "player_snapshots": [
+      {
+        "player_id": 1,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b17e92508886baf30ee9e2cc30c06cf0521e92703fa177d4a04e56ec970e8fda",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 2,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5f85fffbd29aadeb96414c83d4f038cbfbf8bd3fe2e4e03a060029b164c9bf38",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 3,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9df84fda14bd7c82ae1c78314de4eecbcebf0a6e16ce198b40af425dffd1f0ce",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 4,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9b4fa52c63d947916f68ea44f5a97d64d7cb31b3340e29a72fac8aebcb450898",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 5,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ebeddee32c1ce14e5efc95a6807970ed99c0b2225c3568f757b33643660d9196",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 6,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bffad8295dcb323b0744ac5d1569921c33dcc553c05ea5990a9de24e7a3351b0",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 7,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2b5266fc652f8a611e18c44f5ef62720f5f9d2109aeabc2e2ca55ec252abed32",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 8,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c412def44ec7d325caf229d406b75d8eebbd7ca2902a86e38b8802d37e60898c",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 9,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "454dbad7f6cc1348c6d6ac597b09888574d0bb64f8d307dac30ee7c08f5492cb",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 10,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bf32338f6648f51b2a6179e13fbb316bef7ef766c342fd4eddaea260d3d65e82",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 11,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e7eaee7fac1157d35f20742ceb657912ccca3cf17a0b17ba35fe1111639bd42e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 12,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "190bfe16a20235c63d85671f5be8e33824f6b4a06c7ee6d9fa1c18f7c160fec3",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 13,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fe2ad7361df253a846db9697b772f8153cca62db16a3a54499b721bd715edcab",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 14,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4399b2198fbc8a358889d01db24fb18188b7c1e5d9cf008fab44b769c9cc71b8",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 15,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "eb78e94e7364ec35307ea7875c19feb6193767a6f08e6ed55176ba55397ae14b",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 16,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ca00a84ff5c482d2ab8b8eaf2b9923bd25d3f7d0fd891433996cb485c90b648b",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 17,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "13f4e6e9c8302b16979b1035e903868af62817689ce4802253198f9e2b7602eb",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 18,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6676a65c55f28cdf190b6c0639484b8454a3e0a650e38d3ed71c10b3b3f31979",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 19,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e7e0d0cc365b4c722f783518a4d641ea663e4bca959341dd2c1b32061f9609b5",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 20,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1ddc1457c42cd761e15821104aa3606ea24712a6e99b615f7b97c5223377a77f",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 21,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c6bfa20862f62a372a8c16e43b051dc7ade97423d68bc2f7181e9b74ef1bb99a",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 22,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d2492206d4a9ce45df80bbd0af35b4bced26d774823e5502057fdda6f771984e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 23,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7e1067d5062d090f93788dd764723acb54a96722f35d943260c5737aa0865882",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 24,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c58c13d42542f07dd7a4f0658413a36d5302fbd8eed61005e17da73820734f96",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 25,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ca96015febbde0eaa13a92062bfed375632cb96799605daea4b6314f1dee9c59",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 26,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c515cb13fa84f2894c67cf1842645b567c06cb1ef04f7f99d8138aaef040dc8a",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 27,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "be3da267a302cdfff71827f851dcdb536bc7a45e3b1d5c89bd11b430bccfc6d3",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 28,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "04c142b6e267d65d41a0d60306bf51bf2191654d98dc41a6f591bd723d732f22",
+        "current_history_rows": 0,
+        "past_season_rows": 12
+      },
+      {
+        "player_id": 29,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ed7549a520304fd34dfafe208854aa07a4ae09353c6a0bb600f4afac9a01baf6",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 30,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0627dae0d53d97fac8e9dd8ff3d2e8cb22c14a6bb0c2e86c69240b02815932d3",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 31,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "970acc8224958c7a53292e6b3c93e7661bdfca9504cdbfa107c79320d89239f0",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 32,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d7183502d6a1d0caf6a885151af818b918e8fc80957f21921e20c1bffa3403d8",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 33,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e62a432534715682ed2bbea5fe5089f0238df2a38f2107060dd9fb31a2017b87",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 34,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4992bf9904559b99ec3eeaab75765818c90ab350a1288a6891149ad1beb11e8c",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 35,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8847563185aec3a773c8df15baa62e03f9663e7ead540762fd2e2182ef7347f3",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 36,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1acefad5a762c65f46dd71d06120712735aa41ab940adb5e2a5273ca97e1a9da",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 37,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e71dafaa4bd25c6a59d3fb5b071837f5ddbd8eeaf891cb76f1cab2bb8f978846",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 38,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c2975ce7df26237075fe9c4764ada4d6a1885200a089f2a5dbae3ae2dd1389b9",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 39,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "18f82de1eb7a76846f90bb3bc46a6cfe9d48e71426f3ed884b4466cc04245763",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 40,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e71e552696b45eeb2833e226ee9dcad36711739fd51140c681eef5c8153dc503",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 41,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0f7cfd8553b82b0ef3ad34eec78b55d062ee105300002a05df108060dc8b229c",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 42,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "958bfb458fdd50e0b08c7c820391fc494ce96448ba9b9b30d562ef135df21c2f",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 43,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "672491f1e4cfc17d839e09f2fc444810a924d28a4ac9435a72e58920efd319ee",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 44,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c3d83031f73a41bac1c7d72eb97dedc631a640f1efd5e5342477acc83123b335",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 45,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e87b90a5c3d39b227105a47a69fa4c7a6982bfadf0d894254a94cd26c107e16e",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 46,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f95e05b2a36f7b1efc4d0a2d09f7beadb1e21cf90ad6a3ae5a3cacafdca17e2e",
+        "current_history_rows": 0,
+        "past_season_rows": 16
+      },
+      {
+        "player_id": 47,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "14ddd6cc634bf95f439706f26016a5d8bdaeba8b16ee945a938903378e6d9b31",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 48,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a529f1682a6faf606d281b2d92917af28507aa0a5e39a364d2136df3785881c8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 49,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "45beba9c5abdde3ed4a4efe869d90fe5a6af7307590774cb879cd6021a6eb7a4",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 50,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d9e75bf061b3ea3b46be5bf78663b6ea420058041142881532c4af2897595748",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 51,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fe120346892b1f9b031ca921d7531f918c5fb7d72aa7d0f7550773eed56603b8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 52,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e66be70b12b19c3a924d160f9eff30cd53ea5e8429fbe6dfa61ef947983a63a7",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 53,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "40f8000af47676f56f4e0182b901fdcf6c0639105b71a42e7a1944ae71f5d4bf",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 54,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "94878c326354e7bc6365e48cacae7c900a2544a01373c5785a72666f0f366fa7",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 55,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2ef9452a9568feb4ae76673e789cde1559f3a4560634b1dcc2119a5046b8e84d",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 56,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "471d24d10ea64d6000b99470b1216ffb1200ebfb8cc4f0c275c2477a6b5b2d8c",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 57,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5cf58e7037ef48b1dfcc12e736858c893c7fa38ea78adcaed432194ff91a6c21",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 58,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fe62542bfea5e20c17c5af600c00ffcba2a04964b530d5588e19319b8e110660",
+        "current_history_rows": 0,
+        "past_season_rows": 15
+      },
+      {
+        "player_id": 59,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6d1c2a74682696946c24505113e97ee7efbb8abe60e4496113780949a27ad322",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 60,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "565a446ea5a712819d8f4e48d502f3459150447e4cc968fade3d94d548afcc21",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 61,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a7bdf70acafe490c8373b7d4f7449ad8ba3d4ff7069bb3d1f04e58dff983573d",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 62,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "783147fd00ac9aab3daa3dffe16471cad8e6f7c3eb7e747f194177a1adf2618d",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 63,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2b52779a9ee3a724b3ebf3e7668e4279c686d98d10e3fd606fdccd78abd7294f",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 64,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e708f9081bc74cc5f364166a407b28f04d7cf34407f5becfd684b20442189626",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 65,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "884234e2eefc43949fdcba66eafe99f74c2b68594e3b241e4eae9238f16dc4f3",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 66,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "27b2121d9c95d279edf3bbc6eb874bba68b862ca6cb264c5af5353d53a0389a1",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 67,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1c076dcadd37784b91bd391ef76759b6dd435903610a28150ae10bf05b6e6d4b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 68,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "705b98265479b3ec5de80e6155ed3b095e058000a58011c18863b8eba288ed5e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 69,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b33e5b6da026d94e61eeddec1d7709e011aec91ec9bbc97b6df0741660b8a46a",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 70,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a5222ed9c3dd2d97df9ebeaf3802fc3d2a781d2e618d303e8e0b00f48669b174",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 71,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "da7f6c945ded9121ff7e353b2b5f8f58b38c0d6a7ea63058bc4252639169cfe1",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 72,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f9342def5cd044ddf53bd6b358a62b89ddd1979e5af4d20d2faaef1698128c49",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 73,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7480c4a0ebe35846d173a3b0d22fde49394aa91947d31d613a42b5bb64eb7612",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 74,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ab3d31ffa8661b5fac75b4a457a9b1e0a5b35a23e425e35afd30f1d4857a1c49",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 75,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d9df5689b0ded308cd8357a8c3817eab23a8527ac9a1ba3977dd6a76d809d565",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 76,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7f957a6a677e83c084b0b6f5f8fdc5bfc594f8e3dc7dc0122b9ed8763ed9c9f7",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 77,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "306cb8adb818545254b0cf7f4d63702319ad4ce5c9c0d91fc8bf6253b3bccad1",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 78,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dd347c9fcd35d700ae83c93f9084fa0028d775bf938a8e775266dec3bb94df0e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 79,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "21f1cadfb2b1d4d2d77b01ab0f6cb2e2e5a3c6ebd04b311657df483f9e652bb8",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 80,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "583715ef9f3cf686859fa91c325fd63ec0d73d5a5808bc76ece69552fd88ca77",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 81,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "201044eb0f7e178636cddd3c271989a03d2167bb019978e2bb5e757e5798a2e4",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 82,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "99d60d91b2cba586d75bb1a2b110e1f70e5dc3944cb3237756d506907cb84ca2",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 83,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "75f6ea564f8df2dd3074b4b1564b2204dd71824328ec1faafc37fac5fc093f7f",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 84,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6ea84d1f572972c3a5d8132e9bad6c9c4ad32dd0230c7882ee0158e63dbd2564",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 85,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9f9aeb66d18087f3e9b8aabecb6dbff109c2fa4232ef6bbbfcc1eb0b27610fd5",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 86,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ac16dbbcd9019f433bbe331ab9da04bb2817488416c47efef97bbc6658758540",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 87,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "984ce45d0dd5c35468ceb7d8a35f2d99bca20871f67eed0ca0ea5f299606cc3c",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 88,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f4cbd652f7dff35653f0370924b6a605d1a8664c74eee412fe379a37afe72e0e",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 89,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3590bb0877459350978b5730ff5e2850e151b755ea7b48ad6af06a4805991dbf",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 90,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "19e4ef2dd70ef613a417436489d0c8efae7b731db6accd438189f58a9cf147b4",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 91,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cd9f536e711bb23bc9227f8b0cde883bb712cda4e04271a07a64664e04ac7d8e",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 92,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "56a5d6347187ce582ce296f6c8bfb490b76c5f3cf77da31d4dd4db17efbaf8ed",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 93,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "363489739f690e13e376963eccc385fcdf41d0ab34dd4b3569929fb80f5db7ec",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 94,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9baa4dc6c4971648c860f26f1f7f9b7fbb8f62053f2f9ff1754673e7d7bd26ee",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 95,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0834914f094199d5f1aa4aea7d0898febc4ac3541ef4121d57cf969ca0ab631c",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 96,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "09d4bf6e6a89a6d71d7660e49c13ab07e72a71c31b0a39d8ab9989a51398d6f3",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 97,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9563184ee504b8a9cce2f24d65345011c660cd96dc05a8f2852fdb5822d02c04",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 98,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ef1c7dd900e8cbc513a9c443786839ee1555676bac14de8a4b9e982471ca11db",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 99,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1eea158d02b1b60e6ee50cbc9aa6207c9b5904bf551082d62cab185fd375d8ff",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 100,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "74f0854201191351db108b331093a78a2475ccabb2472b8efb424d61ab058a8d",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 101,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b0d4f026e99576a6e40a52f7971cb44cc1485858a9ec33f7cd4223c8b2cf2eed",
+        "current_history_rows": 0,
+        "past_season_rows": 17
+      },
+      {
+        "player_id": 102,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "735ed7bc9f0a65361d6092ef374202113a11ee16831486180d379caa4603cb11",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 103,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "40a52297f941b90c22ccf5922c2d1119a97668db053e41beae2a775171e26ec6",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 104,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "11f5852d71b1886a73a035a63e73daf11be5a990143ccac7d07e601f015a9a8e",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 105,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4a8b30b0477894007856407691825f0ed5143615357b4bf49330847f6451fe8f",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 106,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "15da43d13ff68640da91926d09ee378371aa4edcfc96cbf69159d8cd8d577a64",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 107,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1d21274b9f7ed7c9298bf65cbe229f46263e030fa56f4c1e2cc24f9926348dc3",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 108,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a1661c2b53777ae36c930793e1f886eb6d586096d42784aa0a920b0ec15a0708",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 109,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5411e14ed790b3680a570aeaf55f59d0c5c5bbbd1cc1c733dd50084b4dac1ace",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 110,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dd44a9af6abf2f5a120c45138e338cbc5d5b55cb2e5904d25a85b1a1ccd56eb7",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 111,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d58ede5d51f27e107fe816e27d097bf4e482c09e9abc8a7799a474dc16850fe2",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 112,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "60ea8412e2240a62551705a4f5cab00ad8b3e30b0df617b193d1e593f49912e3",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 113,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b60054e751036ba88a97ef05213f3fd0fddd7313776969f28d93d6ce793c54eb",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 114,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "93bad0822155715a3d587b249454bee59408261728ccfa16f6da81aaa9f27252",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 115,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3253b6ff1384f9b1c2b993d7d99c910974d9c7d37103b242a8d020159e60a414",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 116,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f75ae7cbf03517aa7780ae296ec0c50148f10dd6a3e8f21d98ea98d100559d0d",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 117,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "df3c020d3792248deabe861f7795ce68e358892cbd05e8e38121f019e9d5a236",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 118,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e99d4f9d235f661cf1dbce2e8dec97d5282338432523730cca9fcf10af6802a2",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 119,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c31ef8c8cf6e076c28091274ecb2ffe88ce1c4951cb501c45f15dc243de75e3e",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 120,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c31ef8c8cf6e076c28091274ecb2ffe88ce1c4951cb501c45f15dc243de75e3e",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 121,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4a0320e213f15ec44ec70d3297a7c0e8d662814abf314cd71b0c168c6d854596",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 122,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "910d0b882e6e0844e199dea1159014564c33c530b11064b5acbb99540106f110",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 123,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1ed3ed3832ce38a821db9218fac41bb6404512e752cbaeaf221093087312f1fa",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 124,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "673dad4d881de530f1a60b5f3f29dbba6ccb6d2ee3e93ccc19a56c53b4dec0ee",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 125,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "08ab32dd82fb5f4b79add532a3ac82ad2491c54566a4cb057775041cadc8b9e8",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 126,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4ca94b4d1b5f369d1747f073edb30fa75c36444996a2e12789835a5f0d9482e3",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 127,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "35e9cbc2cd98090af1e92a48948ae4c6ffe42d85a8db1e4c1f19ff5358f3443b",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 128,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4fdbf5c6d4bdd9b28d17914929b7919ee099b2f7ea00fdc4c71919df81f4ac0e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 129,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2a9cc9a6860a5efa45c923b3e49d7cbbae1ca2c7da497d9c47b06f223519bb84",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 130,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "68612b299791974938c21f2062a916ec2b27e9d12f22911315c106f54d605049",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 131,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e24f9b347fe23d9be850168c708514eed6f8021633705a81e4e7164b8f59ab3f",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 132,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cdab8ba303d986bb9d6b6d25e95b48926dd5803e1b1dface47de5306e6bd654f",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 133,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "20159c3a4250749e4f3d03affac19aa6f509f6f5fb81fbe24d3711215568bd8b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 134,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f00e008e216ae27d26d5e2f7eb090f88c882f7ce629662b873ac776b59c58246",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 135,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c31ef8c8cf6e076c28091274ecb2ffe88ce1c4951cb501c45f15dc243de75e3e",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 136,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "980f446a7219034806e06f38be3f83cc23ba395600ad7df486a8269324dcda34",
+        "current_history_rows": 0,
+        "past_season_rows": 18
+      },
+      {
+        "player_id": 137,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6c9b82b6513623efb2e74d09700386089f8fbb15737efe404f79f3e7099ca7d1",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 138,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "46c947aaa38b3f40d2256b7324e0abb72f43c462e2af002012dce0221faf335e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 139,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "20c16a296c4bb5dbbe78c7895ac454689d837c6b74a794c898ea25a09f1ee831",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 140,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "81ad825f60f5f7140faad0821b48792a7851c67a5b151b492002c55279a2edc4",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 141,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "791e3255f90af4564a06791961359adcd48df63f6f1b5b33e1ba40ad2005f321",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 142,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c6cce0832f4671b850e463dd11e146cf3030922306411b031d852e7f95439575",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 143,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d55acf9e0158e5b79c2afbbc1e9b64fe70b4124521219689cd7ece7e482d7c85",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 144,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6f2527907b7a7087ccc6cb9f8cdba0c991d4b9fc643f0f28b1a5a982fc782080",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 145,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "80b870185e900258a450e3f44273eb7d70b831aab242c48d7b60276416e220f8",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 146,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "084a595326b6c41d56769ebf6e648c71243d9448c58b014d7b601d555bff8dc4",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 147,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a13e1a18a5ce93e308051247b044480eed8fe8126894f036d43a0d5f67f31bd5",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 148,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "965588308951735a1b8c0392869a606a9a4b9e10dbda80bc5ea91aac0a45e571",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 149,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1d912470138bb3b2ea1f0f8a1bece37de217b8c13b510a8cc37b69fe44fab119",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 150,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "103d23ebec3da188a891a61b201adb53378bce158228070efcb1c2875545977b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 151,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c2337d71c9c346902654742757ef0e66e11c60be113a08e086dacb5f0def09f3",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 152,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e7716b71afe06ed30e725154a8c3a33157fd693b051423e7a271162e993fa07",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 153,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "814f2a4e49c988e28c3e2832ab27272e0e89bf5f74c074077e7d7ef7558f2843",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 154,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "01405bd5944a8c96b7d7c98e281289202cec2add9a3c3c526e4ad4a7be08cb0c",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 155,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "539fa73bf9020d5f4977988fde73796c9e30e9c274f90086ca68c329556c33d8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 156,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "947c290d12c4af71e462ae24717d0dc71aa713ddee07956e02a2449d68aaa642",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 157,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "273e2e95800d05c85618dec6b27ac66960ab5e2786a72f16850cf17ea5762bd0",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 158,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "01d6d6570744cc08fc71ccc182deb14333eb283b5d18b7ab621ec98e57c59d01",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 159,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "176ca03471ad6f1be256dc8c3e598f013399a46997496ad471a9fd179b31f916",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 160,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cbbf17cd1dea24dca5b67ac9d674fbf43f3891327a442cca2c5377e59c1a4e07",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 161,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "17dc6d85266ce8be33dfc1b550d6e62854e85c20e1a8bfbee59600f1dca8a23c",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 162,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6eef6817568df326faf8145eea97a01724c2ca47be188e26dd2aef3e92f2ddd1",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 163,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "27e66c700b9199b390f8a161544bfda1e0e1b88fe39a464ceaeaf4ccf2b33ff8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 164,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e7716b71afe06ed30e725154a8c3a33157fd693b051423e7a271162e993fa07",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 165,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8fff3be505f7f1bc4c0d03d1b471735f66fe164b77adf981f1fc19bfead7ba98",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 166,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bc94a3ac0bdadb5f2686cf8f1c5c399fed5547080e78d48512a5e106303577c1",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 167,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7242deff2392c74d6a4a81bf78a7fef525229386db1494c747ca93c5bae627f",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 168,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e897caabdc915950e69bce6e7811b0554a5ccf9d0d5f671aa1bdfbf07ab63533",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 169,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5807eed5c0c22b5bbc1c956ced98a3e55aa58b33bc4851ffad628b639a120dd7",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 170,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e7716b71afe06ed30e725154a8c3a33157fd693b051423e7a271162e993fa07",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 171,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 172,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 173,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1c01e3d3b8db7cd65d65dbd4e3c9f592a6d594abd8224e8ead52461f7d55802b",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 174,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 175,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 176,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 177,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "37191b9423e4c52bb14887537bb088cc48e080ba89b1ee983915b9a5568a44c6",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 178,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 179,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 180,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "beaaf903af07285b5be83c07b28a0239d640f4073b5e6774510010f79c443d14",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 181,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 182,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 183,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 184,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f554438f561d28403575ce79d2337b8c541c8d0d29b64cfa98ffe525b907ce17",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 185,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 186,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 187,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 188,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 189,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 190,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "194dd53400734d28c729d270891cf039bee27ad6259f6ce663521892cb777dc4",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 191,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 192,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 193,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 194,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 195,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "536b427a1e532cb0a671c75ea4666df5d32f4526fefa5135e75fc8685e0a7a16",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 196,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 197,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 198,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cf03233ab05ad26aaeed7f0205e4cfdde2d882447e2b6dfd6ca2952e516f5d0d",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 199,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "07a45256867b9a7b12e06cd857674428704f3f7aad4f633d5d92bb03251a817a",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 200,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d03e87052531cf264c2417c627c5f06c52a625d3d499d54e5dc15de99561d8cf",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 201,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f7045c763fefec4123c91f7585964810069de0019fd2c4c4852729e10159c645",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 202,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9206012fd0a92ded55fcece9774e92e3dbfff74ddd50d9d16655461b43819955",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 203,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "52321e25bdb29643de2c5ffaaea48694220e2f2b290863cd184197e4d33c4150",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 204,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8e92ec48b8cfeb942e0612cf9d0de5d3d5278b248822a6660603cb6f0240f850",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 205,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a986059671266b84f06bd58a61c85a80a16cd706947edb83cc0bfb5d42235ee0",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 206,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2ded7b2d46db2f34bf2f6bcc72e20ea83a7e39758fecf0fa51c464d2b70d0318",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 207,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "99a810e1e4604ef4bc82bcfbe0860977d0deee2cd4c65a07d159c1fbe154d3be",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 208,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "119d04f7c94e98dd124be1dfa5e4287c3e63c6ab2e4bc1c46676ecb833a2249e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 209,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2cffaca6ffb656dab9f1719430ffed9f60f7321fb1c2ddffad20124158859bac",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 210,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e8e6d796b8164fb62265ab25f7cb0158af6d8cd7e9b5c7aa0178a3b951584288",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 211,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "71ae915e3cec210b28cc45d8e2a8f89641d7a96d6eef0177eae6b7c16391223a",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 212,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "483e34f7b601d2c0ef29acb270fe5a3abbedc35606e95574af8dc0457fe055a2",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 213,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c950dcbadde51d8f7ef143a93b2f38e2bc13c13278d02bd3a9e34e1934faf7e7",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 214,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "74ebfd684ef11751c4c5a7108fae9562ba9886ef5eeb1d2fefc94d6dc22c20c8",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 215,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5c1de6986ef142401a912e82ad7198fcbf624410398e341fcdca812daade94f8",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 216,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5fbf8ed7aa1f9156a0cb429afbec2fb57f68bbc33f04053bccd44e5f829e5527",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 217,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "00a1d448df2f30d8698ade6cc144f5246e740dd65f042d90109f92f137ed8be8",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 218,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c5d825fc31754c20828894d0d00471ca090f350c92a9af8cb0d1d9602e99b2b8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 219,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "69332d99f167adfd39368030a481c5fb7d4bae8649d1e4d01abccc8f49940201",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 220,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a9988a95cfa3dd063cded5a1cd3fa33e1e17aa198f49424e94c82e130c9c47f5",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 221,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "61ca947be31b9604515777148d7d6b2f0145a8fafc11c4238ef6d8ea7102d96f",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 222,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e56aa6bdbbd0d2d8e5af58c5e8c1bb5a826f2740280706da2390cfc4098834bc",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 223,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "db73f0a6fc32622b7c77456435804d74822907e80fa193481b9bce5d6362316a",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 224,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fdc12636e8dda2517736a096ed5a3d127c7208d3a63cc94889792c4d0fcd2428",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 225,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f3a99e7b901df9ab9583570aa6fb0e0528a56d00e102e94a92d3e171162bf3f8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 226,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "324f6cabe4f76e26bd7028ed194ede19b75833d7dc973977b26829303f92eaf6",
+        "current_history_rows": 0,
+        "past_season_rows": 13
+      },
+      {
+        "player_id": 227,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "99b84090fdf5f160867b9ef9f4817193e55f793ebd620195011956d9529fdc83",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 228,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b76d2097386030375ac1117ef40ee890b2225cc23a4b1642483990e2d4744c59",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 229,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0831fca6a8bc15dc400ef4173055d022ed6d36103f677c653e88bf0e8d664f34",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 230,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "832caed626fefc603f5c4cf7b6c24926641235d42e21895963a9dd28a122de4a",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 231,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8385f5090c08bc62e0f0c9cd93db18212ab233602f07194c0f760c6341009535",
+        "current_history_rows": 0,
+        "past_season_rows": 13
+      },
+      {
+        "player_id": 232,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0fa33dba648985b9d4b45c0040b46749baad76a04b45bfd615443e903c605b60",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 233,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c2b8aece8f9eb1a7ff9cc9a54b2b6c3e833067139854c9382c4915562e7d9225",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 234,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "424904d3e4938da94505f4698b042f2511dfffbac9b23ddac613d6d03aeff6ea",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 235,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e5c308ba0232615c2b0428d5dc4ebe73380b9d27effa8fe1e91700a7c209bf4c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 236,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "13967281add2ac8eeb81ada52d3947ee7227e0c08f8ac3da4b939f464b0ae99b",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 237,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a63c5837bccb2143d0854c71a8b1504667c433703cd36a9b6a9d3aeba2697c27",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 238,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b89251163d184b87e77b09f33aa5c7879a265c6bfc1e10d72a10a467c4be1bd6",
+        "current_history_rows": 0,
+        "past_season_rows": 12
+      },
+      {
+        "player_id": 239,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2e9868404e2ac0d21dc5ed84ba0ba19e98d4b8c25433882beb5e2fb4075b4842",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 240,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "05a8e741155bae1d4080c9381a88c0df0d3de1cd345a25a777b676f0adfe2b63",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 241,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "80b20fd95c6f52b1f0487c877132dd12041dc17314f38927d377170391eb20e8",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 242,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "91194638b8384fc0ee239af7a6ceb3fa6743a98fde38ad253f24aee719cdc1cc",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 243,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "aa01ffd10e9eaa374cbe58e91dec3095e6c04b3b913fa75098acdb5c7450a6c2",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 244,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f21eef116f7422220610451a330e9f2ce80e1a0afbc4a3401706bb41b427198a",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 245,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9191a664a15184632bd22b223b6b44bc7e812f77a0b33dc2c70f8bb16ec32385",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 246,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7cd729c88ef86e9a8e0d006fd8b6a347e10861d971f6daebba727a76121504a7",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 247,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fd9689cefaf6bdc0da2fc2c1c4f5c7f0fd3a248e371f776d09dcee8bf59986b9",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 248,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f24a4d84f15ee5e98643414fd6da0d21f7c13edb321538d1896c1aa8b31fe459",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 249,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a29ab30ee9abd8c49e7e4c903e524e325c954ddf9d38631d8927d9c1bb8061cc",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 250,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9dbe4923b2b4f9199d8f8fee4cb220b15bc3344b308b96c4a39389d47bad58d8",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 251,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4ccd0bdc0c1769bf934112164e4f04ef83f68e4fa701f0073aca38f88495e784",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 252,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9d30292e23d5eb0168dd7f0b770bd0a8aef00e87dc88282e1777510462b67b4c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 253,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c992585d109d6780dd83cb7f49fc977ebf4db701f2163437daa2bdac6df85435",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 254,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a3d5ef7b78bf3688181837f2670a685df8640621a0ac458f149c138978f8e6a8",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 255,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e1e42161044e608a0ec7cdfa6c35a2587853526b2872e7af0acafc7dd63a025a",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 256,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "25be4a211b1899025702baf6fc2e34a1acbaa95b70b2a99c5ccb16a016de704b",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 257,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6e373b8fcc35ce30f3c1ac6ae59a0517bcf28843c958837d55b14be4007b8187",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 258,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "040048ccc1ef962c641227e221c4f43a21fc5bfd611b98e02be906f4e6b2bbc7",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 259,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "920fa5e892bab0520df532d5300e5ec803fbf0186344bf484e3f3a3684828365",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 260,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "24b705ec4e573c365fc20d73f8841434a208efdfe7bb78fb6c1484a74e4710a3",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 261,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fac091d5865931619518c2502064c59ede66f86ee69b7f134a8a9118b4b5a804",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 262,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2a5e7d32964822dfe6c4ab5d9d0c865ea1c048ced400e1f32bbe4a181a2ae68b",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 263,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7a169739a1178fff2fec4c0c3b1a429f9316d8e2ad6ba9a172ba797064dd91a4",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 264,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2755dfbea7d456679f8bb43befca949ac02f535e554b8cac48cb991e1eef1775",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 265,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4fc418331c7a6bee2ed029fbdef66741ff68a25c9bbefa296a9e4a0543f8b255",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 266,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "baa461fd327a0b1536a5786d4292fce5fab36fe559aa5a77aed99d372dfdf0c1",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 267,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3fc959c425695ddbc44073100a91d9848ab76656db4d429b3a7cca6adb406846",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 268,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a4ba18f5c78dbc02657e212d71c7c999b389f95f383b1a912e3f0e2dfc237862",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 269,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4242684400f06feadd3e2fad271baf7c6e23fcf0657fb15aa26094846cc06caa",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 270,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "963699966648f3e61ac1a8b759ea10f9515c5a9db36b928456fbca1475deac9d",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 271,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6fd9edb288dfa98cfdd3fe9151873ca00a605896660b42b7a6237da57b0884bb",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 272,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "34eb38e2cd47e802a6bebad8df4be6419762943167f3ba3b48b12162d41dca6d",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 273,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 274,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ab9dcf0d5027c2c8efc0f8b5d4f4ae042f6786237dfad71deb1f5d8bc5fae6f8",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 275,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 276,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 277,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e8324659513f21d41a2c39fa0c49243e61ca4e969faed5d2b70bb026ef661e84",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 278,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 279,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ec7b4d223d57e321424097b70ac1ff4d217a34c62bed21a580ac31f5815f4042",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 280,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 281,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e77875becfe01d61412f7eac55f6e0e5f8568f8763afeb4ce76846dc6af28de6",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 282,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "53ffcb1094f0d7b90972c7b6fdf1f64980e05edc8ff6554890eaac0033931371",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 283,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 284,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 285,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ac6c5481e70c48d400346d867bc73e77919bba17629df81255894e97cd6e49a2",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 286,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 287,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 288,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "12017a2a1847792ec1b1d83b61dce21b9ada1cb24e43e671b2c5ca510c5d64e8",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 289,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 290,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 291,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 292,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 293,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5d8a659719aa51395726c84a22ca649ffc5d38e87e31184b88e70f257f7fffb4",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 294,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 295,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "79625e7c83293a67f94d7325231135e56318fd6f0c9f6ae2dfdbc5404f68aff6",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 296,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 297,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c2cf842ac9df92474b56d291017b9a0134ed33b68e6df0799c5e8a3e61ff5f05",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 298,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 299,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6bc622c2a001cd1f42b38d41b52e3696000c4f512b755750752d8adc1d27dbf9",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 300,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "db50350a35d9dc007a76bc26abbe9e5e55710d2afed3910a38aadfc15a3fb6e0",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 301,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d75f5e3a0447b24e1e41ad1f135e20288d1cac695a576391b24fd03f3b6d0625",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 302,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b833cc4a90d8af2fddcb64c5cbfcf27e14f7be3474b53ea10014d5b1b45bdaeb",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 303,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4cf09f86592da8904c494debf3b88e420414f3382212c2b9c672b671e3f2538b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 304,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "68d41a34aa48ffd6b411cc412888e2902aae8edb9b730a99cc0f85b43b079133",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 305,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e215ec7c00a3385e7718b1cafa010dc2d5101f542e6509eac74f735db6c2aab4",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 306,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4d8a74fd587d2d5184599cfa769cd8b068c838a97cfb3c692d98a5f367f1e5e3",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 307,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f33454684cbec32827d91abeb9d5867346470c2cd99974e4fa086ff7d8d35b14",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 308,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "aa5903ad7d9177e72314a0a68be7a7e67fac3624d965e50a701fac05a0da6a8c",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 309,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 310,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 311,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c5f1c6a50784afd08215a45b3e9ad5b80e115f881f7e80f1677043cd36fbff74",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 312,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3b25fcf21e93a08a12af1f219cdf4b4b7235a5350234267e04b26e7a20f8a264",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 313,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a0780c78a885362247cf5b45aaa6e6cde3dc5eede82a59ed6ea417537224f3a3",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 314,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "80cabd799e40643701aa7928c592d3d529964de1326aaf72987e4578d4778c98",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 315,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "84ad27f337038edd38e29f90dd9efd71cca94c9bda395647a794f305e82729a2",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 316,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 317,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dfba1940ad886b2ab6bea3a8910f16ee26491a38121cbfaf387b3c776cd582be",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 318,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a2a0b876dfd7506e92187522b9390e705c2bf33b67dbb2a2a2244125fa823646",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 319,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "aca5ce2149e6015ec3f4f9f57cd5594fd66d34948835dd3295b7c8d5c6b239b7",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 320,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "468c6ce2ec8a870f7d1a13e2793b5f0b4da3b802503322daa2f6d365059d47dd",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 321,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 322,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ee608eb5c36f7d32466895c7a9544781fcd03daff67665360221d2e3405d2560",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 323,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c08f5440b06a6ee58624f80901c9c56ebdcb448d42a66f6dc57cc84d03e6a3bb",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 324,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 325,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "50e09c2f7eef2739f95c8d646b7531bfeb54717b1212c126bba15c004b52ad74",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 326,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9e420d99d39b367668f825f149ee502676bd607876f37ed2103374604e43097c",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 327,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a7321176b57d55e3082ca19b88ae5116e840cd0870812b7fb696e084c132a7e8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 328,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c3bb315cd25b75addd75593ce5e84b78fe863bc1a4d27a9522be003c4dfe613f",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 329,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0312c789669c5b655dd00719bc5d2f79ca36037171548408271814b359f85255",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 330,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "913b9702153b72bc8f2808a0b75dcb7e0f12384702fc694eb4a27ec8f73cc2a8",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 331,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "96aa3d349deb382d956244fd7d9ffb97ee2f8490d87097ba1359f1aee18d6f9b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 332,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0c11e1fcb967651255b3ac0d5a8f190a2f2b528e77719e465300078bd25d16fd",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 333,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "556a4c9d35a6dc8b88a0a60c4b4de29798fedcfbd5d0a2bda918ebc137d62c5c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 334,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0eee5afb4743ebdba3f616822fb7aa989ba5d7b42e56dec49c9853b944171741",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 335,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cb259d52199747531c386037eb2e7dbcb55ec7bd73cc06fc5778126c2cce0f9e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 336,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "86d1eb600cf198a659b05f39cb94617ad94c0a93192edbca49f3cd6a3d90bddf",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 337,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "396ef35fb62b2d9a281200fb9aef9f8764b3314e1b78ba1c9e1767efa4b0b667",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 338,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4d3bc13ca6fe7ca40d11f3ac43c820d9e848d33b77f38ea56905102b312b4a81",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 339,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8b1132e92837accd6aa39e2ef4f6e5cdcd6c56ccc2135886456bfd2f31e428bb",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 340,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d4654f17c726e285ba76cb1cbb2801e2ee39aee05e4d3db268601a580410c75b",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 341,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "24971f1555ed707ea1a7ab90bf6553a54dd98bcb3469dcc4b0835ccb90b16aec",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 342,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4efe7d469ba35f2a8c084d1b229101025ff708d7efe8ac160fd71de986671ed0",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 343,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "498713168d8686c6833ce27d444fe54efbaad58268fc0ce74c30d6ea276fe12b",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 344,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "abbdd846b39c82113bb7ef849d27765020913bd1d872a4da2f2dd3477f0ae0bc",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 345,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a43e8b43162f2ad0f71ab391b8e306fe7844725f84e652baa2aa73c5d7b08bce",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 346,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4d3d382023b86a78ea3b53efd03273e2d1ac40f616d7710fab4563e03f85cb22",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 347,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c27d220dd5983ef3d30e89ca37d6c3610e5571ee57b393a7cc1c3beabf0d4894",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 348,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1f7551ed6097b20b0abf22af9f3d3e035c15ff736660ea369aa6f19165528dc6",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 349,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bfb77293857bae85a656ad2f144a97dbd19d5b137d2b608cc5ea12c3c183798e",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 350,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ccb060a938eff506717967de723eb6215147f8202c336bd895f14d2e9e0f857d",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 351,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cef16489a41ebebcff1a680f807aded48f6433273e8a72f8e949e3eb3d37b367",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 352,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "021a0a5cd40d21811afbb5863bd035d44c53d27e913ce81fb449e4818d89feff",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 353,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "148bedda006d789ab9d07c727a93c7443a87d288eaa9732eae46ccec3da959cc",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 354,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8d2e540f373963f185e5c010fd3ff11fd05eac8add5340e9ef9095f3fa8c320c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 355,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "652532f42e7f5ee428bdd90847715ab4514049c26dfa9cd9005f636046a68282",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 356,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "237f0582939061d166dad372d91b13bd91227a88b326451e028abe40b691f6b3",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 357,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "64ed32263c1a3c835d0d58753b4f673133e3f28bd3744ad2451e66e9df263046",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 358,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "322ca32c70d493e80c9b2fab9d56f120771dd6f625b32054bffe4f4148466e2a",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 359,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a2eb611559f29ade7ed64963bd094cdca3d041002032aa0e879afddf60fc06",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 360,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d97bd681abb351fd37843f4be9a5b2abd64fbaec29735848f82a0136f24595cb",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 361,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ae1264517c791cc89270eb77b44a70280d4ba988406c2b959db2715e07f82e5b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 362,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e6fa980f2bc0aa3a85941a8e8dd67f7f70b739308a1be5c07f2347ccc62f6059",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 363,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7e0c558db844290486aa5d04b241285188f5dd881d1648c6720e089037fac123",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 364,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "88cccd11443f77bde526c8c8752f489ef20ca89ae80fb39cc4b3ca9f01bf6526",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 365,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0a1d540e883dae0899f4d6a2bd6ad8064dd14dc5af290ecc3dd9768de9ba8dc6",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 366,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5e580bd43f6db93c1d0260ef0f960cee292ed13b6023ab3144ea2746f847f814",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 367,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1092e5ccc7cb92e5b4d81f8f71b7fb8f03f406d9c1dac964b3b5dc095f797b9d",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 368,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8256f973b38d56f9cc7a6f07adcb9857b4c9fbeba65a76437a5156ecbb0226f9",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 369,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "237cce9107f19452106e445d5cb66134257c5efaedb8f8d0ad263b8eaedb23f1",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 370,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "855a2ef0f02ea202f2af3bb55b1c61f15d89d04deaf3a12ba6c88ae141dd916d",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 371,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cd3bef68d7cc14621e5dbb8fad422c122e5fa8a1a85f672feb4ae15c46999fc5",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 372,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8db2f8515812a7dcbea19e12174eacbd643454bea3d5f419787ed5ffcec7d0e8",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 373,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "38d72ae18f76e087e293300a3e9f68d0f011b7643f1963d2ec9bd630366833f7",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 374,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "646c9efbad985e7236a19c855824648be1429d6ee6aa2b515c4dda218eac5ac9",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 375,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "59596c00b79278cc39ec3e9e35ede795ecb4aa6b5ad6336ee0d56af264acfbd7",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 376,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b80ed85f86fda032d9e5920dab73684e7bc8e7d1321dc0bdb72b20a1c6bc97f8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 377,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e6fa980f2bc0aa3a85941a8e8dd67f7f70b739308a1be5c07f2347ccc62f6059",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 378,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3dd2f1c3141d30996cac004bc8e898d45fe9c59f5648c07cdf33635921ed48c4",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 379,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bd36e54102f7781aa906b405f229dafe8026fd4fde9af8a73a2ee2c385f32665",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 380,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5c923c83129a7dcf1918f08f2287f99d9be59655393426cd1d326f9c36434fce",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 381,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e88b94612772fa6df13a07e48a153171f93558da6a132938555aae2acd410757",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 382,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7f31f9136e2782694f9162c83cc8326af32b04282ebb3009ba56ca63a33f34e6",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 383,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f8c0e08c4af4198f0de9646800c50835937461be8e69d0230fd7c10a97c8020b",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 384,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "71765fbac22fa72b420b0a916c4072fc487adf2e823b630f5fdce3835bd3867b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 385,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "22e1c4215f0c9b9dc71e0653ba9ccd8f374d349c5ef2e018ed87dc41d4155726",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 386,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bdc344ad7e446d321aa78fb0f4a3b6b31ea345fbbc88f1f7d54b1848d67a8d0c",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 387,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "bdc4d076173dc499fe841ad3fd8d93d8ee3e06b415d431801eae02692edda5f5",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 388,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "eabe63f921b3014a976e4b41ee1be8285a4a9afff285521729394931e37fe925",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 389,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "81ce151ae7665e435501a601f0c155cacf504e27434b6417ad49ec42c4241f1d",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 390,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e25d43821414861a28d7c9b763bf1dd63b2c9e4e6b929d6862330ce4acf0aed4",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 391,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "41f6b94a65a9f8bc4540406026bb3a17037027a36665a779e4ed71c3ee215d00",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 392,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "516d4b331d64efe85713c83cf6ae41ad0de4dd48416e3d6993db49f12516772d",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 393,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a39987ef7aa930b897b72a8af11cdf99e65073dae11b1ac34a40aa0e5efb5f6a",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 394,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d06297e96b3eac184d9d669c21f441e2cf95008211b455e12b5db8c41dc36fb7",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 395,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4f207ec4de6e0ab34436c3ef9f56cb1f5ee1283c46719a7e3a8b771bc33f5796",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 396,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "509dad490e68979fa32c16faaa17db593af22a41ace11fb8844333e7777a8124",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 397,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b12954d0b7f4ec97b023405aecbcb375942c1a3e67670f67a8e7fb2bb7244a6b",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 398,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "96184641d92e17467f383189bf2dfe799f51b05830a82c2d128f4d793a292314",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 399,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "36e1abc941d55b9c4d4a7aa144a1eed5592fd130aa4ec32d15a892c1bc42ac76",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 400,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ecbb0072eb32bc3d1b24ae35bd6df2b612675ac0fda19ac142131278ac584163",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 401,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f98ce65a26d02a1130f6ebce0c507dc1b60df05ea74eb419928899ed0afb4152",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 402,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "16fb387ce9b4ce589a470b8beb6366a5d3bfda21d0aab0d1a37a9ce6f38cd787",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 403,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b46784fc08f39c5cfa7df037437f6b3b9ad627ad6c7ef8a5ed476fc3defd98be",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 404,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "14029571df15734ae70c4fcc2cd974caad1f96fe4e409abcbcf9f450cb5c7111",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 405,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0e7bb4ee4021fba1c6a6e02139623b1fec8398d3cc40480b983ba6eeb7ec6ae3",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 406,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0b4e2a7126179ca030943f53ffea1569610cf14f07b0952ac306db088b31e119",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 407,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "122d96be2743e69cf5c500341a18860e8e8c006acfce8b451f94434e2017f65d",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 408,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a255dd00d71eeef2f4cb5e7c1e8071d600206cfbb227b0ef6adfaf567dec3a2d",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 409,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ada16f76a3f017d8b31594522a4004a274364529e5ebf446cb5bdeb1a41ba2a7",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 410,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ae103a4f65360afd5dc4a6e613308ec758b986add7a56db0496ee9444ebe5f14",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 411,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "439a5e05f75df399c84ae0c8e9208140b9ca83a03514168595d8ce50004210dc",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 412,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8df311d6fbbee4f18adefbec86cfb68a5cb6037d730e7dd8f1d69bfa83f8f952",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 413,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0917c4b70af535bfd65dc1459666172004e27eb16b3b5f43b95a4f765ed4a868",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 414,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3461ea38ae5ee15de42a8ea90d83652b0eec8d562efb15c4892d77ecb699de28",
+        "current_history_rows": 0,
+        "past_season_rows": 13
+      },
+      {
+        "player_id": 415,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e62d68c05f703b797623a2f6dc2abf4e1d2f32c25beea284b941c66ae418f23",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 416,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "03f6f18170c1b83ca02af608311a79a8cf6d71ff0be352d1f2fa83eba8c49794",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 417,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "af1bb4263b5736ad1cf177b15c785d201547b3030cdb2255b613d58c617f6167",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 418,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8a7e8385147a2510163f67abf2708444ec0d6f8fd07ebe642871ccb49b2ec12a",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 419,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8c04f0a9523393e04b575414308c9f39110c3662da451b9602cbd80f454961bd",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 420,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5658c6b970f5e376f45c1f2cb56381deb4593b4f4224727f3b5a75e406b3ddc8",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 421,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4b7e7c1dd9c15ca38e99e21704d25bf32dcf7bd8be04b32ab5ef553d17098fd0",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 422,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a89479be3995ba9ee02571012704062f6703091c08cdfb0dd1553eedc71eeb99",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 423,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d148b52e3a6c8c4f030c9b6cb244be99435e8454972de4443fdc5a734b3ce036",
+        "current_history_rows": 0,
+        "past_season_rows": 14
+      },
+      {
+        "player_id": 424,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3c73a2507e4955fbafa4095526923329f7abefb32f3a5615224ab4a8509db2f3",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 425,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "57d704a774429d90fd8ce0336a5834f42616c5bf7cab31660c7903f94e05964c",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 426,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e2770700fdf5eda74c9aed76a290f65d1ba82883ed3e66c5beaf010962f697d1",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 427,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ce67240d337526a00c557a856d7d1bed39a880867a0cc94b6f3be290820adefc",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 428,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b6248827e0b01195c4042c3a5a7f13d8cbaf6d01c9027495630b4378cd8d1c0a",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 429,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9354f55411fc1c5165abca3194aca719460a1341176cfc0e91d1e94493b75344",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 430,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e8aa61d37578c7d2e30cf65192be80fa28742956cda761384591f1ea516dd0f",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 431,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "44d9164b82235017737ece07f495d7a4f386d5455d9d0a221ef9bd85841578ae",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 432,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "eeeca87821e204bc915b24bdc2300efd92d82a48e465ea16518c0350fc07551d",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 433,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e0d7319417475ccd2df945f15abdc36df1dd87d83324f49a3675676e1aabbe7b",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 434,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a1585cca5e1abcc3a325e11fcd5c0643e5e9c05a6cb43f4e70754a770b3b0b58",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 435,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "23a90800f605b739666d9e907bb583045b73d52e51f2f1cf647bd9ab0b703db6",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 436,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d61a4197b6620c8e6cc517b7a8b99bb9a779d5996f7e31374e1cf0d43ec27fc7",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 437,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a58818c23a5c45b70b6d360f754197211a65209c90e76cdd539ca28fed3a5585",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 438,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cc2ae2314c7b1a10334803941495c086a68d53b95fc1806f8f78b1330d2a7213",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 439,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "add2e876ea5af191864af7ed9fd8202c3492c5990cfda4974cc82b985c3041c5",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 440,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "356d5c21f46ab71e94b6efad1f904e5b8fa42a43b16e009b0b7e4040e97fc9b6",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 441,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9e3245c37d9f74f7b6405a310a833d7cf763873823ceffa4d37f1fea1fa5a12e",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 442,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "934df80710956f0fcd8d759bdafd8e3b7a00cc485592469478907a279fd6f94d",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 443,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f0d82058fc6ab3c729c06c3f7f70e367af7e82eab6934121ab9f565c08f32bd2",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 444,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "edd1c9a5180516bcc78b4de2180b60bf1906b9514b9613f74df20fbccbe00040",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 445,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3ee81436e5bafd7213fd9bdc9461d82ed2dfd1e51f93f51726b25f0f91b2aeb5",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 446,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8f158b68bb55738c22c6b1f01e1f045afcb6436acc971b9bf7306803798411ed",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 447,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d10a3f565a7acc6b82d6b629b7ac74c13f5236bd433cd7276ff80c4612639cd9",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 448,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "60cd68276228a2868a7d41a01f5477689c7e39146f851be094fd83b7360f2be3",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 449,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a8725df0cbfa0a56582be7d82619076bc937267c6f4624d689d9c6ab1b89fe98",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 450,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "086c3566772ff17f07d9a0b13a7ce97b32cae3042b7e8657fd92ee718e6323a1",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 451,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "969db876d523b95cbeca2dcf3cf7f6ef9b722a15fe7ca32bc1158e51e8d1ac28",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 452,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "038d36166de3b4a18083b6ed1ed1c52f3be287dca2803d37ade2c1eddf99d5af",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 453,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e4acb1ad2769f7d142bb53001776bba4eecf4aadf07001de5108cbefc9859a7",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 454,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "55e42ceb6a3cf75655bcb096b282a8e8d3c35422a771d2ea7bccfe1f68ca6196",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 455,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e04e5ca7bd2ccf9713deddc22139a150ce243a17d9255481ebd1915dfcde09d6",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 456,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "6a01865371d4c7a052f971f4bfb617f8fe3415f0b6ac67431105f04729fa09ae",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 457,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "996cf523556696a7f590451f58c5f64495782196cf29c0c0c24e5207ae351481",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 458,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7126d10f62f7c76264e465f97df35611476afd1989fba97ba01fd8c4da370977",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 459,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "1ca37ff0dde0a8f42020c6412a601f4dc2fa8dac41dff7e3b84a1f0fcbc5a440",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 460,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "406e30fb40ed7a489bb6f7ecb79b81b32911a6395b2dd7565a9eaf5af026e699",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 461,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "edd1c9a5180516bcc78b4de2180b60bf1906b9514b9613f74df20fbccbe00040",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 462,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "edd1c9a5180516bcc78b4de2180b60bf1906b9514b9613f74df20fbccbe00040",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 463,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b812a64e8b1ac7aa23c462433006a20818992797adb93d9022bca33de9376185",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 464,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5671a3b66d760be03f164f4f0fe86e44bcfc7880bca3a35607f56890a87e3ed4",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 465,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "12f15a8b509dc26d77f28bd1816e53ae937c581b76414f38e728ec214b7664a8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 466,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "49e123322451d84b9d07af6b5934186e9079fff6d2dace7c4577ff4a4b292960",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 467,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5cb78ba384f6c1f55704b1d8d13e18defb3480103f72c3e915a7fd3e46d52d72",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 468,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "86fccdf21348840f01b3bfb9c4c3196dce14f62d7939624e633d503e6e3f00a6",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 469,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3f2ddaffd8bf8c9c67ed70cbfec3cc871c2d125583389a33e9db936e05c26845",
+        "current_history_rows": 0,
+        "past_season_rows": 7
+      },
+      {
+        "player_id": 470,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dcef2b9e086ba6581e0ef86bbb36cf1e43b72adf727d24547bc4324ba7fdf4bc",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 471,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f4e3ebb6b40c60eaee1d625d8d62652b0cf265f28824901f22e8791c29bb31ec",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 472,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "7885693140ef5776862dd8addc579477cf5cf91dac827fe9c79ef60e2f198d62",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 473,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e629dea291e1eb14bbb296f102d323838ed434ba4539a2baed3b1595d287e8dc",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 474,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ba6bc6d5c0834c9e3be614bd9fbcfea6f0468578ac252e1096ea49238bef2fd8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 475,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "22d0570fec0aaf2ca8dd7d568f0427b21208ee541fcaac8a120fd895836215ac",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 476,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "04acc4c5d1dde34965126320b511ecc506c325c0c3874616fad08e3a52204d1c",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 477,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f7ab18bef51c38cd7fd941c34989dfd37e6d8d5321610abb9c597290b2dc306d",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 478,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b923874568ca56632f3fcab386225dd275297fb81bc2f380a2df03fa170670ae",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 479,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3ddd7f635fbafe78863147bb0aa9caceda68525c2c64695c08043d93c0fbe355",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 480,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "cc35c8951e2f8b9ab4964064d0db193091c424d0c6677ea73bbef09f069c3d1b",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 481,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5b114440400ae172306eaed33afed61cf98b14075a8c919e9b58d5b717ee734d",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 482,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dd9f1ea40d901f1028ead3773c32a7412525fe667fdef56aed9a2cb2b2b6de71",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 483,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8d92a0520aa453e61ff54bc0867883ee6250291ed8a4a12cfc83882f1b081222",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 484,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e8f3fec95475f00e6029283f829f27d2e3869152a2bdcab26e9ecdedb50eccdf",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 485,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f11f1021de641a71bd691fd8fba585bbdf24bb23f2c38bab8477be297bd671e9",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 486,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "51d95eee55f99e669f21e2a2bae65f0901948858589b5677670ab1a77b310a37",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 487,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8fa92cca9256875444533143c09e2e30cc8e5330f80c44fecaea72ace10ce6e7",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 488,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "a2c1b82302f5ee8598b332afad81dd9fee08341b73be3af8e4330e23cd94f6d5",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 489,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "61f9193d85ad5623bfc4f3149ba13a3270f3bd6ffb8719bab4e07d08037c7139",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 490,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3591abaf1017885473e0a6dbd82addd344a236ff69cc3ec7816906e5c4637b6d",
+        "current_history_rows": 0,
+        "past_season_rows": 12
+      },
+      {
+        "player_id": 491,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "70872379038dd827f35f251211f8e4f4c00610e0bb439eae4172d2ba42c88491",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 492,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f9374603bbadf2d3102d88c2bda322694fd83a8f79ec36adf68e39394cf02fd8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 493,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4261848dfa481b0a07ba6ee66688533ddd5bf78d02119484b05e1339b84f21ca",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 494,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f55ee545a568dafc011dd06eaf12508312d3bad8d1052801c9d5483a990e7c3e",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 495,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4443844b95f85fc5727a3c83eae325a6aede440b8b5fa8446765f09ce154c09f",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 496,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8160fa5a7861d20ba969b317d6d911134703b108e54d54c0145c5f2c786b7653",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 497,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9a7ca89289d3bfc9013379924ad3d6d6a299e5627c598ff4f12807ec39305d5a",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 498,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b6385150dd03c2e91c665dd32de7144466a4e3d0343c48b185336c25718d1d8f",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 499,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "abd61c1434808444b05fa38051950899749a52e43bb59836bd07e021bea90f71",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 500,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "fd652a04658e2af17db536e59806588d9ace5607e934ad8cc7fa7991b70d7131",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 501,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ff5c3766042a567b9b1e7ca2a1f7f5d0e1bb66ed53a892f5a9e12d2772254c06",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 502,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f1a1e96850a9a0513baadb04d8dae8944120f6106dac838a45e44fcaccfd9766",
+        "current_history_rows": 0,
+        "past_season_rows": 11
+      },
+      {
+        "player_id": 503,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "56ef61f6eb7f8893acdc3af950ac07b9aff5a0e56d4e51bc5a0a46e772d4b715",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 504,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "572078c1ec5a5d6d1716d04c57719dea129cd5b815856cd22fae7eff6851be4b",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 505,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "f0fb3653dbaca418032ab05ff8a6c2f59b14fb88261a5d5d644db4f95421c42c",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 506,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "9c35b8155b3aae5d606b0d26091da5962a72e9fa41cbae02be444cec8df98b78",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 507,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c50570797596779c0d8292f9c156d6ceae1254cb270defa929b9cfcd1ab4fe32",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 508,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "144a667234c0bc3a47ad0e068ce8ed7d4a633160a0c68c6e053a2d9dc45d2bac",
+        "current_history_rows": 0,
+        "past_season_rows": 14
+      },
+      {
+        "player_id": 509,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b5b139a03f7251fad1b9d27e0291375f044aad7355e039e3e8506d83522263af",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 510,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "dd6a827249b29918a25c82b0987fff83f49b6939a93fbf2163c60fa0d89fbecb",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 511,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "47cb73461df264911941355033a799913091a95c2f1d4279cf7a23d75fd50d4c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 512,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b1fdeabfece37edffe4f53bead787562f0d9e115c3c2c086c481b3443c1a60a2",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 513,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2eb7a2fd3ccc9f1f34217df0dbd826459b51397978c7c838c11c8052d3fb646a",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 514,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "20d689ec8fd389b88590382728fe7e1cd3957fa4ad2c01bfccc58763e40b4e51",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 515,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "81e409382c1ea87114c8c41f8d68fe35bfc3ad70f812beecaa2a898904a7554f",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 516,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b0d5a27cf311eaba6221088d0111c19a56a6feb60c2ac7f6d86a559da3e0d3be",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 517,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "8f4d3bcf12cd8ec2a78edc397c9c0dccc94c855b082b6c9db812ed823d3ddd5b",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 518,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "82acd5a13a9eefac9109a84ec9191ebdfe01fe1ade697eb9722d14a12354607e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 519,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "17a653c92bf4ecd77ded021c20e46683a05e406fa5a17c2958dad8b9df27de56",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 520,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c3a8826255ad6ca934bd759bee9862bc78a4f813eab5cb450dc69037c855e634",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 521,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5558e5d7e261692ca91975a0aab30951f6c83fc0b83180acf85925c0f8418ed3",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 522,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "72677718e48035a3917861e1863512b5d1996f713ddaba7ed1269a335dae7bf8",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 523,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c7160c0a829b4b25805afc1299743e86f0cc13a1ee0942d44da96268e5b682e4",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 524,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b0c6bd2d437edbe8920f1c1db829621572dc19603795b0a71d395fdc75743c48",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 525,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "780d453eb399492b40cddcac71878a07ab0f97cf9522678dcfb8e056bf296d41",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 526,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7ea314a587a94ae35f120077ac9f4d815eb007093a18316f2a2a7a2b79f0afc",
+        "current_history_rows": 0,
+        "past_season_rows": 10
+      },
+      {
+        "player_id": 527,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ecf20306aa04dcb2d49bd077610523c0c55bdc8efd2beb67dd43a97f06a6c87e",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 528,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c1c6086547a7e6eb947fc14760831a478648ad31ed8bc2bdbec7f9d7d1f00eae",
+        "current_history_rows": 0,
+        "past_season_rows": 6
+      },
+      {
+        "player_id": 529,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2201c945dfab3823b87cd9e7dca341656a8bf5969b78f82c70376858f191e1dc",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 530,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "642bf213acb0fc369d39f2259483f10d6926b26028876a291888add3e6f1f51c",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 531,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0ec4f1b22cfc5911a01d21fdbb90d7439210500c9743e4d51f962c0db793400d",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 532,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b823343d839ca0ff85d1db03b3b0b4258d7fe028377487ec9565662e2d1e01b4",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 533,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "c5d5411cc58b457520371ae95c8b3be97ec00b618570a961746253202bffe9f9",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 534,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b76410236c7fa36467376dd53a84e4f2d8edf8b85e37a2ef12c9ecf135aaa5a3",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 535,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0a3e1ca4782f9d40b2c434270a107578515f0831c6f280856426c271fbd2820d",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 536,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b4e83d3d13c9f31d66346a62f716a7d20293fc2ff73f60fac94f2dd63e484ce0",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 537,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0253dab243633bad3c76f0dcf137384a5973a5ef0489eb58771badc062269a94",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 538,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ac5af69aee3fed9cf71a9d453818a65fdd23d261c853e71b9f7a19e6ab2d00b3",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 539,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "81e69fd07aaac26336ceea4493a79b6642f51459cee0483e694918d2425d8cf5",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 540,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d120ad0d21e80e151a69390ac116ecea75bbb29bfd543d8f9162e46399bb80d5",
+        "current_history_rows": 0,
+        "past_season_rows": 8
+      },
+      {
+        "player_id": 541,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ceb7ac966c6998f1490e57e3b21d8770b035ec717a4b8a54b728068e9562859a",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 542,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "93f37471b28ade2a38f139a49b5b978322aa64b91c26edb0eda48dac71e95033",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 543,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b95488a0ae5a2aa1bdbd90074afe94038741b24d9269e1889357095a56efc425",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 544,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "23088c86ce15be255145740fac668142dedc94d3ce742fad053fae12b67d7322",
+        "current_history_rows": 0,
+        "past_season_rows": 9
+      },
+      {
+        "player_id": 545,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "21694febddb7a6f6c062f56f9b8d4caa6cba03d26b7434f1c7061b099ec1015e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 546,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "399a67a75a8f1aaf788c9bc12c8d2e3a5384a7a7e1cca01b96e7ae6c3ba66f22",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 547,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5f87a3124d95ddcaaf9903f33bb6a82fc62acea16cac37f1c70f6c58115b2589",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 548,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e086c1039593232d61e1af133dd02322069b4adb08d0efdee8ae62c381e87113",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 549,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "42109377a141886c13b5b45847a2a426d78c66c55ef7b5894494ab4038e056cc",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 550,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "4395fe6774fe175a9136e9e875b5c36c4ccae50e1861732780a0aff49d994040",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 551,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "65b71908f6299d9029270f8beca5f57d3dec48adbe785b9a5c7f9626074fe21e",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 552,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "990ff84ad85e198e99aff3f689b82fb4d62c0baed9ed420009873da1db0991c8",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 553,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "329247628efcbed14675629c28adda71f5948522c1e6d5cc409f93b4885b3496",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 554,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 555,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "94a1e07f7ced5759b033266dcb52da5b85d13969b0f5d56a77540477df613999",
+        "current_history_rows": 0,
+        "past_season_rows": 5
+      },
+      {
+        "player_id": 556,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "859d4e4e90039d6a298c00389d2a58faf09de4aa9b87a92a3ef407131b81661b",
+        "current_history_rows": 0,
+        "past_season_rows": 13
+      },
+      {
+        "player_id": 557,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "5b1e920397339d9d78f01eb964120266241fe515605f223502f88515d3110ce3",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 558,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3ddd7f635fbafe78863147bb0aa9caceda68525c2c64695c08043d93c0fbe355",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 559,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "edd1c9a5180516bcc78b4de2180b60bf1906b9514b9613f74df20fbccbe00040",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 560,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "864cb6ab557174e57ba38539a0cdcdaf32aa8fadfd091da6ae4b9e7e4aa18ebd",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 561,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e3953365fe00c487ae64f7334cb5d887a70fd6b39bd63d335dfc6cfe834f97a8",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 562,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "b7b3e8d78791758a881eafa2fef4383b6d814584bd217eae50c7a2c968e19ccd",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 563,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 564,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ce5c487066e24af4ef499b61a872f35ca6571d8e5cf8d6d6ef90304e75234475",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 565,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "363489739f690e13e376963eccc385fcdf41d0ab34dd4b3569929fb80f5db7ec",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 566,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "201044eb0f7e178636cddd3c271989a03d2167bb019978e2bb5e757e5798a2e4",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 567,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "edd1c9a5180516bcc78b4de2180b60bf1906b9514b9613f74df20fbccbe00040",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 568,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "ce6065c9c25ac73f9d606cf984bd4bd302405e7e978850a08dcbbb21cdc68c02",
+        "current_history_rows": 0,
+        "past_season_rows": 2
+      },
+      {
+        "player_id": 569,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "37b0a6553cc498b3377ae9605c3756b76563e78852fbaffce777a4beb60b10ad",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 570,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "37b0a6553cc498b3377ae9605c3756b76563e78852fbaffce777a4beb60b10ad",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 571,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "eab6b3ad1c18c8c5d23722976737624819007165b5565781ce20d6c75172c1f6",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 572,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 573,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "201044eb0f7e178636cddd3c271989a03d2167bb019978e2bb5e757e5798a2e4",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 574,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 575,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "10998ba76d7956c4fe3ed6acbb54e3de6e50baba088da24dd01d674afe81ac35",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 576,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 577,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "2034fa53e9af2bf3177262697b99899a854106c5ff6dae9b66c2fecb1935173e",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 578,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e66c03467e365ce9b2968890e93261f6cf694d317252cc04ed14cf34636cb807",
+        "current_history_rows": 0,
+        "past_season_rows": 4
+      },
+      {
+        "player_id": 579,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "e6fa980f2bc0aa3a85941a8e8dd67f7f70b739308a1be5c07f2347ccc62f6059",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 580,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "49bd910ee520edf76820fe6a1c57300191c2ca2d47e237be3588342eec139512",
+        "current_history_rows": 0,
+        "past_season_rows": 3
+      },
+      {
+        "player_id": 581,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3ddd7f635fbafe78863147bb0aa9caceda68525c2c64695c08043d93c0fbe355",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 582,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "40f8000af47676f56f4e0182b901fdcf6c0639105b71a42e7a1944ae71f5d4bf",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 583,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "3e7716b71afe06ed30e725154a8c3a33157fd693b051423e7a271162e993fa07",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 584,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "838be1e7b684a67ffcb4cb2a9c2c7e03fc13b3147574df342c117025f2d91550",
+        "current_history_rows": 0,
+        "past_season_rows": 1
+      },
+      {
+        "player_id": 585,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 586,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "d3a4396f23b794ed9d74f3d2c7b9399dc24476d51222254cbcfb610d51bff222",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      },
+      {
+        "player_id": 587,
+        "snapshot": "2026-08-15_20-39-22.json",
+        "snapshot_timestamp": "2026-08-15_20-39-22",
+        "sha256": "0dd676ef06c57bd4b211514e532971976611622d503bbd60c00136554658b295",
+        "current_history_rows": 0,
+        "past_season_rows": 0
+      }
+    ],
+    "counts_written": {
+      "players.csv": 587,
+      "teams.csv": 20,
+      "gameweeks.csv": 38,
+      "fixtures.csv": 380,
+      "player_gameweek.csv": 0,
+      "player_season_history.csv": 2032
+    }
+  },
+  "leakage_policy": {
+    "rule": "For target GW N, historical features use only player-gameweek observations with gameweek < N.",
+    "target_columns": [],
+    "current_state_tables_used_as_predictors": [],
+    "fixture_outcome_fields_used_as_predictors": [],
+    "feature_cutoff_field": "feature_cutoff_gw",
+    "target_gameweek_field": "target_gw",
+    "model_feature_columns": [],
+    "audit_columns": []
+  }
+}

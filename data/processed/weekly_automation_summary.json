@@ -1,0 +1,274 @@
+{
+  "timestamp_utc": "2026-08-15T20:47:36.538047+00:00",
+  "target_season": "2026-27",
+  "target_gameweek": 1,
+  "optimal_squad": {
+    "total_cost": 80.0,
+    "expected_points": 59.18946786460597,
+    "captain": "Valdimarsson",
+    "starting_xi": [
+      {
+        "player_id": 83,
+        "web_name": "Valdimarsson",
+        "position_id": 1,
+        "team_id": 4,
+        "cost": 4.5,
+        "expected_points": 5.493390380793773
+      },
+      {
+        "player_id": 84,
+        "web_name": "Collins",
+        "position_id": 2,
+        "team_id": 4,
+        "cost": 5.5,
+        "expected_points": 5.174555573453353
+      },
+      {
+        "player_id": 136,
+        "web_name": "Welbeck",
+        "position_id": 4,
+        "team_id": 6,
+        "cost": 6.0,
+        "expected_points": 4.596454815918996
+      },
+      {
+        "player_id": 237,
+        "web_name": "Ndiaye",
+        "position_id": 3,
+        "team_id": 9,
+        "cost": 6.0,
+        "expected_points": 5.001788419567726
+      },
+      {
+        "player_id": 242,
+        "web_name": "George",
+        "position_id": 3,
+        "team_id": 9,
+        "cost": 5.5,
+        "expected_points": 4.693870825316351
+      },
+      {
+        "player_id": 267,
+        "web_name": "Luki\u0107",
+        "position_id": 3,
+        "team_id": 12,
+        "cost": 5.0,
+        "expected_points": 4.87857077148527
+      },
+      {
+        "player_id": 299,
+        "web_name": "Burstow",
+        "position_id": 4,
+        "team_id": 11,
+        "cost": 4.5,
+        "expected_points": 4.4616444541333315
+      },
+      {
+        "player_id": 373,
+        "web_name": "C.Jones",
+        "position_id": 3,
+        "team_id": 14,
+        "cost": 5.5,
+        "expected_points": 4.796816148752738
+      },
+      {
+        "player_id": 449,
+        "web_name": "Hall",
+        "position_id": 2,
+        "team_id": 17,
+        "cost": 5.0,
+        "expected_points": 5.0787062004335635
+      },
+      {
+        "player_id": 450,
+        "web_name": "Livramento",
+        "position_id": 2,
+        "team_id": 17,
+        "cost": 5.0,
+        "expected_points": 4.798671442764563
+      },
+      {
+        "player_id": 515,
+        "web_name": "Maddison",
+        "position_id": 3,
+        "team_id": 19,
+        "cost": 6.5,
+        "expected_points": 4.721608451192531
+      }
+    ],
+    "bench": [
+      {
+        "player_id": 25,
+        "web_name": "Gy\u00f6keres",
+        "position_id": 4,
+        "team_id": 1,
+        "cost": 7.5,
+        "expected_points": 0.20857657263230178
+      },
+      {
+        "player_id": 30,
+        "web_name": "Digne",
+        "position_id": 2,
+        "team_id": 2,
+        "cost": 4.5,
+        "expected_points": 3.366429950931309
+      },
+      {
+        "player_id": 31,
+        "web_name": "Konsa",
+        "position_id": 2,
+        "team_id": 2,
+        "cost": 4.5,
+        "expected_points": 0.4278145566930428
+      },
+      {
+        "player_id": 57,
+        "web_name": "Petrovi\u0107",
+        "position_id": 1,
+        "team_id": 3,
+        "cost": 4.5,
+        "expected_points": 0.0890036780980179
+      }
+    ]
+  },
+  "manager_recommendations": {
+    "current_expected_points": 30.453333392889895,
+    "optimal_expected_points": 59.18946786460597,
+    "gross_expected_gain": 28.736134471716078,
+    "transfers_count": 13,
+    "free_transfers_used": 1,
+    "hit_penalty_incurred": 48.0,
+    "net_expected_gain": -19.263865528283922,
+    "recommended_captain": "Valdimarsson",
+    "transfers_out_ids": [
+      32,
+      1,
+      2,
+      67,
+      4,
+      40,
+      42,
+      43,
+      106,
+      107,
+      79,
+      21,
+      60
+    ],
+    "transfers_in_ids": [
+      449,
+      450,
+      515,
+      136,
+      267,
+      299,
+      237,
+      242,
+      83,
+      84,
+      373,
+      25,
+      57
+    ],
+    "optimal_starting_xi": [
+      {
+        "player_id": 83,
+        "web_name": "Valdimarsson",
+        "position_id": 1,
+        "team_id": 4,
+        "cost": 4.5,
+        "expected_points": 5.493390380793773
+      },
+      {
+        "player_id": 84,
+        "web_name": "Collins",
+        "position_id": 2,
+        "team_id": 4,
+        "cost": 5.5,
+        "expected_points": 5.174555573453353
+      },
+      {
+        "player_id": 136,
+        "web_name": "Welbeck",
+        "position_id": 4,
+        "team_id": 6,
+        "cost": 6.0,
+        "expected_points": 4.596454815918996
+      },
+      {
+        "player_id": 237,
+        "web_name": "Ndiaye",
+        "position_id": 3,
+        "team_id": 9,
+        "cost": 6.0,
+        "expected_points": 5.001788419567726
+      },
+      {
+        "player_id": 242,
+        "web_name": "George",
+        "position_id": 3,
+        "team_id": 9,
+        "cost": 5.5,
+        "expected_points": 4.693870825316351
+      },
+      {
+        "player_id": 267,
+        "web_name": "Luki\u0107",
+        "position_id": 3,
+        "team_id": 12,
+        "cost": 5.0,
+        "expected_points": 4.87857077148527
+      },
+      {
+        "player_id": 299,
+        "web_name": "Burstow",
+        "position_id": 4,
+        "team_id": 11,
+        "cost": 4.5,
+        "expected_points": 4.4616444541333315
+      },
+      {
+        "player_id": 373,
+        "web_name": "C.Jones",
+        "position_id": 3,
+        "team_id": 14,
+        "cost": 5.5,
+        "expected_points": 4.796816148752738
+      },
+      {
+        "player_id": 449,
+        "web_name": "Hall",
+        "position_id": 2,
+        "team_id": 17,
+        "cost": 5.0,
+        "expected_points": 5.0787062004335635
+      },
+      {
+        "player_id": 450,
+        "web_name": "Livramento",
+        "position_id": 2,
+        "team_id": 17,
+        "cost": 5.0,
+        "expected_points": 4.798671442764563
+      },
+      {
+        "player_id": 515,
+        "web_name": "Maddison",
+        "position_id": 3,
+        "team_id": 19,
+        "cost": 6.5,
+        "expected_points": 4.721608451192531
+      }
+    ]
+  },
+  "ai_report": {
+    "title": "FPL AI Weekly Decision Report",
+    "squad_summary": "Targeting optimal 15-player squad costing \u00a380.0M with 59.19 expected points.",
+    "captain_rationale": "Captain Valdimarsson selected due to highest projected points (5.49 xP).",
+    "transfer_recommendation": "Recommend rolling transfer (0 transfers). Net gain (+-19.26 pts) does not justify hit cost.",
+    "availability_warnings": [
+      "WARNING: Burstow is flagged (Has joined Sheffield Wednesday on loan for the rest of the season)",
+      "WARNING: Livramento is flagged (Calf injury - 75% chance of playing)"
+    ]
+  }
+}

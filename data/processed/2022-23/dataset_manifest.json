@@ -1,0 +1,35 @@
+{
+  "schema_version": "historical-feature-input-2.1",
+  "generated_by": "prepare_historical_for_features_v2.1.0",
+  "season": "2022-23",
+  "generated_at_utc": "2026-08-15T20:34:38.260342+00:00",
+  "source": {
+    "type": "normalized_historical_dataset",
+    "directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\processed\\2022-23\\historical"
+  },
+  "input_counts": {
+    "players": 778,
+    "fixtures": 380,
+    "gameweeks": 37,
+    "player_gameweek_rows": 26505,
+    "teams": 20
+  },
+  "files": {
+    "players.csv": "players.csv",
+    "teams.csv": "teams.csv",
+    "gameweeks.csv": "gameweeks.csv",
+    "fixtures.csv": "fixtures.csv",
+    "player_gameweek.csv": "player_gameweek.csv",
+    "player_season_history.csv": "player_season_history.csv"
+  },
+  "leakage_policy": {
+    "historical_features": "gameweek < target_gameweek",
+    "target": "gameweek == target_gameweek",
+    "current_aggregate_fields_excluded": true
+  },
+  "notes": [
+    "Teams derived from normalized player_gameweek team/team_code fields.",
+    "Bootstrap snapshot used for team_code -> team_name resolution when needed.",
+    "Gameweek deadlines are deterministic proxies (1h before earliest kickoff)."
+  ]
+}

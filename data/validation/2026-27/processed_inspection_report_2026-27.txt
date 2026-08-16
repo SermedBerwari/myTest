@@ -1,0 +1,78 @@
+========================================================================
+FPL PROCESSED DATASET INSPECTION REPORT
+========================================================================
+Version : 1.0.0
+Season  : 2026-27
+Status  : PASS
+Input   : E:\Python\FPL Fantasy Predictiom\data\processed\2026-27
+
+COUNTS
+------------------------------------------------------------------------
+teams                       : 20
+players                     : 584
+gameweeks                   : 38
+fixtures                    : 380
+player_gameweek_rows        : 0
+player_season_history_rows  : 2032
+
+DUPLICATES
+------------------------------------------------------------------------
+players.csv                   : 0
+teams.csv                     : 0
+gameweeks.csv                 : 0
+fixtures.csv                  : 0
+player_gameweek.csv           : 0
+player_season_history.csv     : 0
+
+REFERENTIAL INTEGRITY
+------------------------------------------------------------------------
+player_team                        : 0
+fixture_teams                      : 0
+fixture_gameweek                   : 0
+player_gameweek_players            : 0
+player_gameweek_fixtures           : 0
+player_gameweek_gameweeks          : 0
+season_history_players             : 0
+
+BUSINESS / DATA QUALITY
+------------------------------------------------------------------------
+Current-season player-GW rows : 0
+Historical player-season rows : 2032
+Position distribution         : {'Goalkeeper': 64, 'Defender': 191, 'Midfielder': 259, 'Forward': 70}
+Player status distribution    : {'a': 514, 'i': 35, 'u': 18, 's': 3, 'd': 14}
+Historical seasons            : {'2006/07': 1, '2007/08': 3, '2008/09': 5, '2009/10': 5, '2010/11': 4, '2011/12': 7, '2012/13': 9, '2013/14': 14, '2014/15': 25, '2015/16': 28, '2016/17': 39, '2017/18': 58, '2018/19': 82, '2019/20': 105, '2020/21': 146, '2021/22': 170, '2022/23': 237, '2023/24': 283, '2024/25': 352, '2025/26': 459}
+
+ERRORS
+------------------------------------------------------------------------
+- None
+
+WARNINGS
+------------------------------------------------------------------------
+- players.csv.known_name: 88.4% missing.
+- players.csv.ep_this: 100.0% missing.
+- players.csv.chance_of_playing_next_round: 85.8% missing.
+- players.csv.chance_of_playing_this_round: 100.0% missing.
+- players.csv.news: 88.0% missing.
+- players.csv.news_added: 85.8% missing.
+- players.csv.squad_number: 100.0% missing.
+- teams.csv.strength: 100.0% missing.
+- teams.csv.form: 100.0% missing.
+- teams.csv.team_division: 100.0% missing.
+- gameweeks.csv.release_time: 100.0% missing.
+- gameweeks.csv.release_time_epoch: 100.0% missing.
+- gameweeks.csv.highest_scoring_entry: 100.0% missing.
+- gameweeks.csv.highest_score: 100.0% missing.
+- gameweeks.csv.most_selected: 100.0% missing.
+- gameweeks.csv.most_transferred_in: 100.0% missing.
+- gameweeks.csv.top_element: 100.0% missing.
+- gameweeks.csv.top_element_info: 100.0% missing.
+- gameweeks.csv.most_vice_captained: 100.0% missing.
+- gameweeks.csv.most_captained: 100.0% missing.
+- fixtures.csv.event_name: 100.0% missing.
+- fixtures.csv.team_h_score: 100.0% missing.
+- fixtures.csv.team_a_score: 100.0% missing.
+- player_gameweek.csv has 0 current-season rows; this is EXPECTED before the first completed gameweek.
+
+========================================================================
+RESULT: PASS
+========================================================================

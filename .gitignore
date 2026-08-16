@@ -1,0 +1,126 @@
+# ============================================================
+# FPL Fantasy Prediction - Git Ignore
+# ============================================================
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+.python-version
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -------------------------
+# Secrets / Environment
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# API keys / credentials
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# -------------------------
+# IDE / Editors
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+
+# -------------------------
+# Large Generated Data
+# -------------------------
+
+# Raw FPL data
+data/raw/
+
+# Large processed CSV datasets
+data/processed/*.csv
+
+# Generated training datasets
+data/training/*.csv
+data/datasets/*.csv
+
+# Generic large CSV files
+*.csv
+
+# -------------------------
+# Generated Outputs
+# -------------------------
+outputs/
+output/
+results/
+reports/
+
+# Temporary files
+tmp/
+temp/
+
+# -------------------------
+# Model Artifacts
+# -------------------------
+
+# Uncomment these if models become too large for GitHub
+# *.cbm
+# *.pkl
+# *.joblib
+# *.bin
+# *.onnx
+
+# -------------------------
+# Python-generated caches
+# -------------------------
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# -------------------------
+# Local project files
+# -------------------------
+PLAN TRACKER.local.md
+local/
+scratch/
+backup/
+
+# -------------------------
+# OS
+# -------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db

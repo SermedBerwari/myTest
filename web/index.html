@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPL AI Predictor Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --accent-green: #10b981;
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 1.5rem;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn-run {
+      background: linear-gradient(135deg, var(--accent-purple), #6366f1);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn-run:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card-value {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--accent-green);
+    }
+
+    .report-box {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .report-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--accent-cyan);
+    }
+
+    .report-item {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .table-container {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      padding: 1rem;
+      color: var(--text-muted);
+      border-bottom: 2px solid var(--card-border);
+      font-weight: 600;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .badge-gk { background: #3b82f622; color: #60a5fa; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600; }
+    .badge-def { background: #10b98122; color: #34d399; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600; }
+    .badge-mid { background: #f59e0b22; color: #fbbf24; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600; }
+    .badge-fwd { background: #ef444422; color: #f87171; padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚽ FPL AI Predictor Dashboard</div>
+    <button class="btn-run" onclick="runPipeline()">⚡ Re-Run AI Pipeline</button>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <div class="card-title">Target Gameweek</div>
+      <div class="card-value" id="target-gw">GW --</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Projected Squad Points</div>
+      <div class="card-value" id="expected-pts">-- pts</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Total Squad Cost</div>
+      <div class="card-value" id="squad-cost" style="color: var(--accent-cyan);">£--M</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Recommended Captain</div>
+      <div class="card-value" id="captain-name" style="color: var(--accent-purple);">--</div>
+    </div>
+  </div>
+
+  <div class="report-box">
+    <div class="report-title">🤖 AI Decision Agent Insights</div>
+    <div class="report-item"><strong>Squad Summary:</strong> <span id="rep-summary">Loading...</span></div>
+    <div class="report-item"><strong>Captain Rationale:</strong> <span id="rep-captain">Loading...</span></div>
+    <div class="report-item"><strong>Transfer Recommendation:</strong> <span id="rep-transfer">Loading...</span></div>
+    <div class="report-item" style="color: #f87171;"><strong>Availability Warnings:</strong> <span id="rep-warnings">None</span></div>
+  </div>
+
+  <div class="table-container">
+    <div class="report-title" style="margin-bottom: 1rem;">Optimal Starting XI</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Player Name</th>
+          <th>Cost</th>
+          <th>Projected Points (xP)</th>
+        </tr>
+      </thead>
+      <tbody id="squad-table-body">
+        <tr><td colspan="4">Loading optimal squad...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const posBadges = { 1: '<span class="badge-gk">GK</span>', 2: '<span class="badge-def">DEF</span>', 3: '<span class="badge-mid">MID</span>', 4: '<span class="badge-fwd">FWD</span>' };
+
+    async function loadData() {
+      try {
+        const res = await fetch('/api/summary');
+        const data = await res.json();
+
+        document.getElementById('target-gw').innerText = 'GW ' + data.target_gameweek;
+        document.getElementById('expected-pts').innerText = data.optimal_squad.expected_points.toFixed(1) + ' pts';
+        document.getElementById('squad-cost').innerText = '£' + data.optimal_squad.total_cost.toFixed(1) + 'M';
+        document.getElementById('captain-name').innerText = data.optimal_squad.captain;
+
+        const ai = data.ai_report;
+        document.getElementById('rep-summary').innerText = ai.squad_summary;
+        document.getElementById('rep-captain').innerText = ai.captain_rationale;
+        document.getElementById('rep-transfer').innerText = ai.transfer_recommendation;
+        document.getElementById('rep-warnings').innerText = ai.availability_warnings.length > 0 ? ai.availability_warnings.join(', ') : 'None';
+
+        const tbody = document.getElementById('squad-table-body');
+        tbody.innerHTML = '';
+
+        data.optimal_squad.starting_xi.forEach(p => {
+          const row = `<tr>
+            <td>${posBadges[p.position_id] || 'POS'}</td>
+            <td><strong>${p.web_name}</strong></td>
+            <td>£${p.cost.toFixed(1)}M</td>
+            <td style="color: var(--accent-green); font-weight: 700;">${p.expected_points.toFixed(2)} pts</td>
+          </tr>`;
+          tbody.innerHTML += row;
+        });
+
+      } catch (err) {
+        console.error('Failed to load dashboard data:', err);
+      }
+    }
+
+    async function runPipeline() {
+      const btn = document.querySelector('.btn-run');
+      btn.innerText = '⏳ Running AI Pipeline...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/run-pipeline', { method: 'POST' });
+        const result = await res.json();
+        alert('Pipeline complete!');
+        loadData();
+      } catch (err) {
+        alert('Pipeline error: ' + err.message);
+      } finally {
+        btn.innerText = '⚡ Re-Run AI Pipeline';
+        btn.disabled = false;
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>

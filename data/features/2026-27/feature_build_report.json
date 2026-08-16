@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "builder_version": "1.3.0",
+  "season": "2026-27",
+  "generated_at_utc": "2026-08-15T20:43:33.478098+00:00",
+  "input_directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\processed\\2026-27",
+  "output_directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\features\\2026-27",
+  "status": "PASS",
+  "source_manifest_schema_version": "1.0.0",
+  "input_counts": {
+    "players": 587,
+    "fixtures": 380,
+    "gameweeks": 38,
+    "player_gameweek_rows": 0
+  },
+  "output_counts": {
+    "feature_rows": 0,
+    "feature_columns": 0,
+    "audit_columns": 0,
+    "target_columns": 0,
+    "total_output_columns": 0,
+    "gameweeks_with_rows": 0
+  },
+  "rows_by_gameweek": {},
+  "skipped": {
+    "no_history": 0,
+    "missing_fixture": 0,
+    "missing_player": 0
+  },
+  "leakage_policy": {
+    "rule": "For target GW N, historical features use only player-gameweek observations with gameweek < N.",
+    "target_columns": [],
+    "current_state_tables_used_as_predictors": [],
+    "fixture_outcome_fields_used_as_predictors": [],
+    "feature_cutoff_field": "feature_cutoff_gw",
+    "target_gameweek_field": "target_gw",
+    "model_feature_columns": [],
+    "audit_columns": []
+  },
+  "feature_groups": {
+    "identity": [
+      "player_id",
+      "position_id",
+      "position_name"
+    ],
+    "fixture": [
+      "team_id",
+      "opponent_team_id",
+      "was_home",
+      "fixture_difficulty"
+    ],
+    "history": [
+      "last_*",
+      "last_3_*",
+      "last_5_*",
+      "last_10_*"
+    ],
+    "minutes": [
+      "prior_minutes",
+      "last_*_minutes",
+      "last_*_start_rate",
+      "last_*_60_plus_rate",
+      "last_*_appearance_rate",
+      "minutes_per_appearance_last_5"
+    ],
+    "player_involvement_v1_1": [
+      "last_*_points_per_90_v11",
+      "last_*_goals_per_90_v11",
+      "last_*_assists_per_90_v11",
+      "last_*_bonus_per_90_v11",
+      "last_*_bps_per_90_v11",
+      "last_*_xg_per_90_v11",
+      "last_*_xa_per_90_v11",
+      "last_*_xgi_per_90_v11"
+    ],
+    "leakage_audit_v1_3": [
+      "feature_cutoff_gw",
+      "target_gw"
+    ]
+  },
+  "notes": [
+    "players.csv is used only for stable identity/position metadata.",
+    "Current price, current form, current ownership and current team aggregates are intentionally excluded from historical predictors.",
+    "Fixture scores and actual match outcomes are never read from fixture result fields.",
+    "One row is produced per player-fixture target; double gameweeks therefore produce multiple rows.",
+    "This dataset is intended for rolling/out-of-sample model training and evaluation.",
+    "v1.1 additions are isolated from the existing v1.0 feature calculations.",
+    "v1.1 player involvement features are derived from pre-target v1.0 rolling metrics.",
+    "v1.2 fixes the rolling starts aggregation required by start-rate features.",
+    "v1.3 explicitly separates model features, audit metadata, and targets."
+  ]
+}
