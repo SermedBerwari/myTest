@@ -1,0 +1,2405 @@
+{
+  "2023-24": {
+    "season": "2023-24",
+    "gameweeks_simulated": 37,
+    "strategies": {
+      "previous_gw": {
+        "season_actual_points": 1583.0,
+        "transfers": 56,
+        "hits": 27,
+        "weeks": 37,
+        "forced_replacements": 5,
+        "bench_points_wasted": 374.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 32.0
+          },
+          {
+            "gw": 3,
+            "points": 49.0
+          },
+          {
+            "gw": 4,
+            "points": 36.0
+          },
+          {
+            "gw": 5,
+            "points": 35.0
+          },
+          {
+            "gw": 6,
+            "points": 57.0
+          },
+          {
+            "gw": 7,
+            "points": 72.0
+          },
+          {
+            "gw": 8,
+            "points": 47.0
+          },
+          {
+            "gw": 9,
+            "points": 68.0
+          },
+          {
+            "gw": 10,
+            "points": 35.0
+          },
+          {
+            "gw": 11,
+            "points": 29.0
+          },
+          {
+            "gw": 12,
+            "points": 23.0
+          },
+          {
+            "gw": 13,
+            "points": 38.0
+          },
+          {
+            "gw": 14,
+            "points": 35.0
+          },
+          {
+            "gw": 15,
+            "points": 23.0
+          },
+          {
+            "gw": 16,
+            "points": 75.0
+          },
+          {
+            "gw": 17,
+            "points": 25.0
+          },
+          {
+            "gw": 18,
+            "points": 56.0
+          },
+          {
+            "gw": 19,
+            "points": 36.0
+          },
+          {
+            "gw": 20,
+            "points": 54.0
+          },
+          {
+            "gw": 21,
+            "points": 49.0
+          },
+          {
+            "gw": 22,
+            "points": 56.0
+          },
+          {
+            "gw": 23,
+            "points": 50.0
+          },
+          {
+            "gw": 24,
+            "points": 32.0
+          },
+          {
+            "gw": 25,
+            "points": 45.0
+          },
+          {
+            "gw": 26,
+            "points": 56.0
+          },
+          {
+            "gw": 27,
+            "points": 82.0
+          },
+          {
+            "gw": 28,
+            "points": 25.0
+          },
+          {
+            "gw": 29,
+            "points": 25.0
+          },
+          {
+            "gw": 30,
+            "points": 31.0
+          },
+          {
+            "gw": 31,
+            "points": 18.0
+          },
+          {
+            "gw": 32,
+            "points": 36.0
+          },
+          {
+            "gw": 33,
+            "points": 35.0
+          },
+          {
+            "gw": 34,
+            "points": 31.0
+          },
+          {
+            "gw": 35,
+            "points": 24.0
+          },
+          {
+            "gw": 36,
+            "points": 65.0
+          },
+          {
+            "gw": 37,
+            "points": 67.0
+          },
+          {
+            "gw": 38,
+            "points": 31.0
+          }
+        ],
+        "avg_gw_points": 42.78378378378378
+      },
+      "rolling_average": {
+        "season_actual_points": 1650.0,
+        "transfers": 46,
+        "hits": 23,
+        "weeks": 37,
+        "forced_replacements": 4,
+        "bench_points_wasted": 470.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 32.0
+          },
+          {
+            "gw": 3,
+            "points": 43.0
+          },
+          {
+            "gw": 4,
+            "points": 43.0
+          },
+          {
+            "gw": 5,
+            "points": 31.0
+          },
+          {
+            "gw": 6,
+            "points": 42.0
+          },
+          {
+            "gw": 7,
+            "points": 70.0
+          },
+          {
+            "gw": 8,
+            "points": 39.0
+          },
+          {
+            "gw": 9,
+            "points": 69.0
+          },
+          {
+            "gw": 10,
+            "points": 34.0
+          },
+          {
+            "gw": 11,
+            "points": 41.0
+          },
+          {
+            "gw": 12,
+            "points": 52.0
+          },
+          {
+            "gw": 13,
+            "points": 37.0
+          },
+          {
+            "gw": 14,
+            "points": 58.0
+          },
+          {
+            "gw": 15,
+            "points": 35.0
+          },
+          {
+            "gw": 16,
+            "points": 22.0
+          },
+          {
+            "gw": 17,
+            "points": 66.0
+          },
+          {
+            "gw": 18,
+            "points": 57.0
+          },
+          {
+            "gw": 19,
+            "points": 48.0
+          },
+          {
+            "gw": 20,
+            "points": 44.0
+          },
+          {
+            "gw": 21,
+            "points": 42.0
+          },
+          {
+            "gw": 22,
+            "points": 53.0
+          },
+          {
+            "gw": 23,
+            "points": 33.0
+          },
+          {
+            "gw": 24,
+            "points": 32.0
+          },
+          {
+            "gw": 25,
+            "points": 49.0
+          },
+          {
+            "gw": 26,
+            "points": 63.0
+          },
+          {
+            "gw": 27,
+            "points": 65.0
+          },
+          {
+            "gw": 28,
+            "points": 35.0
+          },
+          {
+            "gw": 29,
+            "points": 45.0
+          },
+          {
+            "gw": 30,
+            "points": 46.0
+          },
+          {
+            "gw": 31,
+            "points": 19.0
+          },
+          {
+            "gw": 32,
+            "points": 37.0
+          },
+          {
+            "gw": 33,
+            "points": 40.0
+          },
+          {
+            "gw": 34,
+            "points": 47.0
+          },
+          {
+            "gw": 35,
+            "points": 55.0
+          },
+          {
+            "gw": 36,
+            "points": 63.0
+          },
+          {
+            "gw": 37,
+            "points": 39.0
+          },
+          {
+            "gw": 38,
+            "points": 24.0
+          }
+        ],
+        "avg_gw_points": 44.5945945945946
+      },
+      "no_transfer": {
+        "season_actual_points": 1210.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 4,
+        "bench_points_wasted": 85.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 35.0
+          },
+          {
+            "gw": 3,
+            "points": 55.0
+          },
+          {
+            "gw": 4,
+            "points": 40.0
+          },
+          {
+            "gw": 5,
+            "points": 34.0
+          },
+          {
+            "gw": 6,
+            "points": 27.0
+          },
+          {
+            "gw": 7,
+            "points": 14.0
+          },
+          {
+            "gw": 8,
+            "points": 40.0
+          },
+          {
+            "gw": 9,
+            "points": 34.0
+          },
+          {
+            "gw": 10,
+            "points": 34.0
+          },
+          {
+            "gw": 11,
+            "points": 15.0
+          },
+          {
+            "gw": 12,
+            "points": 27.0
+          },
+          {
+            "gw": 13,
+            "points": 13.0
+          },
+          {
+            "gw": 14,
+            "points": 29.0
+          },
+          {
+            "gw": 15,
+            "points": 31.0
+          },
+          {
+            "gw": 16,
+            "points": 37.0
+          },
+          {
+            "gw": 17,
+            "points": 27.0
+          },
+          {
+            "gw": 18,
+            "points": 19.0
+          },
+          {
+            "gw": 19,
+            "points": 26.0
+          },
+          {
+            "gw": 20,
+            "points": 55.0
+          },
+          {
+            "gw": 21,
+            "points": 33.0
+          },
+          {
+            "gw": 22,
+            "points": 21.0
+          },
+          {
+            "gw": 23,
+            "points": 26.0
+          },
+          {
+            "gw": 24,
+            "points": 51.0
+          },
+          {
+            "gw": 25,
+            "points": 39.0
+          },
+          {
+            "gw": 26,
+            "points": 37.0
+          },
+          {
+            "gw": 27,
+            "points": 50.0
+          },
+          {
+            "gw": 28,
+            "points": 11.0
+          },
+          {
+            "gw": 29,
+            "points": 48.0
+          },
+          {
+            "gw": 30,
+            "points": 40.0
+          },
+          {
+            "gw": 31,
+            "points": 21.0
+          },
+          {
+            "gw": 32,
+            "points": 22.0
+          },
+          {
+            "gw": 33,
+            "points": 42.0
+          },
+          {
+            "gw": 34,
+            "points": 48.0
+          },
+          {
+            "gw": 35,
+            "points": 38.0
+          },
+          {
+            "gw": 36,
+            "points": 31.0
+          },
+          {
+            "gw": 37,
+            "points": 24.0
+          },
+          {
+            "gw": 38,
+            "points": 36.0
+          }
+        ],
+        "avg_gw_points": 32.7027027027027
+      },
+      "simple_highest_xp": {
+        "season_actual_points": 1656.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 0,
+        "bench_points_wasted": 135.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 35.0
+          },
+          {
+            "gw": 3,
+            "points": 27.0
+          },
+          {
+            "gw": 4,
+            "points": 84.0
+          },
+          {
+            "gw": 5,
+            "points": 25.0
+          },
+          {
+            "gw": 6,
+            "points": 61.0
+          },
+          {
+            "gw": 7,
+            "points": 30.0
+          },
+          {
+            "gw": 8,
+            "points": 47.0
+          },
+          {
+            "gw": 9,
+            "points": 70.0
+          },
+          {
+            "gw": 10,
+            "points": 18.0
+          },
+          {
+            "gw": 11,
+            "points": 27.0
+          },
+          {
+            "gw": 12,
+            "points": 58.0
+          },
+          {
+            "gw": 13,
+            "points": 21.0
+          },
+          {
+            "gw": 14,
+            "points": 55.0
+          },
+          {
+            "gw": 15,
+            "points": 24.0
+          },
+          {
+            "gw": 16,
+            "points": 42.0
+          },
+          {
+            "gw": 17,
+            "points": 62.0
+          },
+          {
+            "gw": 18,
+            "points": 31.0
+          },
+          {
+            "gw": 19,
+            "points": 43.0
+          },
+          {
+            "gw": 20,
+            "points": 55.0
+          },
+          {
+            "gw": 21,
+            "points": 48.0
+          },
+          {
+            "gw": 22,
+            "points": 57.0
+          },
+          {
+            "gw": 23,
+            "points": 70.0
+          },
+          {
+            "gw": 24,
+            "points": 55.0
+          },
+          {
+            "gw": 25,
+            "points": 35.0
+          },
+          {
+            "gw": 26,
+            "points": 55.0
+          },
+          {
+            "gw": 27,
+            "points": 52.0
+          },
+          {
+            "gw": 28,
+            "points": 45.0
+          },
+          {
+            "gw": 29,
+            "points": 34.0
+          },
+          {
+            "gw": 30,
+            "points": 49.0
+          },
+          {
+            "gw": 31,
+            "points": 45.0
+          },
+          {
+            "gw": 32,
+            "points": 29.0
+          },
+          {
+            "gw": 33,
+            "points": 35.0
+          },
+          {
+            "gw": 34,
+            "points": 44.0
+          },
+          {
+            "gw": 35,
+            "points": 38.0
+          },
+          {
+            "gw": 36,
+            "points": 68.0
+          },
+          {
+            "gw": 37,
+            "points": 47.0
+          },
+          {
+            "gw": 38,
+            "points": 35.0
+          }
+        ],
+        "avg_gw_points": 44.75675675675676
+      },
+      "ai_manager": {
+        "season_actual_points": 1667.0,
+        "transfers": 46,
+        "hits": 23,
+        "weeks": 37,
+        "forced_replacements": 3,
+        "bench_points_wasted": 344.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 35.0
+          },
+          {
+            "gw": 3,
+            "points": 45.0
+          },
+          {
+            "gw": 4,
+            "points": 49.0
+          },
+          {
+            "gw": 5,
+            "points": 30.0
+          },
+          {
+            "gw": 6,
+            "points": 50.0
+          },
+          {
+            "gw": 7,
+            "points": 25.0
+          },
+          {
+            "gw": 8,
+            "points": 39.0
+          },
+          {
+            "gw": 9,
+            "points": 64.0
+          },
+          {
+            "gw": 10,
+            "points": 40.0
+          },
+          {
+            "gw": 11,
+            "points": 27.0
+          },
+          {
+            "gw": 12,
+            "points": 54.0
+          },
+          {
+            "gw": 13,
+            "points": 41.0
+          },
+          {
+            "gw": 14,
+            "points": 66.0
+          },
+          {
+            "gw": 15,
+            "points": 32.0
+          },
+          {
+            "gw": 16,
+            "points": 23.0
+          },
+          {
+            "gw": 17,
+            "points": 60.0
+          },
+          {
+            "gw": 18,
+            "points": 33.0
+          },
+          {
+            "gw": 19,
+            "points": 47.0
+          },
+          {
+            "gw": 20,
+            "points": 53.0
+          },
+          {
+            "gw": 21,
+            "points": 17.0
+          },
+          {
+            "gw": 22,
+            "points": 59.0
+          },
+          {
+            "gw": 23,
+            "points": 71.0
+          },
+          {
+            "gw": 24,
+            "points": 54.0
+          },
+          {
+            "gw": 25,
+            "points": 54.0
+          },
+          {
+            "gw": 26,
+            "points": 57.0
+          },
+          {
+            "gw": 27,
+            "points": 96.0
+          },
+          {
+            "gw": 28,
+            "points": 37.0
+          },
+          {
+            "gw": 29,
+            "points": 34.0
+          },
+          {
+            "gw": 30,
+            "points": 62.0
+          },
+          {
+            "gw": 31,
+            "points": 32.0
+          },
+          {
+            "gw": 32,
+            "points": 29.0
+          },
+          {
+            "gw": 33,
+            "points": 49.0
+          },
+          {
+            "gw": 34,
+            "points": 66.0
+          },
+          {
+            "gw": 35,
+            "points": 39.0
+          },
+          {
+            "gw": 36,
+            "points": 33.0
+          },
+          {
+            "gw": 37,
+            "points": 32.0
+          },
+          {
+            "gw": 38,
+            "points": 33.0
+          }
+        ],
+        "avg_gw_points": 45.054054054054056
+      }
+    }
+  },
+  "2024-25": {
+    "season": "2024-25",
+    "gameweeks_simulated": 37,
+    "strategies": {
+      "previous_gw": {
+        "season_actual_points": 1809.0,
+        "transfers": 52,
+        "hits": 26,
+        "weeks": 37,
+        "forced_replacements": 3,
+        "bench_points_wasted": 351.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 56.0
+          },
+          {
+            "gw": 3,
+            "points": 59.0
+          },
+          {
+            "gw": 4,
+            "points": 64.0
+          },
+          {
+            "gw": 5,
+            "points": 57.0
+          },
+          {
+            "gw": 6,
+            "points": 56.0
+          },
+          {
+            "gw": 7,
+            "points": 51.0
+          },
+          {
+            "gw": 8,
+            "points": 41.0
+          },
+          {
+            "gw": 9,
+            "points": 44.0
+          },
+          {
+            "gw": 10,
+            "points": 50.0
+          },
+          {
+            "gw": 11,
+            "points": 47.0
+          },
+          {
+            "gw": 12,
+            "points": 36.0
+          },
+          {
+            "gw": 13,
+            "points": 53.0
+          },
+          {
+            "gw": 14,
+            "points": 61.0
+          },
+          {
+            "gw": 15,
+            "points": 47.0
+          },
+          {
+            "gw": 16,
+            "points": 51.0
+          },
+          {
+            "gw": 17,
+            "points": 67.0
+          },
+          {
+            "gw": 18,
+            "points": 53.0
+          },
+          {
+            "gw": 19,
+            "points": 67.0
+          },
+          {
+            "gw": 20,
+            "points": 64.0
+          },
+          {
+            "gw": 21,
+            "points": 57.0
+          },
+          {
+            "gw": 22,
+            "points": 38.0
+          },
+          {
+            "gw": 23,
+            "points": 64.0
+          },
+          {
+            "gw": 24,
+            "points": 40.0
+          },
+          {
+            "gw": 25,
+            "points": 53.0
+          },
+          {
+            "gw": 26,
+            "points": 53.0
+          },
+          {
+            "gw": 27,
+            "points": 40.0
+          },
+          {
+            "gw": 28,
+            "points": 75.0
+          },
+          {
+            "gw": 29,
+            "points": 20.0
+          },
+          {
+            "gw": 30,
+            "points": 34.0
+          },
+          {
+            "gw": 31,
+            "points": 27.0
+          },
+          {
+            "gw": 32,
+            "points": 37.0
+          },
+          {
+            "gw": 33,
+            "points": 19.0
+          },
+          {
+            "gw": 34,
+            "points": 29.0
+          },
+          {
+            "gw": 35,
+            "points": 48.0
+          },
+          {
+            "gw": 36,
+            "points": 51.0
+          },
+          {
+            "gw": 37,
+            "points": 58.0
+          },
+          {
+            "gw": 38,
+            "points": 42.0
+          }
+        ],
+        "avg_gw_points": 48.891891891891895
+      },
+      "rolling_average": {
+        "season_actual_points": 1893.0,
+        "transfers": 50,
+        "hits": 24,
+        "weeks": 37,
+        "forced_replacements": 3,
+        "bench_points_wasted": 397.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 56.0
+          },
+          {
+            "gw": 3,
+            "points": 68.0
+          },
+          {
+            "gw": 4,
+            "points": 36.0
+          },
+          {
+            "gw": 5,
+            "points": 71.0
+          },
+          {
+            "gw": 6,
+            "points": 42.0
+          },
+          {
+            "gw": 7,
+            "points": 53.0
+          },
+          {
+            "gw": 8,
+            "points": 43.0
+          },
+          {
+            "gw": 9,
+            "points": 60.0
+          },
+          {
+            "gw": 10,
+            "points": 38.0
+          },
+          {
+            "gw": 11,
+            "points": 58.0
+          },
+          {
+            "gw": 12,
+            "points": 73.0
+          },
+          {
+            "gw": 13,
+            "points": 68.0
+          },
+          {
+            "gw": 14,
+            "points": 70.0
+          },
+          {
+            "gw": 15,
+            "points": 49.0
+          },
+          {
+            "gw": 16,
+            "points": 65.0
+          },
+          {
+            "gw": 17,
+            "points": 98.0
+          },
+          {
+            "gw": 18,
+            "points": 61.0
+          },
+          {
+            "gw": 19,
+            "points": 57.0
+          },
+          {
+            "gw": 20,
+            "points": 60.0
+          },
+          {
+            "gw": 21,
+            "points": 42.0
+          },
+          {
+            "gw": 22,
+            "points": 28.0
+          },
+          {
+            "gw": 23,
+            "points": 66.0
+          },
+          {
+            "gw": 24,
+            "points": 61.0
+          },
+          {
+            "gw": 25,
+            "points": 40.0
+          },
+          {
+            "gw": 26,
+            "points": 69.0
+          },
+          {
+            "gw": 27,
+            "points": 45.0
+          },
+          {
+            "gw": 28,
+            "points": 57.0
+          },
+          {
+            "gw": 29,
+            "points": 35.0
+          },
+          {
+            "gw": 30,
+            "points": 41.0
+          },
+          {
+            "gw": 31,
+            "points": 23.0
+          },
+          {
+            "gw": 32,
+            "points": 29.0
+          },
+          {
+            "gw": 33,
+            "points": 32.0
+          },
+          {
+            "gw": 34,
+            "points": 31.0
+          },
+          {
+            "gw": 35,
+            "points": 25.0
+          },
+          {
+            "gw": 36,
+            "points": 55.0
+          },
+          {
+            "gw": 37,
+            "points": 52.0
+          },
+          {
+            "gw": 38,
+            "points": 36.0
+          }
+        ],
+        "avg_gw_points": 51.16216216216216
+      },
+      "no_transfer": {
+        "season_actual_points": 1224.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 3,
+        "bench_points_wasted": 102.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 46.0
+          },
+          {
+            "gw": 3,
+            "points": 53.0
+          },
+          {
+            "gw": 4,
+            "points": 50.0
+          },
+          {
+            "gw": 5,
+            "points": 44.0
+          },
+          {
+            "gw": 6,
+            "points": 19.0
+          },
+          {
+            "gw": 7,
+            "points": 36.0
+          },
+          {
+            "gw": 8,
+            "points": 25.0
+          },
+          {
+            "gw": 9,
+            "points": 32.0
+          },
+          {
+            "gw": 10,
+            "points": 16.0
+          },
+          {
+            "gw": 11,
+            "points": 32.0
+          },
+          {
+            "gw": 12,
+            "points": 21.0
+          },
+          {
+            "gw": 13,
+            "points": 51.0
+          },
+          {
+            "gw": 14,
+            "points": 25.0
+          },
+          {
+            "gw": 15,
+            "points": 36.0
+          },
+          {
+            "gw": 16,
+            "points": 41.0
+          },
+          {
+            "gw": 17,
+            "points": 40.0
+          },
+          {
+            "gw": 18,
+            "points": 16.0
+          },
+          {
+            "gw": 19,
+            "points": 33.0
+          },
+          {
+            "gw": 20,
+            "points": 47.0
+          },
+          {
+            "gw": 21,
+            "points": 28.0
+          },
+          {
+            "gw": 22,
+            "points": 37.0
+          },
+          {
+            "gw": 23,
+            "points": 33.0
+          },
+          {
+            "gw": 24,
+            "points": 22.0
+          },
+          {
+            "gw": 25,
+            "points": 34.0
+          },
+          {
+            "gw": 26,
+            "points": 29.0
+          },
+          {
+            "gw": 27,
+            "points": 29.0
+          },
+          {
+            "gw": 28,
+            "points": 34.0
+          },
+          {
+            "gw": 29,
+            "points": 40.0
+          },
+          {
+            "gw": 30,
+            "points": 27.0
+          },
+          {
+            "gw": 31,
+            "points": 42.0
+          },
+          {
+            "gw": 32,
+            "points": 23.0
+          },
+          {
+            "gw": 33,
+            "points": 25.0
+          },
+          {
+            "gw": 34,
+            "points": 37.0
+          },
+          {
+            "gw": 35,
+            "points": 32.0
+          },
+          {
+            "gw": 36,
+            "points": 30.0
+          },
+          {
+            "gw": 37,
+            "points": 29.0
+          },
+          {
+            "gw": 38,
+            "points": 30.0
+          }
+        ],
+        "avg_gw_points": 33.08108108108108
+      },
+      "simple_highest_xp": {
+        "season_actual_points": 1675.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 0,
+        "bench_points_wasted": 271.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 46.0
+          },
+          {
+            "gw": 3,
+            "points": 57.0
+          },
+          {
+            "gw": 4,
+            "points": 53.0
+          },
+          {
+            "gw": 5,
+            "points": 51.0
+          },
+          {
+            "gw": 6,
+            "points": 30.0
+          },
+          {
+            "gw": 7,
+            "points": 67.0
+          },
+          {
+            "gw": 8,
+            "points": 35.0
+          },
+          {
+            "gw": 9,
+            "points": 61.0
+          },
+          {
+            "gw": 10,
+            "points": 32.0
+          },
+          {
+            "gw": 11,
+            "points": 48.0
+          },
+          {
+            "gw": 12,
+            "points": 19.0
+          },
+          {
+            "gw": 13,
+            "points": 45.0
+          },
+          {
+            "gw": 14,
+            "points": 35.0
+          },
+          {
+            "gw": 15,
+            "points": 47.0
+          },
+          {
+            "gw": 16,
+            "points": 47.0
+          },
+          {
+            "gw": 17,
+            "points": 29.0
+          },
+          {
+            "gw": 18,
+            "points": 35.0
+          },
+          {
+            "gw": 19,
+            "points": 59.0
+          },
+          {
+            "gw": 20,
+            "points": 48.0
+          },
+          {
+            "gw": 21,
+            "points": 85.0
+          },
+          {
+            "gw": 22,
+            "points": 40.0
+          },
+          {
+            "gw": 23,
+            "points": 31.0
+          },
+          {
+            "gw": 24,
+            "points": 27.0
+          },
+          {
+            "gw": 25,
+            "points": 57.0
+          },
+          {
+            "gw": 26,
+            "points": 45.0
+          },
+          {
+            "gw": 27,
+            "points": 58.0
+          },
+          {
+            "gw": 28,
+            "points": 35.0
+          },
+          {
+            "gw": 29,
+            "points": 51.0
+          },
+          {
+            "gw": 30,
+            "points": 33.0
+          },
+          {
+            "gw": 31,
+            "points": 29.0
+          },
+          {
+            "gw": 32,
+            "points": 53.0
+          },
+          {
+            "gw": 33,
+            "points": 77.0
+          },
+          {
+            "gw": 34,
+            "points": 62.0
+          },
+          {
+            "gw": 35,
+            "points": 26.0
+          },
+          {
+            "gw": 36,
+            "points": 31.0
+          },
+          {
+            "gw": 37,
+            "points": 56.0
+          },
+          {
+            "gw": 38,
+            "points": 35.0
+          }
+        ],
+        "avg_gw_points": 45.270270270270274
+      },
+      "ai_manager": {
+        "season_actual_points": 1524.0,
+        "transfers": 68,
+        "hits": 32,
+        "weeks": 37,
+        "forced_replacements": 3,
+        "bench_points_wasted": 416.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 46.0
+          },
+          {
+            "gw": 3,
+            "points": 39.0
+          },
+          {
+            "gw": 4,
+            "points": 45.0
+          },
+          {
+            "gw": 5,
+            "points": 47.0
+          },
+          {
+            "gw": 6,
+            "points": 23.0
+          },
+          {
+            "gw": 7,
+            "points": 75.0
+          },
+          {
+            "gw": 8,
+            "points": 19.0
+          },
+          {
+            "gw": 9,
+            "points": 27.0
+          },
+          {
+            "gw": 10,
+            "points": 28.0
+          },
+          {
+            "gw": 11,
+            "points": 42.0
+          },
+          {
+            "gw": 12,
+            "points": 21.0
+          },
+          {
+            "gw": 13,
+            "points": 30.0
+          },
+          {
+            "gw": 14,
+            "points": 34.0
+          },
+          {
+            "gw": 15,
+            "points": 56.0
+          },
+          {
+            "gw": 16,
+            "points": 49.0
+          },
+          {
+            "gw": 17,
+            "points": 36.0
+          },
+          {
+            "gw": 18,
+            "points": 39.0
+          },
+          {
+            "gw": 19,
+            "points": 42.0
+          },
+          {
+            "gw": 20,
+            "points": 40.0
+          },
+          {
+            "gw": 21,
+            "points": 82.0
+          },
+          {
+            "gw": 22,
+            "points": 47.0
+          },
+          {
+            "gw": 23,
+            "points": 72.0
+          },
+          {
+            "gw": 24,
+            "points": 28.0
+          },
+          {
+            "gw": 25,
+            "points": 35.0
+          },
+          {
+            "gw": 26,
+            "points": 41.0
+          },
+          {
+            "gw": 27,
+            "points": 31.0
+          },
+          {
+            "gw": 28,
+            "points": 20.0
+          },
+          {
+            "gw": 29,
+            "points": 49.0
+          },
+          {
+            "gw": 30,
+            "points": 36.0
+          },
+          {
+            "gw": 31,
+            "points": 28.0
+          },
+          {
+            "gw": 32,
+            "points": 44.0
+          },
+          {
+            "gw": 33,
+            "points": 53.0
+          },
+          {
+            "gw": 34,
+            "points": 44.0
+          },
+          {
+            "gw": 35,
+            "points": 23.0
+          },
+          {
+            "gw": 36,
+            "points": 44.0
+          },
+          {
+            "gw": 37,
+            "points": 52.0
+          },
+          {
+            "gw": 38,
+            "points": 57.0
+          }
+        ],
+        "avg_gw_points": 41.189189189189186
+      }
+    }
+  },
+  "2025-26": {
+    "season": "2025-26",
+    "gameweeks_simulated": 37,
+    "strategies": {
+      "previous_gw": {
+        "season_actual_points": 1728.0,
+        "transfers": 72,
+        "hits": 36,
+        "weeks": 37,
+        "forced_replacements": 2,
+        "bench_points_wasted": 483.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 48.0
+          },
+          {
+            "gw": 3,
+            "points": 25.0
+          },
+          {
+            "gw": 4,
+            "points": 68.0
+          },
+          {
+            "gw": 5,
+            "points": 49.0
+          },
+          {
+            "gw": 6,
+            "points": 48.0
+          },
+          {
+            "gw": 7,
+            "points": 55.0
+          },
+          {
+            "gw": 8,
+            "points": 45.0
+          },
+          {
+            "gw": 9,
+            "points": 29.0
+          },
+          {
+            "gw": 10,
+            "points": 70.0
+          },
+          {
+            "gw": 11,
+            "points": 34.0
+          },
+          {
+            "gw": 12,
+            "points": 46.0
+          },
+          {
+            "gw": 13,
+            "points": 29.0
+          },
+          {
+            "gw": 14,
+            "points": 44.0
+          },
+          {
+            "gw": 15,
+            "points": 45.0
+          },
+          {
+            "gw": 16,
+            "points": 74.0
+          },
+          {
+            "gw": 17,
+            "points": 50.0
+          },
+          {
+            "gw": 18,
+            "points": 28.0
+          },
+          {
+            "gw": 19,
+            "points": 43.0
+          },
+          {
+            "gw": 20,
+            "points": 49.0
+          },
+          {
+            "gw": 21,
+            "points": 51.0
+          },
+          {
+            "gw": 22,
+            "points": 33.0
+          },
+          {
+            "gw": 23,
+            "points": 48.0
+          },
+          {
+            "gw": 24,
+            "points": 42.0
+          },
+          {
+            "gw": 25,
+            "points": 52.0
+          },
+          {
+            "gw": 26,
+            "points": 57.0
+          },
+          {
+            "gw": 27,
+            "points": 52.0
+          },
+          {
+            "gw": 28,
+            "points": 42.0
+          },
+          {
+            "gw": 29,
+            "points": 46.0
+          },
+          {
+            "gw": 30,
+            "points": 54.0
+          },
+          {
+            "gw": 31,
+            "points": 25.0
+          },
+          {
+            "gw": 32,
+            "points": 80.0
+          },
+          {
+            "gw": 33,
+            "points": 55.0
+          },
+          {
+            "gw": 34,
+            "points": 65.0
+          },
+          {
+            "gw": 35,
+            "points": 30.0
+          },
+          {
+            "gw": 36,
+            "points": 32.0
+          },
+          {
+            "gw": 37,
+            "points": 43.0
+          },
+          {
+            "gw": 38,
+            "points": 42.0
+          }
+        ],
+        "avg_gw_points": 46.7027027027027
+      },
+      "rolling_average": {
+        "season_actual_points": 1795.0,
+        "transfers": 66,
+        "hits": 32,
+        "weeks": 37,
+        "forced_replacements": 2,
+        "bench_points_wasted": 467.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 48.0
+          },
+          {
+            "gw": 3,
+            "points": 28.0
+          },
+          {
+            "gw": 4,
+            "points": 63.0
+          },
+          {
+            "gw": 5,
+            "points": 59.0
+          },
+          {
+            "gw": 6,
+            "points": 69.0
+          },
+          {
+            "gw": 7,
+            "points": 74.0
+          },
+          {
+            "gw": 8,
+            "points": 57.0
+          },
+          {
+            "gw": 9,
+            "points": 41.0
+          },
+          {
+            "gw": 10,
+            "points": 82.0
+          },
+          {
+            "gw": 11,
+            "points": 26.0
+          },
+          {
+            "gw": 12,
+            "points": 27.0
+          },
+          {
+            "gw": 13,
+            "points": 30.0
+          },
+          {
+            "gw": 14,
+            "points": 62.0
+          },
+          {
+            "gw": 15,
+            "points": 56.0
+          },
+          {
+            "gw": 16,
+            "points": 55.0
+          },
+          {
+            "gw": 17,
+            "points": 49.0
+          },
+          {
+            "gw": 18,
+            "points": 42.0
+          },
+          {
+            "gw": 19,
+            "points": 32.0
+          },
+          {
+            "gw": 20,
+            "points": 23.0
+          },
+          {
+            "gw": 21,
+            "points": 66.0
+          },
+          {
+            "gw": 22,
+            "points": 39.0
+          },
+          {
+            "gw": 23,
+            "points": 41.0
+          },
+          {
+            "gw": 24,
+            "points": 53.0
+          },
+          {
+            "gw": 25,
+            "points": 47.0
+          },
+          {
+            "gw": 26,
+            "points": 33.0
+          },
+          {
+            "gw": 27,
+            "points": 47.0
+          },
+          {
+            "gw": 28,
+            "points": 74.0
+          },
+          {
+            "gw": 29,
+            "points": 63.0
+          },
+          {
+            "gw": 30,
+            "points": 45.0
+          },
+          {
+            "gw": 31,
+            "points": 33.0
+          },
+          {
+            "gw": 32,
+            "points": 41.0
+          },
+          {
+            "gw": 33,
+            "points": 72.0
+          },
+          {
+            "gw": 34,
+            "points": 52.0
+          },
+          {
+            "gw": 35,
+            "points": 27.0
+          },
+          {
+            "gw": 36,
+            "points": 42.0
+          },
+          {
+            "gw": 37,
+            "points": 44.0
+          },
+          {
+            "gw": 38,
+            "points": 53.0
+          }
+        ],
+        "avg_gw_points": 48.513513513513516
+      },
+      "no_transfer": {
+        "season_actual_points": 1325.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 2,
+        "bench_points_wasted": 20.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 36.0
+          },
+          {
+            "gw": 3,
+            "points": 28.0
+          },
+          {
+            "gw": 4,
+            "points": 45.0
+          },
+          {
+            "gw": 5,
+            "points": 51.0
+          },
+          {
+            "gw": 6,
+            "points": 45.0
+          },
+          {
+            "gw": 7,
+            "points": 50.0
+          },
+          {
+            "gw": 8,
+            "points": 51.0
+          },
+          {
+            "gw": 9,
+            "points": 32.0
+          },
+          {
+            "gw": 10,
+            "points": 58.0
+          },
+          {
+            "gw": 11,
+            "points": 42.0
+          },
+          {
+            "gw": 12,
+            "points": 29.0
+          },
+          {
+            "gw": 13,
+            "points": 20.0
+          },
+          {
+            "gw": 14,
+            "points": 61.0
+          },
+          {
+            "gw": 15,
+            "points": 49.0
+          },
+          {
+            "gw": 16,
+            "points": 39.0
+          },
+          {
+            "gw": 17,
+            "points": 64.0
+          },
+          {
+            "gw": 18,
+            "points": 46.0
+          },
+          {
+            "gw": 19,
+            "points": 26.0
+          },
+          {
+            "gw": 20,
+            "points": 25.0
+          },
+          {
+            "gw": 21,
+            "points": 20.0
+          },
+          {
+            "gw": 22,
+            "points": 20.0
+          },
+          {
+            "gw": 23,
+            "points": 17.0
+          },
+          {
+            "gw": 24,
+            "points": 36.0
+          },
+          {
+            "gw": 25,
+            "points": 22.0
+          },
+          {
+            "gw": 26,
+            "points": 22.0
+          },
+          {
+            "gw": 27,
+            "points": 39.0
+          },
+          {
+            "gw": 28,
+            "points": 19.0
+          },
+          {
+            "gw": 29,
+            "points": 30.0
+          },
+          {
+            "gw": 30,
+            "points": 41.0
+          },
+          {
+            "gw": 31,
+            "points": 23.0
+          },
+          {
+            "gw": 32,
+            "points": 18.0
+          },
+          {
+            "gw": 33,
+            "points": 25.0
+          },
+          {
+            "gw": 34,
+            "points": 53.0
+          },
+          {
+            "gw": 35,
+            "points": 45.0
+          },
+          {
+            "gw": 36,
+            "points": 10.0
+          },
+          {
+            "gw": 37,
+            "points": 51.0
+          },
+          {
+            "gw": 38,
+            "points": 37.0
+          }
+        ],
+        "avg_gw_points": 35.810810810810814
+      },
+      "simple_highest_xp": {
+        "season_actual_points": 1572.0,
+        "transfers": 0,
+        "hits": 0,
+        "weeks": 37,
+        "forced_replacements": 0,
+        "bench_points_wasted": 115.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 36.0
+          },
+          {
+            "gw": 3,
+            "points": 40.0
+          },
+          {
+            "gw": 4,
+            "points": 41.0
+          },
+          {
+            "gw": 5,
+            "points": 33.0
+          },
+          {
+            "gw": 6,
+            "points": 57.0
+          },
+          {
+            "gw": 7,
+            "points": 56.0
+          },
+          {
+            "gw": 8,
+            "points": 71.0
+          },
+          {
+            "gw": 9,
+            "points": 51.0
+          },
+          {
+            "gw": 10,
+            "points": 47.0
+          },
+          {
+            "gw": 11,
+            "points": 23.0
+          },
+          {
+            "gw": 12,
+            "points": 36.0
+          },
+          {
+            "gw": 13,
+            "points": 23.0
+          },
+          {
+            "gw": 14,
+            "points": 40.0
+          },
+          {
+            "gw": 15,
+            "points": 34.0
+          },
+          {
+            "gw": 16,
+            "points": 52.0
+          },
+          {
+            "gw": 17,
+            "points": 67.0
+          },
+          {
+            "gw": 18,
+            "points": 59.0
+          },
+          {
+            "gw": 19,
+            "points": 33.0
+          },
+          {
+            "gw": 20,
+            "points": 25.0
+          },
+          {
+            "gw": 21,
+            "points": 60.0
+          },
+          {
+            "gw": 22,
+            "points": 42.0
+          },
+          {
+            "gw": 23,
+            "points": 44.0
+          },
+          {
+            "gw": 24,
+            "points": 20.0
+          },
+          {
+            "gw": 25,
+            "points": 44.0
+          },
+          {
+            "gw": 26,
+            "points": 42.0
+          },
+          {
+            "gw": 27,
+            "points": 47.0
+          },
+          {
+            "gw": 28,
+            "points": 55.0
+          },
+          {
+            "gw": 29,
+            "points": 35.0
+          },
+          {
+            "gw": 30,
+            "points": 46.0
+          },
+          {
+            "gw": 31,
+            "points": 24.0
+          },
+          {
+            "gw": 32,
+            "points": 60.0
+          },
+          {
+            "gw": 33,
+            "points": 50.0
+          },
+          {
+            "gw": 34,
+            "points": 52.0
+          },
+          {
+            "gw": 35,
+            "points": 32.0
+          },
+          {
+            "gw": 36,
+            "points": 24.0
+          },
+          {
+            "gw": 37,
+            "points": 35.0
+          },
+          {
+            "gw": 38,
+            "points": 36.0
+          }
+        ],
+        "avg_gw_points": 42.486486486486484
+      },
+      "ai_manager": {
+        "season_actual_points": 1566.0,
+        "transfers": 70,
+        "hits": 34,
+        "weeks": 37,
+        "forced_replacements": 2,
+        "bench_points_wasted": 352.0,
+        "gw_log": [
+          {
+            "gw": 2,
+            "points": 36.0
+          },
+          {
+            "gw": 3,
+            "points": 28.0
+          },
+          {
+            "gw": 4,
+            "points": 49.0
+          },
+          {
+            "gw": 5,
+            "points": 37.0
+          },
+          {
+            "gw": 6,
+            "points": 57.0
+          },
+          {
+            "gw": 7,
+            "points": 54.0
+          },
+          {
+            "gw": 8,
+            "points": 57.0
+          },
+          {
+            "gw": 9,
+            "points": 35.0
+          },
+          {
+            "gw": 10,
+            "points": 48.0
+          },
+          {
+            "gw": 11,
+            "points": 25.0
+          },
+          {
+            "gw": 12,
+            "points": 25.0
+          },
+          {
+            "gw": 13,
+            "points": 40.0
+          },
+          {
+            "gw": 14,
+            "points": 53.0
+          },
+          {
+            "gw": 15,
+            "points": 38.0
+          },
+          {
+            "gw": 16,
+            "points": 42.0
+          },
+          {
+            "gw": 17,
+            "points": 58.0
+          },
+          {
+            "gw": 18,
+            "points": 33.0
+          },
+          {
+            "gw": 19,
+            "points": 35.0
+          },
+          {
+            "gw": 20,
+            "points": 28.0
+          },
+          {
+            "gw": 21,
+            "points": 60.0
+          },
+          {
+            "gw": 22,
+            "points": 37.0
+          },
+          {
+            "gw": 23,
+            "points": 43.0
+          },
+          {
+            "gw": 24,
+            "points": 54.0
+          },
+          {
+            "gw": 25,
+            "points": 48.0
+          },
+          {
+            "gw": 26,
+            "points": 46.0
+          },
+          {
+            "gw": 27,
+            "points": 66.0
+          },
+          {
+            "gw": 28,
+            "points": 55.0
+          },
+          {
+            "gw": 29,
+            "points": 43.0
+          },
+          {
+            "gw": 30,
+            "points": 43.0
+          },
+          {
+            "gw": 31,
+            "points": 27.0
+          },
+          {
+            "gw": 32,
+            "points": 29.0
+          },
+          {
+            "gw": 33,
+            "points": 43.0
+          },
+          {
+            "gw": 34,
+            "points": 47.0
+          },
+          {
+            "gw": 35,
+            "points": 38.0
+          },
+          {
+            "gw": 36,
+            "points": 23.0
+          },
+          {
+            "gw": 37,
+            "points": 57.0
+          },
+          {
+            "gw": 38,
+            "points": 29.0
+          }
+        ],
+        "avg_gw_points": 42.32432432432432
+      }
+    }
+  }
+}

@@ -108,41 +108,126 @@ def optimize_squad(
     }
 
 
+def select_starting_xi(squad_df: pd.DataFrame) -> dict:
+    """
+    Given a FIXED 15-player squad (already chosen -- no transfers happen
+    here), pick the best-scoring valid starting XI + captain for one
+    gameweek. Used by the historical manager simulator (FIX 6) every week,
+    since a real manager only re-picks their XI/captain weekly but only
+    transfers players occasionally.
+
+    squad_df required columns: ['player_id', 'web_name', 'position_id',
+    'team_id', 'cost', 'expected_points'] -- exactly 15 rows.
+    """
+    if len(squad_df) != 15:
+        raise ValueError(f"select_starting_xi requires exactly 15 players, got {len(squad_df)}.")
+
+    squad_df = squad_df.reset_index(drop=True)
+    solver = pywraplp.Solver.CreateSolver("CBC")
+    if not solver:
+        raise RuntimeError("CBC solver unavailable in OR-Tools.")
+
+    n = len(squad_df)
+    s = [solver.BoolVar(f"start_{i}") for i in range(n)]
+    c = [solver.BoolVar(f"captain_{i}") for i in range(n)]
+
+    for i in range(n):
+        solver.Add(c[i] <= s[i])
+
+    solver.Add(solver.Sum(s) == 11)
+    solver.Add(solver.Sum(c) == 1)
+
+    pos = squad_df["position_id"].values
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 1) == 1)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 2) >= 3)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 2) <= 5)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 3) >= 2)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 3) <= 5)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 4) >= 1)
+    solver.Add(solver.Sum(s[i] for i in range(n) if pos[i] == 4) <= 3)
+
+    ep = squad_df["expected_points"].values
+    objective = solver.Objective()
+    for i in range(n):
+        objective.SetCoefficient(s[i], float(ep[i]))
+        objective.SetCoefficient(c[i], float(ep[i]))
+    objective.SetMaximization()
+
+    status = solver.Solve()
+    if status != pywraplp.Solver.OPTIMAL:
+        raise RuntimeError("Solver failed to find an optimal starting XI.")
+
+    start_indices = [i for i in range(n) if s[i].solution_value() > 0.5]
+    bench_indices = [i for i in range(n) if i not in start_indices]
+    captain_index = [i for i in range(n) if c[i].solution_value() > 0.5][0]
+
+    start_df = squad_df.iloc[start_indices]
+    bench_df = squad_df.iloc[bench_indices]
+    expected_pts = start_df["expected_points"].sum() + squad_df.iloc[captain_index]["expected_points"]
+
+    return {
+        "expected_points": float(expected_pts),
+        "captain_id": int(squad_df.iloc[captain_index]["player_id"]),
+        "captain": squad_df.iloc[captain_index]["web_name"],
+        "starting_ids": start_df["player_id"].astype(int).tolist(),
+        "bench_ids": bench_df["player_id"].astype(int).tolist(),
+    }
+
+
 def main() -> None:
     project_root = Path(__file__).resolve().parents[2]
-    dataset_path = project_root / "data" / "processed" / "training_dataset_v1.csv"
 
     print("=" * 72)
     print("SQUAD OPTIMIZER VERIFICATION (PHASE 10)")
     print("=" * 72)
 
-    df = pd.read_csv(dataset_path, low_memory=False)
+    # Use the same validated real-data path as weekly_pipeline.py: current
+    # season features (real fixture context) + current season players.csv
+    # (real team_id/position_id/cost). This avoids the fragile historical
+    # training_dataset_v1.csv <-> player_gameweek.csv price join.
+    season = "2026-27"
+    target_gw = 1
 
-    # Load 2025-26 player metadata for accurate position_id and team_id
-    players_meta = pd.read_csv(project_root / "data" / "processed" / "2025-26" / "players.csv")
+    features_path = project_root / "data" / "features" / season / "player_gameweek_features.csv"
+    players_path = project_root / "data" / "processed" / season / "players.csv"
 
-    sample_gw = df.loc[df["season"] == "2025-26", "target_gw"].max()
-    pool = df.loc[(df["season"] == "2025-26") & (df["target_gw"] == sample_gw)].copy()
+    if not features_path.exists():
+        raise FileNotFoundError(
+            f"{features_path} not found. Run scripts\\build_2026_27_gw1_features.py first."
+        )
 
-    # Merge metadata
-    pool = pool.merge(players_meta[["player_id", "web_name", "position_id"]], on="player_id", how="left", suffixes=("", "_meta"))
+    pool = pd.read_csv(features_path, low_memory=False)
+    pool = pool[pool["target_gw"] == target_gw].copy()
 
-    if "web_name_meta" in pool.columns:
-        pool["web_name"] = pool["web_name_meta"].fillna(pool.get("web_name", "Player_" + pool["player_id"].astype(str)))
-    if "position_id_meta" in pool.columns:
-        pool["position_id"] = pool["position_id_meta"].fillna(pool.get("position_id", 3)).astype(int)
+    players_meta = pd.read_csv(players_path)
+    pool = pool.merge(
+        players_meta[["player_id", "web_name", "position_id", "team_id", "now_cost"]],
+        on="player_id",
+        how="left",
+        suffixes=("", "_meta"),
+    )
+    pool["web_name"] = pool["web_name_meta"].fillna(pool["web_name"])
+    pool["position_id"] = pool["position_id_meta"]
+    pool["team_id"] = pool["team_id_meta"]
+    pool["cost"] = pool["now_cost"] / 10.0
 
-    pool["web_name"] = pool["web_name"].fillna("Player_" + pool["player_id"].astype(str))
-    pool["position_id"] = pool["position_id"].fillna(3).astype(int)
-    # Assign pseudo team_id evenly (1..20) for optimization testing
-    pool["team_id"] = (pool["player_id"] % 20) + 1
-    pool["cost"] = 5.5
+    missing_meta = pool[pool["team_id"].isna() | pool["position_id"].isna() | pool["cost"].isna()]
+    if not missing_meta.empty:
+        raise ValueError(
+            "Missing real team_id/position_id/cost metadata for player_id(s): "
+            f"{missing_meta['player_id'].tolist()}"
+        )
+
+    pool["position_id"] = pool["position_id"].astype(int)
+    pool["team_id"] = pool["team_id"].astype(int)
+    # No trained-model score is used here deliberately (smoke test only);
+    # production weekly_pipeline.py scores with the trained CatBoost model.
     pool["expected_points"] = pool["last_5_points_per_game"].fillna(0)
 
     # Deduplicate by player_id
     pool = pool.drop_duplicates("player_id").reset_index(drop=True)
 
-    print(f"Optimizing squad for 2025-26 GW{sample_gw} (Pool size: {len(pool)} players)...")
+    print(f"Optimizing squad for {season} GW{target_gw} (Pool size: {len(pool)} players)...")
     res = optimize_squad(pool, budget=100.0, max_per_team=3)
 
     print("\n" + "=" * 72)

@@ -8,6 +8,17 @@ Pipeline to aggregate live external intelligence signals (Phase 12):
 
 Outputs:
   - Cleaned availability matrix for expected-minutes & squad optimizer
+
+FIX 4 (see FPL_PROJECT_COMPLETION_AND_FIX_PLAN.md):
+  Previously these signals were only surfaced as post-hoc warning text in
+  the AI report, AFTER the optimizer had already run -- they never actually
+  affected which players got selected, captained, or recommended as
+  transfers. `apply_availability_adjustment` below closes that gap by
+  discounting each player's decision-ready expected_points/expected_minutes
+  BEFORE optimization, so an injured/suspended/doubtful player is
+  naturally deprioritized by the ILP optimizer, the manager engine's
+  transfer-gain calculation, and captaincy selection -- rather than being
+  flagged only after the fact.
 """
 
 from __future__ import annotations
@@ -47,6 +58,64 @@ def fetch_availability_signals(project_root: Path) -> pd.DataFrame:
         })
 
     return pd.DataFrame(records)
+
+
+def apply_availability_adjustment(pool: pd.DataFrame, signals: pd.DataFrame) -> pd.DataFrame:
+    """
+    Merge external intelligence signals onto the scored player pool and
+    discount expected_points / expected_minutes to reflect real
+    availability risk, BEFORE the optimizer/manager engine run.
+
+    Rule:
+      - chance_of_playing_next_round, when present, is used directly as a
+        [0, 1] multiplier (e.g. 75 -> 0.75).
+      - status 'i' (injured) or 's' (suspended) with no chance figure is
+        treated as chance=0 (unavailable) -- NOT dropped from the pool,
+        since the manager engine still needs to value the actual current
+        squad accurately, including an injured player already owned.
+      - status 'd' (doubtful) with no chance figure defaults to a
+        conservative 0.5 multiplier.
+      - status 'a' (available) with no flag: no discount (multiplier 1.0).
+
+    Adds columns: availability_multiplier, availability_status,
+    availability_news, and overwrites expected_points / expected_minutes
+    with the discounted values so every downstream consumer (optimizer,
+    manager engine, captaincy selection) sees the adjusted figures.
+    """
+    if signals is None or signals.empty:
+        pool = pool.copy()
+        pool["availability_multiplier"] = 1.0
+        pool["availability_status"] = "a"
+        pool["availability_news"] = ""
+        return pool
+
+    pool = pool.merge(
+        signals[["player_id", "status", "chance_of_playing_next_round", "news"]],
+        on="player_id",
+        how="left",
+        suffixes=("", "_signal"),
+    )
+
+    def _multiplier(row) -> float:
+        chance = row.get("chance_of_playing_next_round")
+        status = row.get("status")
+        if pd.notna(chance):
+            return max(0.0, min(1.0, float(chance) / 100.0))
+        if status in ("i", "s", "u"):
+            return 0.0
+        if status == "d":
+            return 0.5
+        return 1.0
+
+    pool["availability_multiplier"] = pool.apply(_multiplier, axis=1)
+    pool["availability_status"] = pool["status"].fillna("a")
+    pool["availability_news"] = pool["news"].fillna("")
+
+    pool["expected_points"] = pool["expected_points"] * pool["availability_multiplier"]
+    if "expected_minutes" in pool.columns:
+        pool["expected_minutes"] = pool["expected_minutes"] * pool["availability_multiplier"]
+
+    return pool
 
 
 def main() -> None:

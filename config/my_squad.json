@@ -1,0 +1,7 @@
+{
+  "_label": "DEMO SQUAD -- built by the ILP optimizer from real 2026-27 player data (points_per_game as a proxy for expected_points, since the CatBoost model has not yet been scored for this season). This is NOT the user's real FPL team. Replace player_ids with your real current squad before using this for actual weekly decisions -- see my_squad.example.json for instructions.",
+  "season": "2026-27",
+  "player_ids": [4, 106, 165, 199, 201, 229, 236, 260, 335, 346, 388, 426, 452, 498, 531],
+  "free_transfers": 1,
+  "bank": 0.0
+}
