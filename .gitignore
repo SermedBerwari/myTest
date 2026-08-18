@@ -123,4 +123,20 @@ backup/
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
+ehthumbs.db## Phase 21 repository hygiene
+catboost_info/
+.venv_phase20_check/
+data/processed/*_diagnostic.json
+data/processed/*_error.txt
+data/processed/*_smoke*.json
+data/processed/phase18_static_cli_audit.json
+data/processed/phase16_metric_inventory.txt
+data/processed/phase16_model_variants_compact.txt
+make_prepare_historical_v2_2*.py
+scripts/evaluation/diagnose_*.py
+scripts/evaluation/inspect_*.py
+scripts/evaluation/dump_*.py
+scripts/evaluation/inventory_*.py
+scripts/evaluation/test_*.py
+scripts/evaluation/write_*.py
+scripts/evaluation/run_weekly_pipeline_source.txt

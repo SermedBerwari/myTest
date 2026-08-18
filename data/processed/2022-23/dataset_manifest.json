@@ -1,11 +1,22 @@
 {
   "schema_version": "historical-feature-input-2.1",
-  "generated_by": "prepare_historical_for_features_v2.1.0",
+  "generated_by": "prepare_historical_for_features_v2.2.0",
+  "player_filter": {
+    "valid_positions": [
+      "DEF",
+      "FWD",
+      "GK",
+      "GKP",
+      "MID"
+    ],
+    "invalid_historical_player_gw_rows_excluded": 0,
+    "invalid_player_ids_excluded": 0
+  },
   "season": "2022-23",
-  "generated_at_utc": "2026-08-15T20:34:38.260342+00:00",
+  "generated_at_utc": "2026-08-17T19:38:11.687372+00:00",
   "source": {
     "type": "normalized_historical_dataset",
-    "directory": "E:\\Python\\FPL Fantasy Predictiom\\data\\processed\\2022-23\\historical"
+    "directory": "E:\\Python\\FPL Fantasy Prediction\\data\\processed\\2022-23\\historical"
   },
   "input_counts": {
     "players": 778,

@@ -1,0 +1,3001 @@
+{
+  "season": "2026-27",
+  "as_of_utc": "2026-08-25T12:00:00+00:00",
+  "max_age_hours": 72,
+  "checks": [
+    {
+      "check": "bootstrap_present",
+      "pass": true,
+      "count": 3
+    },
+    {
+      "check": "bootstrap_ordered",
+      "pass": true,
+      "count": 3
+    },
+    {
+      "check": "bootstrap_fresh",
+      "pass": false,
+      "age_hours": 171.045,
+      "max_age_hours": 72
+    },
+    {
+      "check": "fixtures_present",
+      "pass": true,
+      "count": 3
+    },
+    {
+      "check": "fixtures_ordered",
+      "pass": true,
+      "count": 3
+    },
+    {
+      "check": "fixtures_fresh",
+      "pass": false,
+      "age_hours": 231.344,
+      "max_age_hours": 72
+    },
+    {
+      "check": "player_directories_present",
+      "pass": true,
+      "count": 590
+    },
+    {
+      "check": "player_1_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_10_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_100_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_101_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_102_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_103_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_104_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_105_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_106_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_107_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_108_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_109_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_11_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_110_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_111_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_112_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_113_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_114_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_115_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_116_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_117_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_118_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_119_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_12_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_120_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_121_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_122_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_123_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_124_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_125_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_126_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_127_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_128_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_129_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_13_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_130_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_131_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_132_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_133_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_134_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_135_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_136_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_137_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_138_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_139_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_14_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_140_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_141_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_142_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_143_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_144_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_145_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_146_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_147_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_148_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_149_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_15_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_150_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_151_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_152_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_153_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_154_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_155_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_156_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_157_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_158_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_159_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_16_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_160_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_161_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_162_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_163_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_164_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_165_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_166_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_167_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_168_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_169_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_17_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_170_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_171_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_172_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_173_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_174_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_175_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_176_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_177_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_178_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_179_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_18_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_180_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_181_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_182_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_183_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_184_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_185_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_186_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_187_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_188_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_189_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_19_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_190_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_191_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_192_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_193_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_194_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_195_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_196_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_197_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_198_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_199_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_2_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_20_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_200_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_201_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_202_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_203_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_204_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_205_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_206_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_207_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_208_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_209_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_21_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_210_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_211_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_212_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_213_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_214_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_215_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_216_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_217_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_218_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_219_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_22_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_220_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_221_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_222_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_223_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_224_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_225_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_226_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_227_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_228_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_229_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_23_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_230_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_231_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_232_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_233_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_234_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_235_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_236_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_237_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_238_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_239_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_24_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_240_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_241_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_242_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_243_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_244_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_245_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_246_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_247_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_248_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_249_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_25_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_250_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_251_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_252_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_253_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_254_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_255_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_256_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_257_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_258_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_259_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_26_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_260_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_261_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_262_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_263_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_264_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_265_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_266_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_267_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_268_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_269_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_27_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_270_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_271_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_272_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_273_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_274_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_275_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_276_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_277_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_278_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_279_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_28_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_280_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_281_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_282_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_283_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_284_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_285_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_286_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_287_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_288_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_289_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_29_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_290_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_291_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_292_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_293_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_294_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_295_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_296_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_297_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_298_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_299_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_3_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_30_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_300_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_301_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_302_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_303_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_304_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_305_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_306_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_307_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_308_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_309_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_31_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_310_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_311_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_312_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_313_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_314_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_315_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_316_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_317_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_318_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_319_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_32_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_320_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_321_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_322_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_323_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_324_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_325_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_326_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_327_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_328_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_329_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_33_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_330_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_331_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_332_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_333_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_334_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_335_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_336_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_337_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_338_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_339_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_34_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_340_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_341_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_342_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_343_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_344_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_345_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_346_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_347_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_348_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_349_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_35_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_350_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_351_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_352_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_353_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_354_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_355_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_356_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_357_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_358_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_359_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_36_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_360_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_361_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_362_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_363_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_364_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_365_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_366_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_367_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_368_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_369_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_37_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_370_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_371_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_372_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_373_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_374_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_375_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_376_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_377_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_378_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_379_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_38_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_380_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_381_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_382_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_383_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_384_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_385_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_386_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_387_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_388_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_389_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_39_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_390_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_391_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_392_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_393_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_394_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_395_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_396_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_397_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_398_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_399_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_4_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_40_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_400_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_401_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_402_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_403_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_404_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_405_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_406_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_407_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_408_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_409_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_41_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_410_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_411_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_412_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_413_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_414_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_415_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_416_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_417_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_418_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_419_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_42_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_420_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_421_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_422_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_423_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_424_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_425_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_426_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_427_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_428_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_429_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_43_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_430_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_431_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_432_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_433_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_434_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_435_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_436_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_437_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_438_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_439_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_44_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_440_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_441_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_442_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_443_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_444_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_445_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_446_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_447_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_448_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_449_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_45_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_450_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_451_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_452_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_453_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_454_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_455_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_456_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_457_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_458_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_459_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_46_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_460_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_461_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_462_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_463_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_464_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_465_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_466_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_467_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_468_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_469_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_47_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_470_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_471_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_472_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_473_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_474_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_475_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_476_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_477_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_478_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_479_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_48_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_480_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_481_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_482_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_483_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_484_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_485_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_486_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_487_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_488_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_489_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_49_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_490_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_491_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_492_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_493_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_494_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_495_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_496_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_497_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_498_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_499_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_5_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_50_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_500_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_501_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_502_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_503_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_504_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_505_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_506_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_507_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_508_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_509_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_51_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_510_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_511_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_512_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_513_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_514_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_515_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_516_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_517_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_518_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_519_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_52_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_520_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_521_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_522_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_523_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_524_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_525_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_526_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_527_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_528_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_529_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_53_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_530_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_531_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_532_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_533_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_534_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_535_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_536_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_537_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_538_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_539_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_54_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_540_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_541_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_542_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_543_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_544_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_545_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_546_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_547_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_548_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_549_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_55_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_550_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_551_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_552_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_553_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_554_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_555_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_556_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_557_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_558_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_559_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_56_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_560_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_561_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_562_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_563_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_564_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_565_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_566_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_567_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_568_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_569_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_57_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_570_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_571_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_572_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_573_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_574_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_575_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_576_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_577_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_578_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_579_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_58_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_580_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_581_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_582_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_583_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_584_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_585_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_586_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_587_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_588_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_589_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_59_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_590_present",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "player_6_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_60_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_61_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_62_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_63_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_64_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_65_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_66_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_67_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_68_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_69_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_7_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_70_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_71_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_72_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_73_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_74_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_75_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_76_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_77_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_78_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_79_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_8_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_80_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_81_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_82_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_83_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_84_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_85_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_86_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_87_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_88_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_89_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_9_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_90_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_91_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_92_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_93_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_94_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_95_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_96_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_97_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_98_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_99_present",
+      "pass": true,
+      "count": 2
+    },
+    {
+      "check": "player_latest_fresh",
+      "pass": false,
+      "latest_age_hours": 171.045,
+      "max_age_hours": 72
+    }
+  ],
+  "pass": false
+}

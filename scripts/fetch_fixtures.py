@@ -12,8 +12,12 @@ The raw response is preserved unchanged for future processing.
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
+import argparse
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -88,6 +92,10 @@ def save_fixtures(data: list) -> Path:
 
     output_file = OUTPUT_DIR / f"{timestamp}.json"
 
+    if output_file.exists():
+
+        raise FileExistsError(f"Refusing to overwrite immutable snapshot: {output_file}")
+
     with output_file.open(
         "w",
         encoding="utf-8",
@@ -156,6 +164,8 @@ def print_summary(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run fetch_fixtures.py.')
+    parser.parse_args()
     print("=" * 60)
     print("FPL FIXTURES COLLECTOR")
     print("=" * 60)
@@ -193,3 +203,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

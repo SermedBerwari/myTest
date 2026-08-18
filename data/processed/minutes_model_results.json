@@ -1,4 +1,6 @@
 {
-  "minutes_regressor_mae": 12.285197838316895,
-  "starter_classifier_accuracy": 0.8913657770800628
+  "minutes_regressor_mae": 12.221714449640467,
+  "starter_classifier_accuracy": 0.8920947932883584,
+  "starter_classifier_brier_score": 0.07796525889929301,
+  "starter_classifier_expected_calibration_error": 0.010464073114240502
 }

@@ -1,0 +1,77 @@
+{
+  "season": "2026-27",
+  "targets": [
+    "585",
+    "586",
+    "587"
+  ],
+  "files_scanned": 1406,
+  "hits": {
+    "586": [
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-15_20-39-21.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-18_08-57-18.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/players/586/2026-08-15_20-39-22.json",
+        "reason": "directory_or_filename_match"
+      },
+      {
+        "path": "data/processed/2026-27/dataset_manifest.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/features/2026-27/feature_manifest.json",
+        "reason": "content_match"
+      }
+    ],
+    "585": [
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-15_20-39-21.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-18_08-57-18.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/players/585/2026-08-15_20-39-22.json",
+        "reason": "directory_or_filename_match"
+      },
+      {
+        "path": "data/processed/2026-27/dataset_manifest.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/features/2026-27/feature_manifest.json",
+        "reason": "content_match"
+      }
+    ],
+    "587": [
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-15_20-39-21.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/bootstrap/2026-08-18_08-57-18.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/raw/2026-27/players/587/2026-08-15_20-39-22.json",
+        "reason": "directory_or_filename_match"
+      },
+      {
+        "path": "data/processed/2026-27/dataset_manifest.json",
+        "reason": "content_match"
+      },
+      {
+        "path": "data/features/2026-27/feature_manifest.json",
+        "reason": "content_match"
+      }
+    ]
+  }
+}

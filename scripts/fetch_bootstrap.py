@@ -10,6 +10,7 @@ This script:
 """
 
 from __future__ import annotations
+import argparse
 
 import json
 import sys
@@ -86,6 +87,10 @@ def save_bootstrap(data: dict) -> Path:
 
     output_file = OUTPUT_DIR / f"{timestamp}.json"
 
+    if output_file.exists():
+
+        raise FileExistsError(f"Refusing to overwrite immutable snapshot: {output_file}")
+
     with output_file.open(
         "w",
         encoding="utf-8",
@@ -161,6 +166,8 @@ def print_summary(data: dict, output_file: Path) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Fetch and validate the official FPL bootstrap-static dataset.')
+    parser.parse_args()
     print("=" * 60)
     print("FPL BOOTSTRAP COLLECTOR")
     print("=" * 60)
@@ -198,3 +205,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+

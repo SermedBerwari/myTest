@@ -1,0 +1,170 @@
+[
+  {
+    "script": "scripts\\build_2026_27_gw1_features.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\build_dataset.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\fetch_bootstrap.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\fetch_fixtures.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\fetch_player_history.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\validate_raw_data.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\agent\\ai_decision_agent.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\collect_historical_seasons_backup.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\collect_historical_seasons.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\normalize_historical_seasons_v1_3.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\normalize_historical_seasons_v1_4.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\normalize_historical_seasons.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\prepare_historical_for_features_v1_1.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\prepare_historical_for_features_v1_2.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\prepare_historical_for_features_v2_2.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\prepare_historical_for_features_v2.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\data\\prepare_historical_for_features.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\features\\build_features_v1_1.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\features\\build_features_v1_2.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\features\\build_features_v1_3.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\features\\build_features.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\features\\build_training_dataset_v1.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\intelligence\\external_intelligence.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\models\\train_advanced_models.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\models\\train_baseline_models.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\models\\train_minutes_model.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\optimizer\\manager_engine.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  },
+  {
+    "script": "scripts\\optimizer\\squad_optimizer.py",
+    "exit_code": 0,
+    "help": true,
+    "side_effect": false
+  }
+]

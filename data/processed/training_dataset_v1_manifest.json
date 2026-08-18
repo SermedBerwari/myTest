@@ -1,15 +1,15 @@
 {
   "dataset_name": "training_dataset_v1",
   "version": "1.0.0",
-  "generated_at_utc": "2026-08-15T20:36:13.642391+00:00",
+  "generated_at_utc": "2026-08-18T12:40:31.725698+00:00",
   "seasons_included": [
     "2022-23",
     "2023-24",
     "2024-25",
     "2025-26"
   ],
-  "total_rows": 110025,
-  "total_columns": 142,
+  "total_rows": 110265,
+  "total_columns": 143,
   "row_breakdown_by_season": {
     "2022-23": 25711,
     "2023-24": 28850,
@@ -20,7 +20,7 @@
   "key_columns": [
     "season",
     "player_id",
-    "target_gw"
+    "fixture_id"
   ],
   "columns": [
     "player_id",
@@ -35,6 +35,7 @@
     "fixture_difficulty",
     "prior_gameweeks",
     "prior_minutes",
+    "fixture_id",
     "last_minutes",
     "last_total_points",
     "last_goals_scored",
@@ -165,5 +166,31 @@
     "target_bonus",
     "target_xg",
     "target_xa"
-  ]
+  ],
+  "checksums": {
+    "algorithm": "sha256",
+    "dataset": {
+      "path": "data/processed/training_dataset_v1.csv",
+      "sha256": "ca130ca3bedfc44fba114d3f69d64ba6a1f541caaa00b297583ec16d4e07098f"
+    },
+    "source_feature_manifests": {
+      "2022-23": {
+        "path": "data/features/2022-23/feature_manifest.json",
+        "sha256": "7696b030c329af15395eaf48cace10a5f7f247b524c4e27e951a9830ef30d726"
+      },
+      "2023-24": {
+        "path": "data/features/2023-24/feature_manifest.json",
+        "sha256": "24f2ee445dc077a853d65076c5b40229fa9c4edafd90468dfb1f741c2076ede3"
+      },
+      "2024-25": {
+        "path": "data/features/2024-25/feature_manifest.json",
+        "sha256": "a000ac9f21be6d87d40c7ad713d51b1ec3548473dfba4f2e483acd71a49a9fdb"
+      },
+      "2025-26": {
+        "path": "data/features/2025-26/feature_manifest.json",
+        "sha256": "9e0564cab80e1590cb6194b473fa124d2b23b6815df23909a70daeea47232fa6"
+      }
+    }
+  },
+  "reproducibility_signature": "d5945e9eec110882b82cdcd9331f57d9a44f6bf65f2e3c394b8e6763dfad2716"
 }

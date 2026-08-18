@@ -52,6 +52,7 @@ from pathlib import Path
 
 import pandas as pd
 from catboost import CatBoostRegressor
+from sklearn.linear_model import Ridge
 
 scripts_dir = Path(__file__).resolve().parents[1]
 if str(scripts_dir) not in sys.path:
@@ -67,7 +68,7 @@ NON_FEATURE_COLS = [
     "target_clean_sheets", "target_bonus", "target_xg", "target_xa",
 ]
 
-STRATEGIES = ["previous_gw", "rolling_average", "no_transfer", "simple_highest_xp", "ai_manager"]
+STRATEGIES = ["previous_gw", "rolling_average", "historical_average_xp", "ridge_xp", "ml_plus_minutes", "ml_plus_availability", "no_transfer", "simple_highest_xp", "ai_manager"]
 MAX_FREE_TRANSFERS = 2
 HIT_PENALTY = 4.0
 STARTING_BUDGET = 100.0
@@ -76,6 +77,12 @@ STARTING_BUDGET = 100.0
 def _feature_cols(df: pd.DataFrame) -> list[str]:
     return [c for c in df.columns if c not in NON_FEATURE_COLS and pd.api.types.is_numeric_dtype(df[c])]
 
+
+def _train_ridge_model(df: pd.DataFrame, target_season: str, feat_cols: list[str]):
+    train = df[df["season"] < target_season]
+    model = Ridge(alpha=10.0)
+    model.fit(train[feat_cols].fillna(0.0), train["target_points"].fillna(0.0))
+    return model
 
 def _train_season_models(df: pd.DataFrame, target_season: str, feat_cols: list[str]):
     """Train points + minutes models using ONLY seasons strictly before target_season."""
@@ -227,9 +234,10 @@ def simulate_season(
 
     print(f"  Training season models for {target_season} on all prior seasons...")
     points_model, minutes_model = _train_season_models(df, target_season, feat_cols)
+    ridge_model = _train_ridge_model(df, target_season, feat_cols)
     price_lookup = _load_price_lookup(project_root, target_season)
 
-    results = {s: {"season_actual_points": 0.0, "transfers": 0, "hits": 0, "weeks": 0,
+    results = {s: {"season_actual_points": 0.0, "captain_points": 0.0, "vice_captain_points": 0.0, "transfers": 0, "hits": 0, "weeks": 0,
                     "forced_replacements": 0, "bench_points_wasted": 0.0, "gw_log": []} for s in STRATEGIES}
 
     state = {s: {"squad_ids": None, "bank": 0.0, "free_transfers": 1, "squad_meta": {}} for s in STRATEGIES}
@@ -237,6 +245,10 @@ def simulate_season(
     expected_col_map = {
         "previous_gw": "previous_gw_points",
         "rolling_average": "rolling_average_points",
+        "historical_average_xp": "historical_average_xp",
+        "ridge_xp": "ridge_xp",
+        "ml_plus_minutes": "ml_plus_minutes",
+        "ml_plus_availability": "ml_plus_availability",
         "no_transfer": "ai_expected_points",
         "simple_highest_xp": "ai_expected_points",
         "ai_manager": "ai_expected_points",
@@ -244,6 +256,15 @@ def simulate_season(
 
     for gw in gameweeks:
         pool = _build_gw_pool(df_season, int(gw), feat_cols, points_model, minutes_model, price_lookup)
+        history = df_season[(df_season["target_gw"] < int(gw)) & df_season["target_points"].notna()]
+        hist = history.groupby("player_id")["target_points"].mean()
+        pool["historical_average_xp"] = pool["player_id"].map(hist).fillna(0.0).clip(lower=0.0)
+        pool["ridge_xp"] = ridge_model.predict(pool[feat_cols].fillna(0.0)).clip(min=0.0)
+
+        minutes_factor = (pool["expected_minutes_pred"] / 90.0).clip(lower=0.0, upper=1.0)
+        pool["ml_plus_minutes"] = pool["raw_points_pred"].clip(lower=0.0) * minutes_factor
+        availability_proxy = pool.get("last_5_appearance_rate", pd.Series(1.0, index=pool.index)).fillna(1.0).clip(lower=0.5, upper=1.0)
+        pool["ml_plus_availability"] = pool["ai_expected_points"].clip(lower=0.0) * availability_proxy
         if pool.empty or len(pool) < 15:
             continue
 
@@ -333,16 +354,24 @@ def simulate_season(
                 continue  # still short this week (no valid replacement found) -- skip scoring only
 
             xi = select_starting_xi(squad_rows)  # decision made on PREDICTED points
+            starting_for_captain = squad_rows[squad_rows["player_id"].isin(xi["starting_ids"])]
+            vice_candidates = starting_for_captain[starting_for_captain["player_id"] != xi["captain_id"]]
+            vice_captain_id = int(vice_candidates.sort_values(["expected_points", "player_id"], ascending=[False, True]).iloc[0]["player_id"])
             actual_lookup = squad_rows.set_index("player_id")["actual_points"]
             starters_actual = actual_lookup.loc[xi["starting_ids"]].sum()
             captain_actual = actual_lookup.loc[xi["captain_id"]]
+            vice_captain_actual = actual_lookup.loc[vice_captain_id]
             bench_actual = actual_lookup.loc[xi["bench_ids"]].sum()
 
             week_score = float(starters_actual + captain_actual)  # captain doubled
+            results[strat]["captain_points"] += float(captain_actual * 2.0)
+            results[strat]["vice_captain_points"] += float(vice_captain_actual)
+            results[strat]["captain_ids"] = results[strat].get("captain_ids", []) + [int(xi["captain_id"])]
+            results[strat]["vice_captain_ids"] = results[strat].get("vice_captain_ids", []) + [vice_captain_id]
             results[strat]["season_actual_points"] += week_score
             results[strat]["bench_points_wasted"] += float(bench_actual)
             results[strat]["weeks"] += 1
-            results[strat]["gw_log"].append({"gw": int(gw), "points": week_score})
+            results[strat]["gw_log"].append({"gw": int(gw), "points": week_score, "captain_id": int(xi["captain_id"]), "vice_captain_id": vice_captain_id, "captain_points": float(captain_actual * 2.0), "vice_captain_points": float(vice_captain_actual)})
 
     for strat in STRATEGIES:
         r = results[strat]

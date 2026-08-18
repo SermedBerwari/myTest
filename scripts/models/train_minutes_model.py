@@ -13,16 +13,32 @@ Outputs:
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
+import argparse
 import joblib
+import argparse
 import pandas as pd
 from catboost import CatBoostClassifier, CatBoostRegressor
-from sklearn.metrics import mean_absolute_error, accuracy_score
+from sklearn.metrics import mean_absolute_error, accuracy_score, brier_score_loss
 
+
+def expected_calibration_error(y_true, probabilities, bins=10):
+    edges = [i / bins for i in range(bins + 1)]
+    errors = []
+    for lo, hi in zip(edges[:-1], edges[1:]):
+        mask = (probabilities >= lo) & ((probabilities < hi) if hi < 1 else (probabilities <= hi))
+        if mask.any():
+            errors.append(float(mask.mean()) * abs(float(probabilities[mask].mean()) - float(y_true[mask].mean())))
+    return float(sum(errors))
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run train_minutes_model.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[2]
     dataset_path = project_root / "data" / "processed" / "training_dataset_v1.csv"
     models_dir = project_root / "data" / "models"
@@ -41,7 +57,7 @@ def main() -> None:
         "target_points", "target_minutes", "target_goals", "target_assists",
         "target_clean_sheets", "target_bonus", "target_xg", "target_xa"
     ]
-    feature_cols = [c for c in df.columns if c not in non_feature_cols and pd.api.types.is_numeric_dtype(df[c])]
+    feature_cols = [c for c in df.columns if c not in non_feature_cols and not c.startswith("target_") and c != "fixture_id" and pd.api.types.is_numeric_dtype(df[c])]
 
     df[feature_cols] = df[feature_cols].fillna(0)
     df[target_minutes_col] = df[target_minutes_col].fillna(0)
@@ -75,6 +91,9 @@ def main() -> None:
     start_model.fit(X_train, y_train_start)
     start_preds = start_model.predict(X_test)
     start_acc = float(accuracy_score(y_test_start, start_preds))
+    start_probabilities = start_model.predict_proba(X_test)[:, 1]
+    start_brier = float(brier_score_loss(y_test_start, start_probabilities))
+    start_ece = expected_calibration_error(y_test_start.to_numpy(), start_probabilities)
 
     print(f"\nMinutes Regressor MAE  : {mins_mae:.2f} minutes")
     print(f"Starting Classifier ACC: {start_acc * 100:.2f}%")
@@ -85,7 +104,9 @@ def main() -> None:
 
     results = {
         "minutes_regressor_mae": mins_mae,
-        "starter_classifier_accuracy": start_acc
+        "starter_classifier_accuracy": start_acc,
+        "starter_classifier_brier_score": start_brier,
+        "starter_classifier_expected_calibration_error": start_ece
     }
     report_path = project_root / "data" / "processed" / "minutes_model_results.json"
     with open(report_path, "w", encoding="utf-8") as f:
@@ -97,3 +118,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+
+

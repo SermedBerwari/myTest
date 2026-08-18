@@ -1,0 +1,67 @@
+{
+  "report_name": "baseline_benchmark_report",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-08-18T13:14:49.777849+00:00",
+  "target": "target_points",
+  "evaluation_policy": {
+    "chronological_split": "2025-26 test set",
+    "baseline_comparison_mandatory": true,
+    "net_of_hit": true
+  },
+  "models": [
+    {
+      "model": "Historical_Average_Last3",
+      "regression_metrics": {
+        "mae": 1.0544043258328972,
+        "rmse": 2.1782900129830436
+      },
+      "ranking_metrics": {
+        "status": "requires_prediction_artifact"
+      }
+    },
+    {
+      "model": "Rolling_Average_GW3",
+      "regression_metrics": {
+        "mae": 1.0544043258328972,
+        "rmse": 2.1782900129830436
+      },
+      "ranking_metrics": {
+        "status": "requires_prediction_artifact"
+      }
+    },
+    {
+      "model": "Rolling_Average_GW5",
+      "regression_metrics": {
+        "mae": 1.0489766846909705,
+        "rmse": 2.116274907400008
+      },
+      "ranking_metrics": {
+        "status": "requires_prediction_artifact"
+      }
+    },
+    {
+      "model": "Rolling_Average_GW10",
+      "regression_metrics": {
+        "mae": 1.0521669172349444,
+        "rmse": 2.078267328519202
+      },
+      "ranking_metrics": {
+        "status": "requires_prediction_artifact"
+      }
+    },
+    {
+      "model": "Ridge_Linear_Regression",
+      "regression_metrics": {
+        "mae": 0.9600646159934421,
+        "rmse": 1.9354330100266723
+      },
+      "ranking_metrics": {
+        "status": "requires_prediction_artifact"
+      }
+    }
+  ],
+  "ranking_metric_definition": {
+    "spearman": "Macro-average within-gameweek Spearman correlation.",
+    "top_k_hit_rate": "Macro-average overlap of predicted and realized top-k players."
+  }
+}

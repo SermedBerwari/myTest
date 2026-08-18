@@ -22,10 +22,14 @@ FIX 4 (see FPL_PROJECT_COMPLETION_AND_FIX_PLAN.md):
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+import argparse
 import pandas as pd
 
 
@@ -119,6 +123,8 @@ def apply_availability_adjustment(pool: pd.DataFrame, signals: pd.DataFrame) -> 
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run external_intelligence.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[2]
     print("=" * 72)
     print("EXTERNAL INTELLIGENCE PIPELINE (PHASE 12)")
@@ -144,3 +150,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

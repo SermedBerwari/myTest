@@ -28,9 +28,13 @@ Output:
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
+import argparse
 import pandas as pd
 
 # Columns that must ALWAYS come from the current season's own metadata /
@@ -61,6 +65,8 @@ CURRENT_SEASON_ONLY_COLUMNS = {
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run build_2026_27_gw1_features.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[1]
 
     print("=" * 72)
@@ -197,3 +203,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

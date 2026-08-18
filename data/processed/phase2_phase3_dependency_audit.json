@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "phase": 2,
+      "item": "Define release-blocking versus acceptable warnings",
+      "status": "SATISFIED",
+      "evidence": "data/processed/DATA_VALIDATION_RELEASE_POLICY.md",
+      "needed": "Keep policy linked to the Phase 2 ingestion gate."
+    },
+    {
+      "phase": 2,
+      "item": "Add automated ingestion regression tests",
+      "status": "MISSING",
+      "evidence": "No dedicated raw-data regression test module found.",
+      "needed": "Add tests for snapshot structure, required fields, IDs, fixtures, warnings, and strict/non-strict exit behavior."
+    },
+    {
+      "phase": 2,
+      "item": "Add freshness checks",
+      "status": "PARTIAL",
+      "evidence": "validate_raw_data.py validates snapshots but no dedicated freshness contract was found.",
+      "needed": "Add max-age and timestamp-order assertions with a documented clock/tolerance policy."
+    },
+    {
+      "phase": 2,
+      "item": "Define canonical weekly data-refresh command",
+      "status": "PARTIAL",
+      "evidence": "Pipeline and CLI entry points exist, but no Phase 2 canonical refresh command document was found.",
+      "needed": "Document one command covering capture, validation, and immutable snapshot naming."
+    },
+    {
+      "phase": 2,
+      "item": "Preserve immutable pre-deadline snapshots",
+      "status": "SATISFIED",
+      "evidence": "Timestamped data/raw/2026-27 bootstrap, fixtures, and player snapshots exist.",
+      "needed": "Keep write-once snapshot behavior and test that existing snapshots are not overwritten."
+    },
+    {
+      "phase": 3,
+      "item": "Establish one canonical normalization command",
+      "status": "MISSING",
+      "evidence": "Multiple normalization variants exist under scripts/data.",
+      "needed": "Create one documented wrapper command and designate variants as archived compatibility tools."
+    },
+    {
+      "phase": 3,
+      "item": "Archive obsolete preparation variants",
+      "status": "PARTIAL",
+      "evidence": "An archive exists, but multiple historical preparation variants remain in the operational tree.",
+      "needed": "Move superseded variants into the archive and retain only the canonical path."
+    },
+    {
+      "phase": 3,
+      "item": "Add normalization regression tests",
+      "status": "MISSING",
+      "evidence": "No dedicated normalization regression test module found.",
+      "needed": "Add fixture-based tests for row counts, keys, season/gameweek ordering, and rerun determinism."
+    },
+    {
+      "phase": 3,
+      "item": "Document exact input/output contracts",
+      "status": "PARTIAL",
+      "evidence": "Dataset and feature manifests exist, but no dedicated normalization contract document was found.",
+      "needed": "Document raw input paths, normalized schemas, output paths, versions, and failure semantics."
+    }
+  ],
+  "summary": {
+    "SATISFIED": 2,
+    "PARTIAL": 4,
+    "MISSING": 3
+  }
+}

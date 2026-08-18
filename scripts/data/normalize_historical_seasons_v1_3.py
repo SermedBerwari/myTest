@@ -1,4 +1,10 @@
 from pathlib import Path
+import sys
+
+if __name__ == '__main__' and '--help' in sys.argv:
+    print('Historical Data Normalizer source generator.')
+    print('Use the generated normalizer with --seasons, --project-root, --force, --dry-run, --quiet, or --verbose.')
+    raise SystemExit(0)
 
 script = r'''#!/usr/bin/env python3
 """
@@ -37,6 +43,7 @@ import logging
 import re
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
 from typing import Any
 
 import pandas as pd
@@ -960,3 +967,4 @@ compile(script, str(out), "exec")
 print(f"Created and syntax-validated: {out}")
 print(f"Version: 1.3.0")
 print(f"Lines: {len(script.splitlines())}")
+

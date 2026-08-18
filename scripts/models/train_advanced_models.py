@@ -11,10 +11,15 @@ Outputs:
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
+import argparse
 import joblib
+import argparse
 import pandas as pd
 from catboost import CatBoostRegressor
 from lightgbm import LGBMRegressor
@@ -23,6 +28,8 @@ from xgboost import XGBRegressor
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run train_advanced_models.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[2]
     dataset_path = project_root / "data" / "processed" / "training_dataset_v1.csv"
     models_dir = project_root / "data" / "models"
@@ -41,7 +48,7 @@ def main() -> None:
         "target_points", "target_minutes", "target_goals", "target_assists",
         "target_clean_sheets", "target_bonus", "target_xg", "target_xa"
     ]
-    feature_cols = [c for c in df.columns if c not in non_feature_cols and pd.api.types.is_numeric_dtype(df[c])]
+    feature_cols = [c for c in df.columns if c not in non_feature_cols and not c.startswith("target_") and c != "fixture_id" and pd.api.types.is_numeric_dtype(df[c])]
 
     df[feature_cols] = df[feature_cols].fillna(0)
     df[target_col] = df[target_col].fillna(0)
@@ -107,3 +114,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+

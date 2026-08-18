@@ -1,0 +1,38 @@
+{
+  "canonical": "scripts/features/build_features_v1_3.py",
+  "checks": [
+    {
+      "check": "canonical_wrapper",
+      "pass": true,
+      "evidence": "scripts/build_features.py"
+    },
+    {
+      "check": "v13_builder",
+      "pass": true,
+      "evidence": "scripts/features/build_features_v1_3.py"
+    },
+    {
+      "check": "legacy_archived",
+      "pass": true,
+      "evidence": "old documents/phase4_archived_feature_builders"
+    },
+    {
+      "check": "canonical_policy",
+      "pass": true,
+      "evidence": "data/processed/PHASE4_CANONICAL_FEATURE_PATH.md"
+    },
+    {
+      "check": "registry_version",
+      "pass": true,
+      "evidence": [
+        "builder-1.3.0",
+        "builder-1.3.0",
+        "builder-1.3.0",
+        "builder-1.3.0",
+        "builder-1.3.0",
+        "builder-1.3.0"
+      ]
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "weekly-20260818T152356Z-d81e905a",
+  "status": "PASS",
+  "started_at_utc": "2026-08-18T15:23:56.233448+00:00",
+  "completed_at_utc": "2026-08-18T15:23:57.770543+00:00",
+  "season": "2026-27",
+  "target_gw": 1,
+  "model_version": "catboost_model",
+  "feature_version": "1.0.0",
+  "stages": [
+    {
+      "stage": "input_lineage",
+      "status": "PASS"
+    },
+    {
+      "stage": "pipeline_execution",
+      "status": "PASS"
+    },
+    {
+      "stage": "output_validation",
+      "status": "PASS"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data\\processed\\training_dataset_v1_manifest.json",
+      "sha256": "a8814698bdba3f2bd8ffb1d90ddbb45ca3690e463bcdf8ff3b5ee76640e93708"
+    },
+    {
+      "path": "data\\processed\\model_registry.json",
+      "sha256": "b31e8b749ebeb54b895437d878f94c92765c0de1e2f670664005acdc45eb79b7"
+    },
+    {
+      "path": "data\\processed\\canonical_feature_path_report.json",
+      "sha256": "308e6cf765e6cff0b80bdece2f4f6b562768528d800c2bc8d1384e0e842faf90"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\weekly_automation_summary_canonical.json",
+      "sha256": "7e1c2a1867cb18f102775a9bdaace07716b82b144217049b4ad49a0fc1632d44"
+    }
+  ]
+}

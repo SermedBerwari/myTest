@@ -136,7 +136,9 @@ def _score_player_pool(project_root: Path, season: str, target_gw: int) -> pd.Da
         raise ValueError(f"No feature rows found for season={season}, target_gw={target_gw}.")
 
     from decision.expected_points import compute_decision_ready_points
+    from decision.official_xp import rank_players
     pool = compute_decision_ready_points(pool, project_root)
+    pool = rank_players(pool)
 
     return pool
 
@@ -151,8 +153,17 @@ def _attach_real_metadata(project_root: Path, season: str, pool: pd.DataFrame) -
         )
 
     players_meta = pd.read_csv(players_meta_path)
+    meta_cols = [c for c in ["player_id", "web_name", "position_id", "team_id", "now_cost"] if c in players_meta.columns]
+    required_meta = {"player_id", "position_id", "team_id"}
+    missing_required_meta = required_meta - set(meta_cols)
+    if missing_required_meta:
+        raise ValueError(f"Historical player metadata is missing required columns: {sorted(missing_required_meta)}")
+    if "now_cost" not in meta_cols:
+        players_meta = players_meta.copy()
+        players_meta["now_cost"] = pd.NA
+        meta_cols.append("now_cost")
     pool = pool.merge(
-        players_meta[["player_id", "web_name", "position_id", "team_id", "now_cost"]],
+        players_meta[meta_cols],
         on="player_id",
         how="left",
         suffixes=("", "_meta"),
@@ -290,3 +301,5 @@ if __name__ == "__main__":
     args = _parse_args()
     squad_arg = Path(args.squad) if args.squad else None
     run_weekly_pipeline(season=args.season, target_gw=args.gw, squad_path=squad_arg)
+
+

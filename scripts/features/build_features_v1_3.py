@@ -628,6 +628,7 @@ def build_player_feature_row(
     row: dict[str, Any] = {
         # Identity
         "player_id": player_id,
+        "fixture_id": to_int(target_row.get("fixture_id")),
         "season": player.get("season"),
         "gameweek": target_gameweek,
         "web_name": player.get("web_name"),
@@ -1082,7 +1083,8 @@ def main() -> int:
 
         required_v11 = [
             "feature_cutoff_gw",
-            "target_gw",
+            "fixture_id",
+                "target_gw",
             "last_3_points_per_90_v11",
             "last_5_points_per_90_v11",
             "last_10_points_per_90_v11",
@@ -1160,6 +1162,7 @@ def main() -> int:
         "feature_groups": {
             "identity": [
                 "player_id",
+                "fixture_id",
                 "position_id",
                 "position_name",
             ],
@@ -1195,6 +1198,7 @@ def main() -> int:
             ],
             "leakage_audit_v1_3": [
                 "feature_cutoff_gw",
+                "fixture_id",
                 "target_gw",
             ],
         },
@@ -1308,3 +1312,5 @@ if __name__ == "__main__":
     except Exception as exc:
         LOG.error("FEATURE BUILD FAILED: %s", exc)
         raise SystemExit(1)
+
+

@@ -69,7 +69,7 @@ DISAGREEMENT_MINUTES_THRESHOLD = 45.0
 DISAGREEMENT_START_PROB_THRESHOLD = 0.30
 
 NON_FEATURE_COLS = [
-    "season", "player_id", "gameweek", "target_gw", "feature_cutoff_gw",
+    "season", "player_id", "fixture_id", "gameweek", "target_gw", "feature_cutoff_gw",
     "web_name", "first_name", "second_name", "position_name",
     "target_points", "target_minutes", "target_goals", "target_assists",
     "target_clean_sheets", "target_bonus", "target_xg", "target_xa",
@@ -130,9 +130,9 @@ def compute_decision_ready_points(pool: pd.DataFrame, project_root: Path) -> pd.
     if starter_path.exists():
         starter_model = CatBoostClassifier()
         starter_model.load_model(str(starter_path))
-        pool["start_probability"] = starter_model.predict_proba(X)[:, 1]
+        pool["start_probability"] = starter_model.predict_proba(X)[:, 1].clip(0.0, 1.0)
     else:
-        pool["start_probability"] = (pool["expected_minutes"] >= 60).astype(float)
+        pool["start_probability"] = pool.get("start_probability", (pool["expected_minutes"] >= 60).astype(float))
 
     # Sanity guard: minutes regressor vs starting classifier disagreement.
     disagreement = (
@@ -159,3 +159,4 @@ def compute_decision_ready_points(pool: pd.DataFrame, project_root: Path) -> pd.
     pool["expected_points"] = pool["decision_ready_points"]
 
     return pool
+

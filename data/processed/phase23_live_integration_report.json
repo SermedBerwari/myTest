@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-08-18T12:01:00.464043+00:00",
+  "season": "2026-27",
+  "gameweek": 1,
+  "checks": {
+    "required_snapshots": {
+      "status": "PASS",
+      "detail": []
+    },
+    "complete_player_pool": {
+      "status": "PASS",
+      "detail": "rows=587, unique_ids=587"
+    },
+    "current_ids": {
+      "status": "PASS",
+      "detail": "all player IDs are positive and non-null"
+    },
+    "current_prices": {
+      "status": "PASS",
+      "detail": "all players have positive current prices"
+    },
+    "availability_data": {
+      "status": "PASS",
+      "detail": "availability/status column exists"
+    },
+    "fixture_snapshot": {
+      "status": "PASS",
+      "detail": "fixture rows and gameweek field present"
+    },
+    "cold_start": {
+      "status": "PASS",
+      "detail": "GW1 contains explicit zero-history rows"
+    },
+    "feature_target_separation": {
+      "status": "PASS",
+      "detail": "target is not represented as a prior feature"
+    },
+    "official_gw1_recommendation": {
+      "status": "PASS",
+      "detail": "weekly summary targets 2026-27 GW1"
+    },
+    "recommendation_legality": {
+      "status": "PASS",
+      "detail": "11 starters, 4 bench, unique IDs, budget <= 100"
+    },
+    "captain_present": {
+      "status": "PASS",
+      "detail": "captain is selected from starting XI"
+    }
+  },
+  "source_hashes": {
+    "data\\processed\\2026-27\\players.csv": "sha256:db3a94640221e652ab25a822e1cafe2955caab4108e0eaf393ad15dc5f756ae6",
+    "data\\processed\\2026-27\\fixtures.csv": "sha256:652ef0d78fdfea1aee68555092cba6c13db7744eee4d05acbc0f9a1eeac605de",
+    "data\\processed\\2026-27\\gameweeks.csv": "sha256:fdeabbc378286a983037bb88971f92ee8d8200f9dfbe228b06a8d6e85a94e9e5",
+    "data\\processed\\2026-27\\player_gameweek.csv": "sha256:bcd61335ca7d9bc80228f609e13a7e2c54656f0ed571d34f1f01057b689578d2",
+    "data\\processed\\2026-27\\player_season_history.csv": "sha256:62e9db1d92c387dddbc899c3797b35dc9bc1a08dbf71a699cd432de9b4822048",
+    "data\\features\\2026-27\\player_gameweek_features.csv": "sha256:ab68fc3cef68d74a2bf51668019afbe54a4d3c57d4538d57590b58c8e1555cdd",
+    "data\\features\\2026-27\\feature_manifest.json": "sha256:68e16b909332d93fbe0880edcb26dcbbf6c9fcc492f7a9595f49e82fa8430fbd",
+    "data\\processed\\weekly_automation_summary.json": "sha256:3c26fb89f9563f795ba56e1c1e4a69b4e44b930b43dbf190db6f6a8098d84f1d"
+  }
+}

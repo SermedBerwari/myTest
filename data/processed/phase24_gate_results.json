@@ -1,0 +1,11 @@
+{
+  "data": 2,
+  "leakage": 0,
+  "comparison": 0,
+  "full_loop": 0,
+  "variants": 0,
+  "registry": 0,
+  "reproducibility": 0,
+  "hygiene": 0,
+  "live": 0
+}

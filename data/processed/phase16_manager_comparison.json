@@ -1,0 +1,6583 @@
+{
+  "schema_version": "phase16-v1.0.0",
+  "hit_penalty": 4.0,
+  "source": "E:\\Python\\FPL Fantasy Prediction\\data\\processed\\historical_manager_simulation.json",
+  "seasons": [
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "strategies": [
+    "ai_manager",
+    "historical_average_xp",
+    "ml_plus_availability",
+    "ml_plus_minutes",
+    "no_transfer",
+    "previous_gw",
+    "ridge_xp",
+    "rolling_average",
+    "simple_highest_xp"
+  ],
+  "season_results": [
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "weeks": 37,
+      "total_points": 1547.0,
+      "net_points_after_hits": 1531.0,
+      "average_gw_points": 41.810810810810814,
+      "median_gw_points": 40.0,
+      "transfers": 27,
+      "hits": 4,
+      "hit_points_lost": 16.0,
+      "bench_points_wasted": 361.0,
+      "forced_replacements": 4,
+      "captain_points": 274.0,
+      "vice_captain_points": 183.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "weeks": 37,
+      "total_points": 1525.0,
+      "net_points_after_hits": 1513.0,
+      "average_gw_points": 41.21621621621622,
+      "median_gw_points": 39.0,
+      "transfers": 29,
+      "hits": 3,
+      "hit_points_lost": 12.0,
+      "bench_points_wasted": 296.0,
+      "forced_replacements": 3,
+      "captain_points": 226.0,
+      "vice_captain_points": 174.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "weeks": 37,
+      "total_points": 1641.0,
+      "net_points_after_hits": 1609.0,
+      "average_gw_points": 44.351351351351354,
+      "median_gw_points": 41.0,
+      "transfers": 44,
+      "hits": 8,
+      "hit_points_lost": 32.0,
+      "bench_points_wasted": 313.0,
+      "forced_replacements": 2,
+      "captain_points": 344.0,
+      "vice_captain_points": 154.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "weeks": 37,
+      "total_points": 1664.0,
+      "net_points_after_hits": 1640.0,
+      "average_gw_points": 44.972972972972975,
+      "median_gw_points": 40.0,
+      "transfers": 35,
+      "hits": 6,
+      "hit_points_lost": 24.0,
+      "bench_points_wasted": 333.0,
+      "forced_replacements": 4,
+      "captain_points": 338.0,
+      "vice_captain_points": 164.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "weeks": 37,
+      "total_points": 1671.0,
+      "net_points_after_hits": 1651.0,
+      "average_gw_points": 45.16216216216216,
+      "median_gw_points": 45.0,
+      "transfers": 17,
+      "hits": 5,
+      "hit_points_lost": 20.0,
+      "bench_points_wasted": 315.0,
+      "forced_replacements": 3,
+      "captain_points": 370.0,
+      "vice_captain_points": 192.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "weeks": 37,
+      "total_points": 1793.0,
+      "net_points_after_hits": 1773.0,
+      "average_gw_points": 48.45945945945946,
+      "median_gw_points": 45.0,
+      "transfers": 40,
+      "hits": 5,
+      "hit_points_lost": 20.0,
+      "bench_points_wasted": 454.0,
+      "forced_replacements": 2,
+      "captain_points": 418.0,
+      "vice_captain_points": 128.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "weeks": 37,
+      "total_points": 1730.0,
+      "net_points_after_hits": 1718.0,
+      "average_gw_points": 46.75675675675676,
+      "median_gw_points": 46.0,
+      "transfers": 26,
+      "hits": 3,
+      "hit_points_lost": 12.0,
+      "bench_points_wasted": 369.0,
+      "forced_replacements": 4,
+      "captain_points": 360.0,
+      "vice_captain_points": 188.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "weeks": 37,
+      "total_points": 1431.0,
+      "net_points_after_hits": 1403.0,
+      "average_gw_points": 38.67567567567568,
+      "median_gw_points": 39.0,
+      "transfers": 43,
+      "hits": 7,
+      "hit_points_lost": 28.0,
+      "bench_points_wasted": 291.0,
+      "forced_replacements": 3,
+      "captain_points": 238.0,
+      "vice_captain_points": 121.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "weeks": 37,
+      "total_points": 1657.0,
+      "net_points_after_hits": 1641.0,
+      "average_gw_points": 44.78378378378378,
+      "median_gw_points": 44.0,
+      "transfers": 40,
+      "hits": 4,
+      "hit_points_lost": 16.0,
+      "bench_points_wasted": 329.0,
+      "forced_replacements": 2,
+      "captain_points": 368.0,
+      "vice_captain_points": 179.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "weeks": 37,
+      "total_points": 1683.0,
+      "net_points_after_hits": 1679.0,
+      "average_gw_points": 45.486486486486484,
+      "median_gw_points": 42.0,
+      "transfers": 24,
+      "hits": 1,
+      "hit_points_lost": 4.0,
+      "bench_points_wasted": 363.0,
+      "forced_replacements": 3,
+      "captain_points": 318.0,
+      "vice_captain_points": 124.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "weeks": 37,
+      "total_points": 1739.0,
+      "net_points_after_hits": 1739.0,
+      "average_gw_points": 47.0,
+      "median_gw_points": 41.0,
+      "transfers": 36,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 398.0,
+      "forced_replacements": 3,
+      "captain_points": 388.0,
+      "vice_captain_points": 180.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "weeks": 37,
+      "total_points": 1744.0,
+      "net_points_after_hits": 1744.0,
+      "average_gw_points": 47.13513513513514,
+      "median_gw_points": 48.0,
+      "transfers": 31,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 422.0,
+      "forced_replacements": 2,
+      "captain_points": 364.0,
+      "vice_captain_points": 168.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "weeks": 37,
+      "total_points": 1210.0,
+      "net_points_after_hits": 1210.0,
+      "average_gw_points": 32.7027027027027,
+      "median_gw_points": 34.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 85.0,
+      "forced_replacements": 4,
+      "captain_points": 266.0,
+      "vice_captain_points": 158.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "weeks": 37,
+      "total_points": 1224.0,
+      "net_points_after_hits": 1224.0,
+      "average_gw_points": 33.08108108108108,
+      "median_gw_points": 32.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 102.0,
+      "forced_replacements": 3,
+      "captain_points": 228.0,
+      "vice_captain_points": 150.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "weeks": 37,
+      "total_points": 1325.0,
+      "net_points_after_hits": 1325.0,
+      "average_gw_points": 35.810810810810814,
+      "median_gw_points": 36.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 20.0,
+      "forced_replacements": 2,
+      "captain_points": 402.0,
+      "vice_captain_points": 118.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "weeks": 37,
+      "total_points": 1583.0,
+      "net_points_after_hits": 1475.0,
+      "average_gw_points": 42.78378378378378,
+      "median_gw_points": 36.0,
+      "transfers": 56,
+      "hits": 27,
+      "hit_points_lost": 108.0,
+      "bench_points_wasted": 374.0,
+      "forced_replacements": 5,
+      "captain_points": 288.0,
+      "vice_captain_points": 144.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "weeks": 37,
+      "total_points": 1809.0,
+      "net_points_after_hits": 1705.0,
+      "average_gw_points": 48.891891891891895,
+      "median_gw_points": 51.0,
+      "transfers": 52,
+      "hits": 26,
+      "hit_points_lost": 104.0,
+      "bench_points_wasted": 351.0,
+      "forced_replacements": 3,
+      "captain_points": 370.0,
+      "vice_captain_points": 169.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "weeks": 37,
+      "total_points": 1728.0,
+      "net_points_after_hits": 1584.0,
+      "average_gw_points": 46.7027027027027,
+      "median_gw_points": 46.0,
+      "transfers": 72,
+      "hits": 36,
+      "hit_points_lost": 144.0,
+      "bench_points_wasted": 483.0,
+      "forced_replacements": 2,
+      "captain_points": 300.0,
+      "vice_captain_points": 135.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "weeks": 37,
+      "total_points": 1812.0,
+      "net_points_after_hits": 1812.0,
+      "average_gw_points": 48.972972972972975,
+      "median_gw_points": 41.0,
+      "transfers": 23,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 332.0,
+      "forced_replacements": 4,
+      "captain_points": 362.0,
+      "vice_captain_points": 210.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "weeks": 37,
+      "total_points": 2007.0,
+      "net_points_after_hits": 2007.0,
+      "average_gw_points": 54.24324324324324,
+      "median_gw_points": 52.0,
+      "transfers": 36,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 507.0,
+      "forced_replacements": 3,
+      "captain_points": 556.0,
+      "vice_captain_points": 254.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "weeks": 37,
+      "total_points": 1886.0,
+      "net_points_after_hits": 1886.0,
+      "average_gw_points": 50.972972972972975,
+      "median_gw_points": 51.0,
+      "transfers": 36,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 457.0,
+      "forced_replacements": 2,
+      "captain_points": 376.0,
+      "vice_captain_points": 194.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "weeks": 37,
+      "total_points": 1685.0,
+      "net_points_after_hits": 1645.0,
+      "average_gw_points": 45.54054054054054,
+      "median_gw_points": 43.0,
+      "transfers": 33,
+      "hits": 10,
+      "hit_points_lost": 40.0,
+      "bench_points_wasted": 385.0,
+      "forced_replacements": 4,
+      "captain_points": 298.0,
+      "vice_captain_points": 184.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "weeks": 37,
+      "total_points": 1909.0,
+      "net_points_after_hits": 1861.0,
+      "average_gw_points": 51.5945945945946,
+      "median_gw_points": 51.0,
+      "transfers": 38,
+      "hits": 12,
+      "hit_points_lost": 48.0,
+      "bench_points_wasted": 390.0,
+      "forced_replacements": 3,
+      "captain_points": 552.0,
+      "vice_captain_points": 166.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "weeks": 37,
+      "total_points": 1728.0,
+      "net_points_after_hits": 1660.0,
+      "average_gw_points": 46.7027027027027,
+      "median_gw_points": 48.0,
+      "transfers": 51,
+      "hits": 17,
+      "hit_points_lost": 68.0,
+      "bench_points_wasted": 468.0,
+      "forced_replacements": 2,
+      "captain_points": 350.0,
+      "vice_captain_points": 129.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "weeks": 37,
+      "total_points": 1656.0,
+      "net_points_after_hits": 1656.0,
+      "average_gw_points": 44.75675675675676,
+      "median_gw_points": 45.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 135.0,
+      "forced_replacements": 0,
+      "captain_points": 200.0,
+      "vice_captain_points": 195.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "weeks": 37,
+      "total_points": 1675.0,
+      "net_points_after_hits": 1675.0,
+      "average_gw_points": 45.270270270270274,
+      "median_gw_points": 46.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 271.0,
+      "forced_replacements": 0,
+      "captain_points": 264.0,
+      "vice_captain_points": 151.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "weeks": 37,
+      "total_points": 1572.0,
+      "net_points_after_hits": 1572.0,
+      "average_gw_points": 42.486486486486484,
+      "median_gw_points": 42.0,
+      "transfers": 0,
+      "hits": 0,
+      "hit_points_lost": 0.0,
+      "bench_points_wasted": 115.0,
+      "forced_replacements": 0,
+      "captain_points": 280.0,
+      "vice_captain_points": 124.0
+    }
+  ],
+  "strategy_summary": [
+    {
+      "strategy": "ai_manager",
+      "seasons": 3,
+      "total_points": 4713.0,
+      "total_net_points_after_hits": 4653.0,
+      "mean_season_net_points": 1551.0,
+      "median_season_net_points": 1531.0,
+      "mean_gw_points": 42.45945945945946,
+      "total_transfers": 100,
+      "total_hits": 15,
+      "total_hit_points_lost": 60.0,
+      "total_bench_points_wasted": 970.0,
+      "season_net_point_range": 96.0
+    },
+    {
+      "strategy": "historical_average_xp",
+      "seasons": 3,
+      "total_points": 5128.0,
+      "total_net_points_after_hits": 5064.0,
+      "mean_season_net_points": 1688.0,
+      "median_season_net_points": 1651.0,
+      "mean_gw_points": 46.19819819819819,
+      "total_transfers": 92,
+      "total_hits": 16,
+      "total_hit_points_lost": 64.0,
+      "total_bench_points_wasted": 1102.0,
+      "season_net_point_range": 133.0
+    },
+    {
+      "strategy": "ml_plus_availability",
+      "seasons": 3,
+      "total_points": 4818.0,
+      "total_net_points_after_hits": 4762.0,
+      "mean_season_net_points": 1587.3333333333333,
+      "median_season_net_points": 1641.0,
+      "mean_gw_points": 43.40540540540541,
+      "total_transfers": 109,
+      "total_hits": 14,
+      "total_hit_points_lost": 56.0,
+      "total_bench_points_wasted": 989.0,
+      "season_net_point_range": 315.0
+    },
+    {
+      "strategy": "ml_plus_minutes",
+      "seasons": 3,
+      "total_points": 5166.0,
+      "total_net_points_after_hits": 5162.0,
+      "mean_season_net_points": 1720.6666666666667,
+      "median_season_net_points": 1739.0,
+      "mean_gw_points": 46.54054054054054,
+      "total_transfers": 91,
+      "total_hits": 1,
+      "total_hit_points_lost": 4.0,
+      "total_bench_points_wasted": 1183.0,
+      "season_net_point_range": 65.0
+    },
+    {
+      "strategy": "no_transfer",
+      "seasons": 3,
+      "total_points": 3759.0,
+      "total_net_points_after_hits": 3759.0,
+      "mean_season_net_points": 1253.0,
+      "median_season_net_points": 1224.0,
+      "mean_gw_points": 33.86486486486486,
+      "total_transfers": 0,
+      "total_hits": 0,
+      "total_hit_points_lost": 0.0,
+      "total_bench_points_wasted": 207.0,
+      "season_net_point_range": 115.0
+    },
+    {
+      "strategy": "previous_gw",
+      "seasons": 3,
+      "total_points": 5120.0,
+      "total_net_points_after_hits": 4764.0,
+      "mean_season_net_points": 1588.0,
+      "median_season_net_points": 1584.0,
+      "mean_gw_points": 46.12612612612613,
+      "total_transfers": 180,
+      "total_hits": 89,
+      "total_hit_points_lost": 356.0,
+      "total_bench_points_wasted": 1208.0,
+      "season_net_point_range": 230.0
+    },
+    {
+      "strategy": "ridge_xp",
+      "seasons": 3,
+      "total_points": 5705.0,
+      "total_net_points_after_hits": 5705.0,
+      "mean_season_net_points": 1901.6666666666667,
+      "median_season_net_points": 1886.0,
+      "mean_gw_points": 51.3963963963964,
+      "total_transfers": 95,
+      "total_hits": 0,
+      "total_hit_points_lost": 0.0,
+      "total_bench_points_wasted": 1296.0,
+      "season_net_point_range": 195.0
+    },
+    {
+      "strategy": "rolling_average",
+      "seasons": 3,
+      "total_points": 5322.0,
+      "total_net_points_after_hits": 5166.0,
+      "mean_season_net_points": 1722.0,
+      "median_season_net_points": 1660.0,
+      "mean_gw_points": 47.945945945945944,
+      "total_transfers": 122,
+      "total_hits": 39,
+      "total_hit_points_lost": 156.0,
+      "total_bench_points_wasted": 1243.0,
+      "season_net_point_range": 216.0
+    },
+    {
+      "strategy": "simple_highest_xp",
+      "seasons": 3,
+      "total_points": 4903.0,
+      "total_net_points_after_hits": 4903.0,
+      "mean_season_net_points": 1634.3333333333333,
+      "median_season_net_points": 1656.0,
+      "mean_gw_points": 44.171171171171174,
+      "total_transfers": 0,
+      "total_hits": 0,
+      "total_hit_points_lost": 0.0,
+      "total_bench_points_wasted": 521.0,
+      "season_net_point_range": 103.0
+    }
+  ],
+  "gameweek_results": [
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 2,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 3,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 4,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 5,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 6,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 7,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 8,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 9,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 10,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 11,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 12,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 13,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 14,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 15,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 16,
+      "actual_points": 75.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 17,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 18,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 19,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 20,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 21,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 22,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 23,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 24,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 25,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 26,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 27,
+      "actual_points": 82.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 28,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 29,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 30,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 31,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 32,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 33,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 34,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 35,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 36,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 37,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "previous_gw",
+      "gameweek": 38,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 2,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 3,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 4,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 5,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 6,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 7,
+      "actual_points": 76.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 8,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 9,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 10,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 11,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 12,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 13,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 14,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 15,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 16,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 17,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 18,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 19,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 20,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 21,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 22,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 23,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 24,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 25,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 26,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 27,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 28,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 29,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 30,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 31,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 32,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 33,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 34,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 35,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 36,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 37,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "rolling_average",
+      "gameweek": 38,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 2,
+      "actual_points": 1.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 3,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 4,
+      "actual_points": 17.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 5,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 6,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 7,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 8,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 9,
+      "actual_points": 77.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 10,
+      "actual_points": 78.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 11,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 12,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 13,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 14,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 15,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 16,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 17,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 18,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 19,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 20,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 21,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 22,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 23,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 24,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 25,
+      "actual_points": 75.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 26,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 27,
+      "actual_points": 79.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 28,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 29,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 30,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 31,
+      "actual_points": 16.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 32,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 33,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 34,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 35,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 36,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 37,
+      "actual_points": 80.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "historical_average_xp",
+      "gameweek": 38,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 2,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 3,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 4,
+      "actual_points": 77.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 5,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 6,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 7,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 8,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 9,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 10,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 11,
+      "actual_points": 15.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 12,
+      "actual_points": 85.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 13,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 14,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 15,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 16,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 17,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 18,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 19,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 20,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 21,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 22,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 23,
+      "actual_points": 81.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 24,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 25,
+      "actual_points": 79.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 26,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 27,
+      "actual_points": 84.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 28,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 29,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 30,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 31,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 32,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 33,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 34,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 35,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 36,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 37,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ridge_xp",
+      "gameweek": 38,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 2,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 3,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 4,
+      "actual_points": 87.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 5,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 6,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 7,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 8,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 9,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 10,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 11,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 12,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 13,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 14,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 15,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 16,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 17,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 18,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 19,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 20,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 21,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 22,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 23,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 24,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 25,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 26,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 27,
+      "actual_points": 80.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 28,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 29,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 30,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 31,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 32,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 33,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 34,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 35,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 36,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 37,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 38,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 2,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 3,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 4,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 5,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 6,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 7,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 8,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 9,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 10,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 11,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 12,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 13,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 14,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 15,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 16,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 17,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 18,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 19,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 20,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 21,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 22,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 23,
+      "actual_points": 76.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 24,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 25,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 26,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 27,
+      "actual_points": 92.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 28,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 29,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 30,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 31,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 32,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 33,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 34,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 35,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 36,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 37,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ml_plus_availability",
+      "gameweek": 38,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 2,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 3,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 4,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 5,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 6,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 7,
+      "actual_points": 14.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 8,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 9,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 10,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 11,
+      "actual_points": 15.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 12,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 13,
+      "actual_points": 13.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 14,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 15,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 16,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 17,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 18,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 19,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 20,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 21,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 22,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 23,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 24,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 25,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 26,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 27,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 28,
+      "actual_points": 11.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 29,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 30,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 31,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 32,
+      "actual_points": 22.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 33,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 34,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 35,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 36,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 37,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "no_transfer",
+      "gameweek": 38,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 2,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 3,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 4,
+      "actual_points": 84.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 5,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 6,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 7,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 8,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 9,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 10,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 11,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 12,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 13,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 14,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 15,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 16,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 17,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 18,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 19,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 20,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 21,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 22,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 23,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 24,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 25,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 26,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 27,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 28,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 29,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 30,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 31,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 32,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 33,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 34,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 35,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 36,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 37,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "simple_highest_xp",
+      "gameweek": 38,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 2,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 3,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 4,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 5,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 6,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 7,
+      "actual_points": 13.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 8,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 9,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 10,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 11,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 12,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 13,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 14,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 15,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 16,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 17,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 18,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 19,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 20,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 21,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 22,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 23,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 24,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 25,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 26,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 27,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 28,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 29,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 30,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 31,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 32,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 33,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 34,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 35,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 36,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 37,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2023-24",
+      "strategy": "ai_manager",
+      "gameweek": 38,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 2,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 3,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 4,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 5,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 6,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 7,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 8,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 9,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 10,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 11,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 12,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 13,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 14,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 15,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 16,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 17,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 18,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 19,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 20,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 21,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 22,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 23,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 24,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 25,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 26,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 27,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 28,
+      "actual_points": 75.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 29,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 30,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 31,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 32,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 33,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 34,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 35,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 36,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 37,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "previous_gw",
+      "gameweek": 38,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 2,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 3,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 4,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 5,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 6,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 7,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 8,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 9,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 10,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 11,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 12,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 13,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 14,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 15,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 16,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 17,
+      "actual_points": 82.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 18,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 19,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 20,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 21,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 22,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 23,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 24,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 25,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 26,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 27,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 28,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 29,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 30,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 31,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 32,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 33,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 34,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 35,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 36,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 37,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "rolling_average",
+      "gameweek": 38,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 2,
+      "actual_points": 11.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 3,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 4,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 5,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 6,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 7,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 8,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 9,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 10,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 11,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 12,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 13,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 14,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 15,
+      "actual_points": 75.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 16,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 17,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 18,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 19,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 20,
+      "actual_points": 91.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 21,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 22,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 23,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 24,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 25,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 26,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 27,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 28,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 29,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 30,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 31,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 32,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 33,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 34,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 35,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 36,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 37,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "historical_average_xp",
+      "gameweek": 38,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 2,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 3,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 4,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 5,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 6,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 7,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 8,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 9,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 10,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 11,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 12,
+      "actual_points": 100.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 13,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 14,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 15,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 16,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 17,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 18,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 19,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 20,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 21,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 22,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 23,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 24,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 25,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 26,
+      "actual_points": 87.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 27,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 28,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 29,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 30,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 31,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 32,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 33,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 34,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 35,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 36,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 37,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ridge_xp",
+      "gameweek": 38,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 2,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 3,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 4,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 5,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 6,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 7,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 8,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 9,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 10,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 11,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 12,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 13,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 14,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 15,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 16,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 17,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 18,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 19,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 20,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 21,
+      "actual_points": 85.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 22,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 23,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 24,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 25,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 26,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 27,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 28,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 29,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 30,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 31,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 32,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 33,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 34,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 35,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 36,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 37,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 38,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 2,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 3,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 4,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 5,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 6,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 7,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 8,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 9,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 10,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 11,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 12,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 13,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 14,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 15,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 16,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 17,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 18,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 19,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 20,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 21,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 22,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 23,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 24,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 25,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 26,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 27,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 28,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 29,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 30,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 31,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 32,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 33,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 34,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 35,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 36,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 37,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ml_plus_availability",
+      "gameweek": 38,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 2,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 3,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 4,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 5,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 6,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 7,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 8,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 9,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 10,
+      "actual_points": 16.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 11,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 12,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 13,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 14,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 15,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 16,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 17,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 18,
+      "actual_points": 16.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 19,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 20,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 21,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 22,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 23,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 24,
+      "actual_points": 22.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 25,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 26,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 27,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 28,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 29,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 30,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 31,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 32,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 33,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 34,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 35,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 36,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 37,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "no_transfer",
+      "gameweek": 38,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 2,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 3,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 4,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 5,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 6,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 7,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 8,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 9,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 10,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 11,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 12,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 13,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 14,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 15,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 16,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 17,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 18,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 19,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 20,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 21,
+      "actual_points": 85.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 22,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 23,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 24,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 25,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 26,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 27,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 28,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 29,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 30,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 31,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 32,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 33,
+      "actual_points": 77.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 34,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 35,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 36,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 37,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "simple_highest_xp",
+      "gameweek": 38,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 2,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 3,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 4,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 5,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 6,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 7,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 8,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 9,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 10,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 11,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 12,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 13,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 14,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 15,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 16,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 17,
+      "actual_points": 62.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 18,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 19,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 20,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 21,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 22,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 23,
+      "actual_points": 82.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 24,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 25,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 26,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 27,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 28,
+      "actual_points": 16.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 29,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 30,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 31,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 32,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 33,
+      "actual_points": 87.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 34,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 35,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 36,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 37,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2024-25",
+      "strategy": "ai_manager",
+      "gameweek": 38,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 2,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 3,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 4,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 5,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 6,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 7,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 8,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 9,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 10,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 11,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 12,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 13,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 14,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 15,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 16,
+      "actual_points": 74.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 17,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 18,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 19,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 20,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 21,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 22,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 23,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 24,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 25,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 26,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 27,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 28,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 29,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 30,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 31,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 32,
+      "actual_points": 80.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 33,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 34,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 35,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 36,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 37,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "previous_gw",
+      "gameweek": 38,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 2,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 3,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 4,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 5,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 6,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 7,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 8,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 9,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 10,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 11,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 12,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 13,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 14,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 15,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 16,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 17,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 18,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 19,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 20,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 21,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 22,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 23,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 24,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 25,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 26,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 27,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 28,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 29,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 30,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 31,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 32,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 33,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 34,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 35,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 36,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 37,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "rolling_average",
+      "gameweek": 38,
+      "actual_points": 66.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 2,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 3,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 4,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 5,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 6,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 7,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 8,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 9,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 10,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 11,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 12,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 13,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 14,
+      "actual_points": 74.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 15,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 16,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 17,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 18,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 19,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 20,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 21,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 22,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 23,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 24,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 25,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 26,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 27,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 28,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 29,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 30,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 31,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 32,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 33,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 34,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 35,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 36,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 37,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "historical_average_xp",
+      "gameweek": 38,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 2,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 3,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 4,
+      "actual_points": 79.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 5,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 6,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 7,
+      "actual_points": 73.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 8,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 9,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 10,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 11,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 12,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 13,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 14,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 15,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 16,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 17,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 18,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 19,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 20,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 21,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 22,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 23,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 24,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 25,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 26,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 27,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 28,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 29,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 30,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 31,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 32,
+      "actual_points": 68.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 33,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 34,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 35,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 36,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 37,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ridge_xp",
+      "gameweek": 38,
+      "actual_points": 76.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 2,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 3,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 4,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 5,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 6,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 7,
+      "actual_points": 70.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 8,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 9,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 10,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 11,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 12,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 13,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 14,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 15,
+      "actual_points": 63.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 16,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 17,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 18,
+      "actual_points": 21.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 19,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 20,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 21,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 22,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 23,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 24,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 25,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 26,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 27,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 28,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 29,
+      "actual_points": 54.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 30,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 31,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 32,
+      "actual_points": 72.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 33,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 34,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 35,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 36,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 37,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_minutes",
+      "gameweek": 38,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 2,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 3,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 4,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 5,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 6,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 7,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 8,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 9,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 10,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 11,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 12,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 13,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 14,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 15,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 16,
+      "actual_points": 43.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 17,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 18,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 19,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 20,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 21,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 22,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 23,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 24,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 25,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 26,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 27,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 28,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 29,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 30,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 31,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 32,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 33,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 34,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 35,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 36,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 37,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ml_plus_availability",
+      "gameweek": 38,
+      "actual_points": 69.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 2,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 3,
+      "actual_points": 28.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 4,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 5,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 6,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 7,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 8,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 9,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 10,
+      "actual_points": 58.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 11,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 12,
+      "actual_points": 29.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 13,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 14,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 15,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 16,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 17,
+      "actual_points": 64.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 18,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 19,
+      "actual_points": 26.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 20,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 21,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 22,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 23,
+      "actual_points": 17.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 24,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 25,
+      "actual_points": 22.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 26,
+      "actual_points": 22.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 27,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 28,
+      "actual_points": 19.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 29,
+      "actual_points": 30.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 30,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 31,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 32,
+      "actual_points": 18.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 33,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 34,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 35,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 36,
+      "actual_points": 10.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 37,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "no_transfer",
+      "gameweek": 38,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 2,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 3,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 4,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 5,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 6,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 7,
+      "actual_points": 56.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 8,
+      "actual_points": 71.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 9,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 10,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 11,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 12,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 13,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 14,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 15,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 16,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 17,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 18,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 19,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 20,
+      "actual_points": 25.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 21,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 22,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 23,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 24,
+      "actual_points": 20.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 25,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 26,
+      "actual_points": 42.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 27,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 28,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 29,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 30,
+      "actual_points": 46.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 31,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 32,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 33,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 34,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 35,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 36,
+      "actual_points": 24.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 37,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "simple_highest_xp",
+      "gameweek": 38,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 2,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 3,
+      "actual_points": 27.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 4,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 5,
+      "actual_points": 44.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 6,
+      "actual_points": 52.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 7,
+      "actual_points": 65.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 8,
+      "actual_points": 59.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 9,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 10,
+      "actual_points": 60.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 11,
+      "actual_points": 36.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 12,
+      "actual_points": 33.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 13,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 14,
+      "actual_points": 55.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 15,
+      "actual_points": 38.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 16,
+      "actual_points": 39.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 17,
+      "actual_points": 53.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 18,
+      "actual_points": 37.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 19,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 20,
+      "actual_points": 31.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 21,
+      "actual_points": 61.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 22,
+      "actual_points": 57.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 23,
+      "actual_points": 34.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 24,
+      "actual_points": 32.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 25,
+      "actual_points": 49.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 26,
+      "actual_points": 40.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 27,
+      "actual_points": 51.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 28,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 29,
+      "actual_points": 67.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 30,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 31,
+      "actual_points": 35.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 32,
+      "actual_points": 41.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 33,
+      "actual_points": 47.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 34,
+      "actual_points": 45.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 35,
+      "actual_points": 48.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 36,
+      "actual_points": 23.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 37,
+      "actual_points": 50.0
+    },
+    {
+      "season": "2025-26",
+      "strategy": "ai_manager",
+      "gameweek": 38,
+      "actual_points": 66.0
+    }
+  ],
+  "data_quality_notes": [
+    "Captain and vice-captain totals are persisted from the predicted starting XI and actual historical outcomes.",
+    "Actual points are sourced from historical target outcomes; decisions are sourced from the simulator predictions."
+  ]
+}

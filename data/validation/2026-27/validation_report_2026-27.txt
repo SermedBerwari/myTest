@@ -4,44 +4,44 @@ FPL RAW DATA VALIDATION REPORT
 
 Validator version : 2.0.0
 Season            : 2026-27
-Status            : PASSED
-Started           : 2026-08-14T09:44:09.810764+00:00
-Completed         : 2026-08-14T09:44:10.418959+00:00
+Status            : PASSED_WITH_WARNINGS
+Started           : 2026-08-18T10:35:57.435937+00:00
+Completed         : 2026-08-18T10:35:58.081720+00:00
 
 ------------------------------------------------------------------------
 SNAPSHOT STRUCTURE
 ------------------------------------------------------------------------
-Bootstrap snapshots       : 1
-Latest bootstrap          : data\raw\2026-27\bootstrap\2026-08-13_14-33-55.json
-Fixtures snapshots        : 2
-Latest fixtures           : data\raw\2026-27\fixtures\2026-08-14_09-25-19.json
-Player directories        : 584
-Player snapshots          : 584
+Bootstrap snapshots       : 3
+Latest bootstrap          : data\raw\2026-27\bootstrap\2026-08-18_08-57-18.json
+Fixtures snapshots        : 3
+Latest fixtures           : data\raw\2026-27\fixtures\2026-08-15_20-39-22.json
+Player directories        : 590
+Player snapshots          : 1174
 
 ------------------------------------------------------------------------
 DATA
 ------------------------------------------------------------------------
-Bootstrap players         : 584
+Bootstrap players         : 590
 Bootstrap teams           : 20
 Bootstrap gameweeks       : 38
 Fixture records            : 380
 Player history records     : 0
-Player fixture records     : 44384
+Player fixture records     : 22306
 
 ------------------------------------------------------------------------
 PLAYER COVERAGE
 ------------------------------------------------------------------------
-Bootstrap player IDs       : 584
-Latest history player IDs  : 584
+Bootstrap player IDs       : 590
+Latest history player IDs  : 590
 Missing player directories  : 0
 Extra player directories    : 0
 
 ------------------------------------------------------------------------
 SNAPSHOT VALIDATION
 ------------------------------------------------------------------------
-Latest snapshots validated : 584
+Latest snapshots validated : 590
 Latest snapshots invalid    : 0
-Historical snapshots valid  : 584
+Historical snapshots valid  : 0
 Historical snapshots invalid: 0
 
 ------------------------------------------------------------------------
@@ -54,24 +54,27 @@ Duplicate fixture IDs       : 0
 ISSUES
 ------------------------------------------------------------------------
 Errors                      : 0
-Warnings                    : 0
+Warnings                    : 1
 Info                        : 2
 
 ------------------------------------------------------------------------
 ISSUE DETAILS
 ------------------------------------------------------------------------
-0001. [INFO] [snapshot_coverage] Player snapshot coverage: 584 players; minimum snapshots=1; maximum snapshots=1.
+0001. [INFO] [snapshot_coverage] Player snapshot coverage: 590 players; minimum snapshots=1; maximum snapshots=2.
 
-0002. [INFO] [quality] Latest player-history coverage: 584/584 (100.00%).
+0002. [WARNING] [snapshot_coverage] Players do not all have the same number of snapshots. Lowest count=1, highest count=2. Sample of lowest-coverage players: [585, 586, 587, 588, 589, 590]
+
+0003. [INFO] [quality] Latest player-history coverage: 590/590 (100.00%).
 
 ------------------------------------------------------------------------
 RECOMMENDATIONS
 ------------------------------------------------------------------------
+- Review warnings before using the dataset for ML training.
 - Raw data passed all critical validation checks.
 - Keep data/raw immutable. All normalization should write to data/processed/.
 - Run this validator after every scheduled FPL data collection.
 - Use --all-snapshots periodically to audit historical snapshot integrity.
 
 ========================================================================
-FINAL STATUS: PASSED
+FINAL STATUS: PASSED_WITH_WARNINGS
 ========================================================================

@@ -1,0 +1,54 @@
+{
+  "manifest_version": "reproducibility-1.0.0",
+  "execution_timestamp_utc": "2026-08-18T12:01:02.4194689Z",
+  "runtime": {
+    "python": "Python 3.13.12",
+    "platform": "Microsoft Windows NT 10.0.26200.0",
+    "git_commit": "f99b59f6f58602c7cd32403a3b3b6a76bc1e6068"
+  },
+  "dependencies": {
+    "declared_requirements": "requirements.txt",
+    "locked_requirements": "data/processed/requirements.lock.txt",
+    "requirements_sha256": "sha256:a3a61b2b9634c551037de7020394dbe51d17824d258e3d85e48d342450e74cda",
+    "lockfile_sha256": "sha256:09141d60f2f22984ea8bdf9d690d6d2038b92197feb78c42ac0e340b08a3edc4",
+    "pip_check": "PASS",
+    "versions": {
+      "numpy": "numpy==2.4.4",
+      "pandas": "pandas==3.0.2",
+      "scikit-learn": "scikit-learn==1.9.0",
+      "catboost": "catboost==1.2.10",
+      "ortools": "ortools==9.15.6755",
+      "joblib": "joblib==1.5.3",
+      "pytest": "pytest==9.1.1",
+      "requests": "requests==2.34.2"
+    }
+  },
+  "dataset": {
+    "versions": [
+      "historical-feature-input-2.1",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "feature_version": "builder-1.3.0",
+    "data_cutoff_policy": "historical_features strictly before target gameweek; target outcomes excluded from features",
+    "target_season": "2026-27",
+    "target_gameweek": 1
+  },
+  "models": {
+    "registry": "data/processed/model_registry.json",
+    "registry_sha256": "sha256:216821491ef06b1dfd55b22016afcc8af33bfffaf7f7f138d505539ea3e10857",
+    "production_model": "catboost_model",
+    "registry_version": "model-registry-1.0.0"
+  },
+  "source_hashes": {
+    "FPL_Fantasy_MASTER_PLAN.md": "sha256:7a44ba2a2639fbeb1a447ae0b9c5a67a1402be9b06df82f4607b2c49ae506048",
+    "scripts/weekly_pipeline.py": "sha256:9a7d95ab0e368a1c2a9b9e689bc81b8bebbcd382e67d7e56e448d40e564968ba"
+  },
+  "randomness": {
+    "policy": "deterministic transforms and chronological walk-forward evaluation",
+    "seed": "not globally randomized; model-specific seeds must be recorded at training time"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "formula_version": "xp-v1.0.0",
+  "formula": "official_xp = (raw_points / (recent_minutes_per_appearance / 90)) * (0.7*expected_minutes + 0.3*90*start_probability) / 90 * availability_multiplier * fixture_multiplier",
+  "fixture_multiplier": "clip(1 + 0.04*(3 - fixture_difficulty), 0.85, 1.15)",
+  "availability": {
+    "available": 1.0,
+    "doubtful": 0.5,
+    "injured": 0.0,
+    "suspended": 0.0
+  },
+  "ranking": "descending official_xp; stable player_id tie-break; overall and position ranks"
+}

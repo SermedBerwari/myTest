@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-08-18T09:53:27.5929344Z",
+  "environment": ".venv_phase20_check",
+  "requirements": "requirements.txt",
+  "install_exit_code": 0,
+  "pip_check_exit_code": 0,
+  "pytest_exit_code": 0
+}

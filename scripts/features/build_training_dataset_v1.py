@@ -12,6 +12,7 @@ Output : data/processed/training_dataset_v1.csv
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -19,6 +20,13 @@ from pathlib import Path
 import pandas as pd
 
 VERSION = "1.0.0"
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 DEFAULT_SEASONS = ["2022-23", "2023-24", "2024-25", "2025-26"]
 
 
@@ -97,9 +105,34 @@ def main() -> None:
         "total_columns": len(unified.columns),
         "row_breakdown_by_season": season_counts,
         "target_column": "target_points",
-        "key_columns": ["season", "player_id", "target_gw"],
+        "key_columns": ["season", "player_id", "fixture_id"],
         "columns": unified.columns.tolist(),
     }
+    manifest["checksums"] = {
+        "algorithm": "sha256",
+        "dataset": {
+            "path": "data/processed/training_dataset_v1.csv",
+            "sha256": sha256_file(output_path),
+        },
+        "source_feature_manifests": {
+            season: {
+                "path": f"data/features/{season}/feature_manifest.json",
+                "sha256": sha256_file(root / "data" / "features" / season / "feature_manifest.json"),
+            }
+            for season in seasons
+        },
+    }
+
+
+    reproducibility_payload = {
+        "version": VERSION,
+        "seasons": seasons,
+        "columns": unified.columns.tolist(),
+        "checksums": manifest["checksums"],
+    }
+    manifest["reproducibility_signature"] = hashlib.sha256(
+        json.dumps(reproducibility_payload, sort_keys=True).encode("utf-8")
+    ).hexdigest()
 
     manifest_path = output_dir / "training_dataset_v1_manifest.json"
     with open(manifest_path, "w", encoding="utf-8") as f:
@@ -111,3 +144,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

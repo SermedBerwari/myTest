@@ -1,0 +1,45 @@
+{
+  "selection_version": "phase7-selection-1.0.0",
+  "official_model": "catboost_model",
+  "production_artifact": "data/models/catboost_model.cbm",
+  "evaluation_protocol": "chronological train 2022-23, 2023-24, 2024-25; test 2025-26",
+  "advanced_candidates": {
+    "XGBoost": {
+      "MAE": 0.9720482230186462,
+      "RMSE": 1.944038987159729
+    },
+    "LightGBM": {
+      "MAE": 0.9565959731115384,
+      "RMSE": 1.9371355603617035
+    },
+    "CatBoost": {
+      "MAE": 0.9453142345937754,
+      "RMSE": 1.9354829336925994
+    }
+  },
+  "baselines": {
+    "Historical_Average_Last3": {
+      "MAE": 1.0544043258328972,
+      "RMSE": 2.1782900129830436
+    },
+    "Rolling_Average_GW3": {
+      "MAE": 1.0544043258328972,
+      "RMSE": 2.1782900129830436
+    },
+    "Rolling_Average_GW5": {
+      "MAE": 1.0489766846909705,
+      "RMSE": 2.116274907400008
+    },
+    "Rolling_Average_GW10": {
+      "MAE": 1.0521669172349444,
+      "RMSE": 2.078267328519202
+    },
+    "Ridge_Linear_Regression": {
+      "MAE": 0.9600646159934421,
+      "RMSE": 1.9354330100266723
+    }
+  },
+  "decision": "CatBoost selected because it has the lowest MAE among advanced candidates and improves on Ridge and all listed baselines under the same split.",
+  "production_consumption_verified": true,
+  "verified_consumer": "scripts/decision/expected_points.py"
+}

@@ -21,9 +21,14 @@ were successfully collected and which failed.
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
+import argparse
 import sys
+import argparse
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -207,6 +212,10 @@ def save_player_history(
         / f"{timestamp}.json"
     )
 
+    if output_file.exists():
+
+        raise FileExistsError(f"Refusing to overwrite immutable snapshot: {output_file}")
+
     with output_file.open(
         "w",
         encoding="utf-8",
@@ -241,6 +250,10 @@ def save_manifest(
         / f"collection_manifest_{timestamp}.json"
     )
 
+    if output_file.exists():
+
+        raise FileExistsError(f"Refusing to overwrite immutable snapshot: {output_file}")
+
     with output_file.open(
         "w",
         encoding="utf-8",
@@ -260,6 +273,8 @@ def save_manifest(
 # ============================================================
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run fetch_player_history.py.')
+    parser.parse_args()
 
     print("=" * 60)
     print("FPL PLAYER HISTORY COLLECTOR")
@@ -465,3 +480,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

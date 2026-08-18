@@ -22,6 +22,28 @@ from catboost import CatBoostRegressor
 from sklearn.metrics import mean_absolute_error, root_mean_squared_error
 
 
+def compute_outcome_metrics(frame: pd.DataFrame, predictions) -> dict[str, float]:
+    scored = frame[["player_id", "target_points"]].copy()
+    scored["prediction"] = predictions
+    scored = scored.groupby("player_id", as_index=False)[["target_points", "prediction"]].sum()
+    result = {}
+    for k in (5, 10, 20):
+        kk = min(k, len(scored))
+        predicted = set(scored.nlargest(kk, "prediction")["player_id"])
+        actual = set(scored.nlargest(kk, "target_points")["player_id"])
+        result[f"precision_at_{k}"] = float(len(predicted & actual) / kk) if kk else 0.0
+    predicted_captain = scored.nlargest(1, "prediction").iloc[0]
+    actual_captain = scored.nlargest(1, "target_points").iloc[0]
+    result["captain_hit"] = float(predicted_captain["player_id"] == actual_captain["player_id"])
+    result["captain_points_ratio"] = float(predicted_captain["target_points"] / actual_captain["target_points"]) if actual_captain["target_points"] else 0.0
+    squad = scored.nlargest(min(15, len(scored)), "prediction")
+    oracle = scored.nlargest(min(15, len(scored)), "target_points")
+    result["predicted_squad_points"] = float(squad["target_points"].sum())
+    result["oracle_squad_points"] = float(oracle["target_points"].sum())
+    result["squad_regret"] = float(result["oracle_squad_points"] - result["predicted_squad_points"])
+    result["transfer_target_lift"] = float(squad["target_points"].mean() - scored["target_points"].mean()) if len(scored) else 0.0
+    return result
+
 def main() -> None:
     project_root = Path(__file__).resolve().parents[2]
     dataset_path = project_root / "data" / "processed" / "training_dataset_v1.csv"
@@ -64,6 +86,8 @@ def main() -> None:
         test_mask = (df["season"] == test_season) & (df["target_gw"] == gw)
 
         X_tr, y_tr = df.loc[train_mask, feature_cols], df.loc[train_mask, target_col]
+        if X_tr.empty or y_tr.empty:
+            continue
         X_te, y_te = df.loc[test_mask, feature_cols], df.loc[test_mask, target_col]
 
         if len(X_te) == 0:
@@ -72,11 +96,12 @@ def main() -> None:
         model = CatBoostRegressor(iterations=150, learning_rate=0.05, depth=5, random_seed=42, verbose=0)
         model.fit(X_tr, y_tr)
         preds = model.predict(X_te)
+        outcome = compute_outcome_metrics(df.loc[test_mask], preds)
 
         mae = float(mean_absolute_error(y_te, preds))
         rmse = float(root_mean_squared_error(y_te, preds))
 
-        gw_results.append({"gameweek": int(gw), "samples": len(X_te), "MAE": mae, "RMSE": rmse})
+        gw_results.append({"gameweek": int(gw), "samples": len(X_te), "MAE": mae, "RMSE": rmse, **outcome})
         all_preds.extend(preds)
         all_actuals.extend(y_te)
 
@@ -84,11 +109,14 @@ def main() -> None:
 
     overall_mae = float(mean_absolute_error(all_actuals, all_preds))
     overall_rmse = float(root_mean_squared_error(all_actuals, all_preds))
+    metric_names = ["precision_at_5", "precision_at_10", "precision_at_20", "captain_hit", "captain_points_ratio", "predicted_squad_points", "oracle_squad_points", "squad_regret", "transfer_target_lift"]
+    ranking_metrics = {f"mean_{name}": float(sum(row[name] for row in gw_results) / len(gw_results)) for name in metric_names}
 
     summary = {
         "season": test_season,
         "overall_walk_forward_mae": overall_mae,
         "overall_walk_forward_rmse": overall_rmse,
+        "ranking_metrics": ranking_metrics,
         "gameweek_breakdown": gw_results
     }
 

@@ -11,14 +11,18 @@ player IDs that exist in the supplied player pool.
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
 
+import argparse
 import pandas as pd
 
 try:
-    from optimizer.squad_optimizer import optimize_squad, select_starting_xi
+    from .squad_optimizer import optimize_squad, select_starting_xi
 except ImportError:
     from squad_optimizer import optimize_squad, select_starting_xi
 
@@ -31,6 +35,10 @@ REQUIRED_POOL_COLUMNS = {
     "expected_points",
 }
 
+
+def _is_unavailable(value: object) -> bool:
+    s = str(value or "available").strip().lower()
+    return s in {"unavailable", "unknown", "injured", "suspended", "out", "doubtful"}
 
 def _validate_player_pool(player_pool: pd.DataFrame) -> None:
     """Validate the minimum schema required by the manager engine."""
@@ -144,6 +152,8 @@ def _search_best_transfers(
     player_pool: pd.DataFrame,
     bank: float,
     max_transfers: int = 2,
+    free_transfers: int = 1,
+    hit_penalty: float = 4.0,
 ) -> dict:
     """
     FIX 8: targeted best-swap search, replacing the old "diff against a
@@ -191,7 +201,7 @@ def _search_best_transfers(
 
     single_options.sort(key=lambda o: o["gain"], reverse=True)
 
-    best_combo = {"transfers": [], "gross_gain": 0.0}
+    best_combo = {"transfers": [], "gross_gain": 0.0, "net_gain": 0.0}
 
     for k in range(1, max_transfers + 1):
         used_in_ids: set[int] = set()
@@ -221,8 +231,9 @@ def _search_best_transfers(
             team_counts_running = projected
 
         gross_gain = sum(o["gain"] for o in combo)
-        if len(combo) == k and gross_gain > best_combo["gross_gain"]:
-            best_combo = {"transfers": combo, "gross_gain": gross_gain}
+        net_gain = gross_gain - max(0, k - int(free_transfers)) * float(hit_penalty)
+        if len(combo) == k and net_gain > best_combo["net_gain"]:
+            best_combo = {"transfers": combo, "gross_gain": gross_gain, "net_gain": net_gain}
 
     return best_combo
 
@@ -233,6 +244,7 @@ def recommend_transfers(
     free_transfers: int = 1,
     bank: float = 0.0,
     hit_penalty: float = 4.0,
+    manager_mode: str = "standard",
 ) -> dict:
     """
     Recommend transfers via a TARGETED best-swap search (FIX 8) -- not a
@@ -256,6 +268,17 @@ def recommend_transfers(
     if hit_penalty < 0:
         raise ValueError("hit_penalty cannot be negative.")
 
+    supported_modes = {"standard", "free_transfer_only", "hit_allowed"}
+    if manager_mode not in supported_modes:
+        raise ValueError(f"Unsupported manager_mode {manager_mode!r}; supported: {sorted(supported_modes)}")
+    availability_col = "availability" if "availability" in player_pool.columns else ("status" if "status" in player_pool.columns else None)
+    if availability_col:
+        unavailable = player_pool[availability_col].map(_is_unavailable) 
+        unavailable_current = player_pool.loc[player_pool["player_id"].isin(current_squad_ids) & unavailable, "player_id"].astype(int).tolist()
+        if unavailable_current:
+            raise ValueError(f"Current squad contains unavailable players: {unavailable_current}")
+        player_pool = player_pool.loc[~unavailable].copy()
+
     current_squad = (
         player_pool[player_pool["player_id"].isin(current_squad_ids)]
         .copy()
@@ -263,7 +286,8 @@ def recommend_transfers(
     )
     current_xp = float(current_squad["expected_points"].sum())
 
-    best = _search_best_transfers(current_squad, player_pool, bank, max_transfers=2)
+    max_search_transfers = free_transfers if manager_mode == "free_transfer_only" else 2
+    best = _search_best_transfers(current_squad, player_pool, bank, max_transfers=max_search_transfers, free_transfers=free_transfers, hit_penalty=hit_penalty)
     transfers = best["transfers"]
     num_transfers = len(transfers)
 
@@ -285,15 +309,26 @@ def recommend_transfers(
     except RuntimeError:
         xi = None
     recommended_captain = None
+    recommended_vice_captain = None
     optimal_starting_xi = []
+    optimal_squad_ids = sorted(int(pid) for pid in new_squad_ids)
+    optimal_bench_ids = []
     if xi is not None:
-        cap_row = new_squad[new_squad["player_id"] == xi["captain_id"]].iloc[0]
-        recommended_captain = cap_row.get("web_name", str(xi["captain_id"]))
+        captain_id = int(xi["captain_id"])
+        vice_id = xi.get("vice_captain_id")
+        if vice_id is None:
+            candidates = [int(pid) for pid in xi["starting_ids"] if int(pid) != captain_id]
+            vice_id = sorted(candidates, key=lambda pid: (-float(new_squad.loc[new_squad["player_id"] == pid, "expected_points"].iloc[0]), pid))[0]
+        cap_row = new_squad[new_squad["player_id"] == captain_id].iloc[0]
+        vice_row = new_squad[new_squad["player_id"] == int(vice_id)].iloc[0]
+        recommended_captain = cap_row.get("web_name", str(captain_id))
+        recommended_vice_captain = vice_row.get("web_name", str(vice_id))
+        starting_ids = [int(pid) for pid in xi["starting_ids"]]
+        optimal_bench_ids = [pid for pid in optimal_squad_ids if pid not in starting_ids]
         optimal_starting_xi = [
-            {"player_id": int(pid), "web_name": new_squad[new_squad["player_id"] == pid].iloc[0].get("web_name", "")}
-            for pid in xi["starting_ids"]
+            {"player_id": int(pid), "web_name": new_squad.loc[new_squad["player_id"] == pid, "web_name"].iloc[0], "is_captain": int(pid) == captain_id, "is_vice_captain": int(pid) == int(vice_id)}
+            for pid in starting_ids
         ]
-
     return {
         "current_expected_points": current_xp,
         "optimal_expected_points": optimal_xp,
@@ -303,13 +338,19 @@ def recommend_transfers(
         "hit_penalty_incurred": total_penalty,
         "net_expected_gain": net_gain,
         "recommended_captain": recommended_captain,
+        "recommended_vice_captain": recommended_vice_captain,
         "transfers_out_ids": transfers_out_ids,
         "transfers_in_ids": transfers_in_ids,
+        "optimal_squad_ids": optimal_squad_ids,
+        "optimal_bench_ids": optimal_bench_ids,
         "optimal_starting_xi": optimal_starting_xi,
+        "manager_mode": manager_mode,
     }
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run manager_engine.py.')
+    parser.parse_args()
     """
     Smoke test using real metadata from the current (2026-27) season.
 
@@ -432,3 +473,15 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+

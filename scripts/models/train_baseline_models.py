@@ -15,16 +15,23 @@ Outputs:
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
+import argparse
 import numpy as np
+import argparse
 import pandas as pd
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, root_mean_squared_error
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run train_baseline_models.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[2]
     dataset_path = project_root / "data" / "processed" / "training_dataset_v1.csv"
 
@@ -108,3 +115,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+

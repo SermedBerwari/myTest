@@ -12,12 +12,27 @@ Enforces all official FPL constraints:
 """
 
 from __future__ import annotations
+import argparse
+import argparse
 
+import argparse
 import json
 from pathlib import Path
+import argparse
 import pandas as pd
 from ortools.linear_solver import pywraplp
 
+
+def _validate_player_pool(player_pool: pd.DataFrame) -> None:
+    required={"player_id","position_id","team_id","cost","expected_points"}
+    missing=required-set(player_pool.columns)
+    if missing: raise ValueError(f"Missing optimizer columns: {sorted(missing)}")
+    if len(player_pool)<15: raise ValueError("Player pool must contain at least 15 players.")
+    if player_pool["player_id"].duplicated().any(): raise ValueError("Player pool contains duplicate player_id values.")
+    if not set(pd.to_numeric(player_pool["position_id"],errors="coerce").dropna().astype(int)).issubset({1,2,3,4}): raise ValueError("Invalid position_id; expected FPL positions 1-4.")
+    if pd.to_numeric(player_pool["team_id"],errors="coerce").isna().any() or (pd.to_numeric(player_pool["team_id"],errors="coerce")<=0).any(): raise ValueError("Invalid team_id values.")
+    if pd.to_numeric(player_pool["cost"],errors="coerce").isna().any() or (pd.to_numeric(player_pool["cost"],errors="coerce")<0).any(): raise ValueError("Invalid cost values.")
+    if pd.to_numeric(player_pool["expected_points"],errors="coerce").isna().any(): raise ValueError("expected_points must be finite numeric values.")
 
 def optimize_squad(
     player_pool: pd.DataFrame,
@@ -28,6 +43,7 @@ def optimize_squad(
     Optimizes a 15-player FPL squad and Starting XI given expected points and prices.
     player_pool required columns: ['player_id', 'web_name', 'position_id', 'team_id', 'cost', 'expected_points']
     """
+    _validate_player_pool(player_pool)
     solver = pywraplp.Solver.CreateSolver("CBC")
     if not solver:
         raise RuntimeError("CBC solver unavailable in OR-Tools.")
@@ -91,6 +107,8 @@ def optimize_squad(
     start_indices = [i for i in range(n) if s[i].solution_value() > 0.5]
     bench_indices = [i for i in squad_indices if i not in start_indices]
     captain_index = [i for i in range(n) if c[i].solution_value() > 0.5][0]
+    vice_candidates=[i for i in start_indices if i != captain_index]
+    vice_index=sorted(vice_candidates,key=lambda i:(-float(player_pool.iloc[i]["expected_points"]),int(player_pool.iloc[i]["player_id"])))[0]
 
     squad_df = player_pool.iloc[squad_indices].copy()
     start_df = player_pool.iloc[start_indices].copy()
@@ -103,6 +121,10 @@ def optimize_squad(
         "total_cost": float(total_cost),
         "expected_points": float(expected_pts),
         "captain": player_pool.iloc[captain_index]["web_name"],
+        "vice_captain_id": int(player_pool.iloc[vice_index]["player_id"]),
+        "vice_captain": player_pool.iloc[vice_index]["web_name"],
+        "starting_ids": start_df["player_id"].astype(int).tolist(),
+        "bench_ids": bench_df["player_id"].astype(int).tolist(),
         "starting_xi": start_df[["player_id", "web_name", "position_id", "team_id", "cost", "expected_points"]].to_dict(orient="records"),
         "bench": bench_df[["player_id", "web_name", "position_id", "team_id", "cost", "expected_points"]].to_dict(orient="records"),
     }
@@ -160,6 +182,8 @@ def select_starting_xi(squad_df: pd.DataFrame) -> dict:
     start_indices = [i for i in range(n) if s[i].solution_value() > 0.5]
     bench_indices = [i for i in range(n) if i not in start_indices]
     captain_index = [i for i in range(n) if c[i].solution_value() > 0.5][0]
+    vice_candidates=[i for i in start_indices if i != captain_index]
+    vice_index=sorted(vice_candidates,key=lambda i:(-float(squad_df.iloc[i]["expected_points"]),int(squad_df.iloc[i]["player_id"])))[0]
 
     start_df = squad_df.iloc[start_indices]
     bench_df = squad_df.iloc[bench_indices]
@@ -169,12 +193,16 @@ def select_starting_xi(squad_df: pd.DataFrame) -> dict:
         "expected_points": float(expected_pts),
         "captain_id": int(squad_df.iloc[captain_index]["player_id"]),
         "captain": squad_df.iloc[captain_index]["web_name"],
+        "vice_captain_id": int(squad_df.iloc[vice_index]["player_id"]),
+        "vice_captain": squad_df.iloc[vice_index]["web_name"],
         "starting_ids": start_df["player_id"].astype(int).tolist(),
         "bench_ids": bench_df["player_id"].astype(int).tolist(),
     }
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Run squad_optimizer.py.')
+    parser.parse_args()
     project_root = Path(__file__).resolve().parents[2]
 
     print("=" * 72)
@@ -252,3 +280,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+
